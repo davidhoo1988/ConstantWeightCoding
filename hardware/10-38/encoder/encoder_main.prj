@@ -1,0 +1,3 @@
+verilog work "ipcore_dir/mul_11bits.v"
+verilog work "best_d.v"
+verilog work "encoder_main.v"

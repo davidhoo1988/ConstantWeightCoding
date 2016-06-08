@@ -1,0 +1,5 @@
+verilog work "../encoder/ipcore_dir/mul_12bits.v"
+verilog work "best_d.v"
+verilog work "ipcore_dir/fifo_11_to_11.v"
+verilog work "decoder_main.v"
+verilog work "decoder_top.v"

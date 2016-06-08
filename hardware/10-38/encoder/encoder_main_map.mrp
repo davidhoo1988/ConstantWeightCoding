@@ -1,0 +1,634 @@
+Release 13.2 Map O.61xd (nt64)
+Xilinx Mapping Report File for Design 'encoder_main'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o encoder_main_map.ncd encoder_main.ngd
+encoder_main.pcf 
+Target Device  : xc6vlx240t
+Target Package : ff784
+Target Speed   : -3
+Mapper Version : virtex6 -- $Revision: 1.55 $
+Mapped Date    : Wed Dec 30 12:11:42 2015
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    1
+Slice Logic Utilization:
+  Number of Slice Registers:                   430 out of 301,440    1%
+    Number used as Flip Flops:                 427
+    Number used as Latches:                      3
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                      1,616 out of 150,720    1%
+    Number used as logic:                    1,616 out of 150,720    1%
+      Number using O6 output only:           1,596
+      Number using O5 output only:               0
+      Number using O5 and O6:                   20
+      Number used as ROM:                        0
+    Number used as Memory:                       0 out of  58,400    0%
+    Number used exclusively as route-thrus:      0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   489 out of  37,680    1%
+  Number of LUT Flip Flop pairs used:        1,619
+    Number with an unused Flip Flop:         1,190 out of   1,619   73%
+    Number with an unused LUT:                   3 out of   1,619    1%
+    Number of fully used LUT-FF pairs:         426 out of   1,619   26%
+    Number of unique control sets:              12
+    Number of slice register sites lost
+      to control set restrictions:              66 out of 301,440    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                       395 out of     400   98%
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                  0 out of     416    0%
+  Number of RAMB18E1/FIFO18E1s:                  0 out of     832    0%
+  Number of BUFG/BUFGCTRLs:                      1 out of      32    3%
+    Number used as BUFGs:                        1
+    Number used as BUFGCTRLs:                    0
+  Number of ILOGICE1/ISERDESE1s:                 0 out of     720    0%
+  Number of OLOGICE1/OSERDESE1s:                 0 out of     720    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHCEs:                             0 out of     144    0%
+  Number of BUFIODQSs:                           0 out of      72    0%
+  Number of BUFRs:                               0 out of      36    0%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DSP48E1s:                            7 out of     768    1%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of GTXE1s:                              0 out of      12    0%
+  Number of IBUFDS_GTXE1s:                       0 out of      12    0%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         0 out of      18    0%
+  Number of IODELAYE1s:                          0 out of     720    0%
+  Number of MMCM_ADVs:                           0 out of      12    0%
+  Number of PCIE_2_0s:                           0 out of       2    0%
+  Number of STARTUPs:                            1 out of       1  100%
+  Number of SYSMONs:                             0 out of       1    0%
+  Number of TEMAC_SINGLEs:                       0 out of       4    0%
+
+Average Fanout of Non-Clock Nets:                4.73
+
+Peak Memory Usage:  758 MB
+Total REAL time to MAP completion:  48 secs 
+Total CPU time to MAP completion:   48 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   Mram_state[2]_GND_2_o_Mux_21_o is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network
+   uut/multiplier/U0/i_mult/gEMBEDDED_MULT.gEMB_MULTS_only.gDSP.iDSP/inferred_ds
+   p.m_reg<4> has no load.
+INFO:LIT:395 - The above info message is repeated 4 more times for the following
+   (max. 5 shown):
+   uut/multiplier/U0/i_mult/gEMBEDDED_MULT.gEMB_MULTS_only.gDSP.iDSP/inferred_ds
+   p.m_reg<3>,
+   uut/multiplier/U0/i_mult/gEMBEDDED_MULT.gEMB_MULTS_only.gDSP.iDSP/inferred_ds
+   p.m_reg<2>,
+   uut/multiplier/U0/i_mult/gEMBEDDED_MULT.gEMB_MULTS_only.gDSP.iDSP/inferred_ds
+   p.m_reg<1>,
+   uut/multiplier/U0/i_mult/gEMBEDDED_MULT.gEMB_MULTS_only.gDSP.iDSP/inferred_ds
+   p.m_reg<0>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 0.950 Volts. (default - Range: 0.950 to
+   1.050 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   4 block(s) optimized away
+   5 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal
+"uut/multiplier/U0/i_mult/gEMBEDDED_MULT.gEMB_MULTS_only.gDSP.iDSP/inferred_dsp.
+m_reg<4>" is sourceless and has been removed.
+The signal
+"uut/multiplier/U0/i_mult/gEMBEDDED_MULT.gEMB_MULTS_only.gDSP.iDSP/inferred_dsp.
+m_reg<3>" is sourceless and has been removed.
+The signal
+"uut/multiplier/U0/i_mult/gEMBEDDED_MULT.gEMB_MULTS_only.gDSP.iDSP/inferred_dsp.
+m_reg<2>" is sourceless and has been removed.
+The signal
+"uut/multiplier/U0/i_mult/gEMBEDDED_MULT.gEMB_MULTS_only.gDSP.iDSP/inferred_dsp.
+m_reg<1>" is sourceless and has been removed.
+The signal
+"uut/multiplier/U0/i_mult/gEMBEDDED_MULT.gEMB_MULTS_only.gDSP.iDSP/inferred_dsp.
+m_reg<0>" is sourceless and has been removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+VCC 		uut/multiplier/blk00000001
+GND 		uut/multiplier/blk00000002
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| bin_msg<0>                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<1>                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<2>                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<3>                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<4>                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<5>                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<6>                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<7>                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<8>                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<9>                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<10>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<11>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<12>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<13>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<14>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<15>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<16>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<17>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<18>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<19>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<20>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<21>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<22>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<23>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<24>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<25>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<26>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<27>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<28>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<29>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<30>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<31>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<32>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<33>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<34>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<35>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<36>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<37>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<38>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<39>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<40>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<41>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<42>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<43>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<44>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<45>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<46>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<47>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<48>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<49>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<50>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<51>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<52>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<53>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<54>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<55>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<56>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<57>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<58>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<59>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<60>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<61>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<62>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<63>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<64>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<65>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<66>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<67>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<68>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<69>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<70>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<71>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<72>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<73>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<74>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<75>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<76>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<77>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<78>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<79>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<80>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<81>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<82>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<83>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<84>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<85>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<86>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<87>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<88>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<89>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<90>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<91>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<92>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<93>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<94>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<95>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<96>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<97>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<98>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<99>                        | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<100>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<101>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<102>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<103>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<104>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<105>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<106>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<107>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<108>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<109>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<110>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<111>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<112>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<113>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<114>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<115>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<116>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<117>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<118>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<119>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<120>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<121>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<122>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<123>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<124>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<125>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<126>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<127>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<128>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<129>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<130>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<131>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<132>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<133>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<134>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<135>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<136>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<137>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<138>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<139>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<140>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<141>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<142>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<143>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<144>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<145>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<146>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<147>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<148>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<149>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<150>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<151>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<152>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<153>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<154>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<155>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<156>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<157>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<158>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<159>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<160>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<161>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<162>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<163>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<164>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<165>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<166>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<167>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<168>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<169>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<170>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<171>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<172>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<173>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<174>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<175>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<176>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<177>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<178>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<179>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<180>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<181>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<182>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<183>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<184>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<185>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<186>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<187>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<188>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<189>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<190>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<191>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<192>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<193>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<194>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<195>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<196>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<197>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<198>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<199>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<200>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<201>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<202>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<203>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<204>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<205>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<206>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<207>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<208>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<209>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<210>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<211>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<212>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<213>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<214>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<215>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<216>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<217>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<218>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<219>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<220>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<221>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<222>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<223>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<224>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<225>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<226>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<227>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<228>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<229>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<230>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<231>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<232>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<233>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<234>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<235>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<236>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<237>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<238>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<239>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<240>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<241>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<242>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<243>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<244>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<245>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<246>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<247>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<248>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<249>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<250>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<251>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<252>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<253>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<254>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<255>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<256>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<257>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<258>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<259>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<260>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<261>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<262>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<263>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<264>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<265>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<266>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<267>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<268>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<269>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<270>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<271>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<272>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<273>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<274>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<275>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<276>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<277>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<278>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<279>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<280>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<281>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<282>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<283>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<284>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<285>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<286>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<287>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<288>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<289>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<290>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<291>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<292>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<293>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<294>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<295>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<296>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<297>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<298>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<299>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<300>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<301>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<302>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<303>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<304>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<305>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<306>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<307>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<308>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<309>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<310>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<311>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<312>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<313>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<314>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<315>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<316>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<317>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<318>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<319>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<320>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<321>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<322>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<323>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<324>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<325>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<326>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<327>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<328>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<329>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<330>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<331>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<332>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<333>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<334>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<335>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<336>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<337>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<338>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<339>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<340>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<341>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<342>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<343>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<344>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<345>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<346>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<347>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<348>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<349>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<350>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<351>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<352>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<353>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<354>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<355>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<356>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<357>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<358>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<359>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<360>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<361>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<362>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<363>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<364>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<365>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<366>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<367>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<368>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<369>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<370>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<371>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<372>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<373>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<374>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<375>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<376>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<377>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<378>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| bin_msg<379>                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| clk                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| cw_word<0>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cw_word<1>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cw_word<2>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cw_word<3>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cw_word<4>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cw_word<5>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cw_word<6>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cw_word<7>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cw_word<8>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| cw_word<9>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| done                               | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ready                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| rst_b                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| start                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

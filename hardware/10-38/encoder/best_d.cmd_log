@@ -1,0 +1,23 @@
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/best_d.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/best_d.syr" 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/best_d.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/best_d.syr" 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/best_d.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/best_d.syr" 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/best_d.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/best_d.syr" 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/best_d.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/best_d.syr" 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/best_d.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/best_d.syr" 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/best_d.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/best_d.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6vlx240t-ff784-3 best_d.ngc best_d.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o best_d_map.ncd best_d.ngd best_d.pcf 
+par -w -intstyle ise -ol high -mt off best_d_map.ncd best_d.ncd best_d.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml best_d.twx best_d.ncd -o best_d.twr best_d.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc best_d.ucf -p xc6vlx240t-ff784-3 best_d.ngc best_d.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o best_d_map.ncd best_d.ngd best_d.pcf 
+par -w -intstyle ise -ol high -mt off best_d_map.ncd best_d.ncd best_d.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml best_d.twx best_d.ncd -o best_d.twr best_d.pcf -ucf best_d.ucf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/best_d.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/best_d.syr" 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/best_d.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/best_d.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6vlx240t-ff784-3 best_d.ngc best_d.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o best_d_map.ncd best_d.ngd best_d.pcf 
+par -w -intstyle ise -ol high -mt off best_d_map.ncd best_d.ncd best_d.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml best_d.twx best_d.ncd -o best_d.twr best_d.pcf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/best_d.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/best_d.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6vlx240t-ff784-3 best_d.ngc best_d.ngd  

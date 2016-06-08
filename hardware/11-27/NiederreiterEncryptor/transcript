@@ -1,0 +1,133 @@
+# Reading C:/Program Files/Modelsim/tcl/vsim/pref.tcl 
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {encryptor_top_tb.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module mul_12bits
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	mul_12bits
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module best_d
+# 
+# Top level modules:
+# 	best_d
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module fifo_8_to_1
+# 
+# Top level modules:
+# 	fifo_8_to_1
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module encoder_main
+# 
+# Top level modules:
+# 	encoder_main
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module PublicKey
+# 
+# Top level modules:
+# 	PublicKey
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module encoder_top
+# 
+# Top level modules:
+# 	encoder_top
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module encryptor_top
+# 
+# Top level modules:
+# 	encryptor_top
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module encryptor_top_tb
+# 
+# Top level modules:
+# 	encryptor_top_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# vsim -L xilinxcorelib_ver -L unisims_ver -L secureip -lib work -voptargs=\"+acc\" -t 1ps work.encryptor_top_tb glbl 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.encryptor_top_tb(fast)
+# Loading work.encryptor_top(fast)
+# Loading work.encoder_top(fast)
+# Loading work.fifo_8_to_1(fast)
+# Loading xilinxcorelib_ver.FIFO_GENERATOR_V8_2(fast)
+# Loading xilinxcorelib_ver.FIFO_GENERATOR_V8_2_CONV_VER(fast)
+# Loading xilinxcorelib_ver.fifo_generator_v8_2_bhv_ver_as(fast)
+# Loading work.encoder_main(fast)
+# Loading work.best_d(fast)
+# Loading work.mul_12bits(fast)
+# Loading unisims_ver.GND(fast)
+# Loading unisims_ver.XORCY(fast)
+# Loading unisims_ver.MUXCY(fast)
+# Loading unisims_ver.MULT_AND(fast)
+# Loading unisims_ver.LUT2(fast)
+# Loading unisims_ver.FD(fast)
+# Loading unisims_ver.LUT4(fast)
+# Loading unisims_ver.LUT2(fast__1)
+# Loading unisims_ver.LUT1(fast)
+# Loading unisims_ver.LUT3(fast)
+# Loading work.PublicKey(fast)
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V6_2(fast)
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V6_2_mem_module(fast)
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V6_2_output_stage(fast)
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V6_2_output_stage(fast__1)
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V6_2_softecc_output_reg_stage(fast)
+# Loading work.glbl(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+#  Block Memory Generator CORE Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator CORE Generator module encryptor_top_tb.uut.pk.inst.native_mem_module.blk_mem_gen_v6_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+restart
+# Loading work.encryptor_top_tb(fast)
+# Loading work.encryptor_top(fast)
+# Loading work.encoder_top(fast)
+# Loading work.fifo_8_to_1(fast)
+# Loading xilinxcorelib_ver.FIFO_GENERATOR_V8_2(fast)
+# Loading xilinxcorelib_ver.FIFO_GENERATOR_V8_2_CONV_VER(fast)
+# Loading xilinxcorelib_ver.fifo_generator_v8_2_bhv_ver_as(fast)
+# Loading work.encoder_main(fast)
+# Loading work.best_d(fast)
+# Loading work.mul_12bits(fast)
+# Loading unisims_ver.GND(fast)
+# Loading unisims_ver.XORCY(fast)
+# Loading unisims_ver.MUXCY(fast)
+# Loading unisims_ver.MULT_AND(fast)
+# Loading unisims_ver.LUT2(fast)
+# Loading unisims_ver.FD(fast)
+# Loading unisims_ver.LUT4(fast)
+# Loading unisims_ver.LUT2(fast__1)
+# Loading unisims_ver.LUT1(fast)
+# Loading unisims_ver.LUT3(fast)
+# Loading work.PublicKey(fast)
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V6_2(fast)
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V6_2_mem_module(fast)
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V6_2_output_stage(fast)
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V6_2_output_stage(fast__1)
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V6_2_softecc_output_reg_stage(fast)
+# Loading work.glbl(fast)
+do wave.do
+# ** Error: (vish-4014) No objects found matching '/encryptor_top_tb/uut/cw_done_tmp4'.
+# Executing ONERROR command at macro ./wave.do line 31
+run 6us
+# WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+#  Block Memory Generator CORE Generator module loading initial data...
+#  Block Memory Generator data initialization complete.
+# Block Memory Generator CORE Generator module encryptor_top_tb.uut.pk.inst.native_mem_module.blk_mem_gen_v6_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.

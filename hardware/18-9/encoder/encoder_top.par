@@ -1,0 +1,226 @@
+Release 13.2 par O.61xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+RSPC_DR_RAYCHEN::  Wed Jan 13 16:09:46 2016
+
+par -w -intstyle ise -ol high -mt off encoder_top_map.ncd encoder_top.ncd
+encoder_top.pcf 
+
+
+Constraints file: encoder_top.pcf.
+Loading device for application Rf_Device from file '6vlx240t.nph' in environment C:\Xilinx\13.2\ISE_DS\ISE\.
+   "encoder_top" is an NCD, version 3.2, device xc6vlx240t, package ff784, speed -3
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.15 2011-06-20".
+
+
+
+Device Utilization Summary:
+
+Slice Logic Utilization:
+  Number of Slice Registers:                   219 out of 301,440    1%
+    Number used as Flip Flops:                 197
+    Number used as Latches:                     22
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                        292 out of 150,720    1%
+    Number used as logic:                      287 out of 150,720    1%
+      Number using O6 output only:             202
+      Number using O5 output only:               1
+      Number using O5 and O6:                   84
+      Number used as ROM:                        0
+    Number used as Memory:                       0 out of  58,400    0%
+    Number used exclusively as route-thrus:      5
+      Number with same-slice register load:      4
+      Number with same-slice carry load:         1
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   139 out of  37,680    1%
+  Number of LUT Flip Flop pairs used:          361
+    Number with an unused Flip Flop:           159 out of     361   44%
+    Number with an unused LUT:                  69 out of     361   19%
+    Number of fully used LUT-FF pairs:         133 out of     361   36%
+    Number of slice register sites lost
+      to control set restrictions:               0 out of 301,440    0%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        32 out of     400    8%
+    IOB Flip Flops:                              2
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                  0 out of     416    0%
+  Number of RAMB18E1/FIFO18E1s:                  1 out of     832    1%
+    Number using RAMB18E1 only:                  1
+    Number using FIFO18E1 only:                  0
+  Number of BUFG/BUFGCTRLs:                      1 out of      32    3%
+    Number used as BUFGs:                        1
+    Number used as BUFGCTRLs:                    0
+  Number of ILOGICE1/ISERDESE1s:                 0 out of     720    0%
+  Number of OLOGICE1/OSERDESE1s:                 2 out of     720    1%
+    Number used as OLOGICE1s:                    2
+    Number used as OSERDESE1s:                   0
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHCEs:                             0 out of     144    0%
+  Number of BUFIODQSs:                           0 out of      72    0%
+  Number of BUFRs:                               0 out of      36    0%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DSP48E1s:                            0 out of     768    0%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of GTXE1s:                              0 out of      12    0%
+  Number of IBUFDS_GTXE1s:                       0 out of      12    0%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         0 out of      18    0%
+  Number of IODELAYE1s:                          0 out of     720    0%
+  Number of MMCM_ADVs:                           0 out of      12    0%
+  Number of PCIE_2_0s:                           0 out of       2    0%
+  Number of STARTUPs:                            1 out of       1  100%
+  Number of SYSMONs:                             0 out of       1    0%
+  Number of TEMAC_SINGLEs:                       0 out of       4    0%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 9 secs 
+Finished initial Timing Analysis.  REAL time: 9 secs 
+
+Starting Router
+
+
+Phase  1  : 4972 unrouted;      REAL time: 11 secs 
+
+Phase  2  : 4552 unrouted;      REAL time: 11 secs 
+
+Phase  3  : 322 unrouted;      REAL time: 21 secs 
+
+Phase  4  : 319 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 28 secs 
+
+Updating file: encoder_top.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 28 secs 
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 28 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 28 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 28 secs 
+
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 28 secs 
+
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 28 secs 
+Total REAL time to Router completion: 28 secs 
+Total CPU time to Router completion: 28 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|           clk_BUFGP | BUFGCTRL_X0Y0| No   |   69 |  0.132     |  1.469      |
++---------------------+--------------+------+------+------------+-------------+
+|bin2cw/Mmux_state[2] |              |      |      |            |             |
+|_GND_21_o_Mux_107_o1 |              |      |      |            |             |
+|                   2 |         Local|      |    1 |  0.000     |  0.285      |
++---------------------+--------------+------+------+------------+-------------+
+|  bin2cw/Mram__n0357 |         Local|      |    1 |  0.000     |  0.502      |
++---------------------+--------------+------+------+------------+-------------+
+| bin2cw/Mram__n03573 |         Local|      |    2 |  0.000     |  0.283      |
++---------------------+--------------+------+------+------------+-------------+
+|bin2cw/state[2]_GND_ |              |      |      |            |             |
+|      21_o_Mux_107_o |         Local|      |    1 |  0.000     |  0.360      |
++---------------------+--------------+------+------+------------+-------------+
+| bin2cw/Mram__n03579 |         Local|      |    2 |  0.000     |  0.295      |
++---------------------+--------------+------+------+------------+-------------+
+|bin2cw/state[2]_GND_ |              |      |      |            |             |
+|       15_o_Mux_95_o |         Local|      |    2 |  0.186     |  0.565      |
++---------------------+--------------+------+------+------------+-------------+
+| bin2cw/Mram__n03578 |         Local|      |    3 |  0.262     |  0.519      |
++---------------------+--------------+------+------+------------+-------------+
+|bin2cw/Mmux_state[2] |              |      |      |            |             |
+|_next_state[0]_Mux_2 |              |      |      |            |             |
+|               5_o11 |         Local|      |    1 |  0.000     |  0.291      |
++---------------------+--------------+------+------+------------+-------------+
+| bin2cw/Mram__n03577 |         Local|      |    1 |  0.000     |  0.440      |
++---------------------+--------------+------+------+------------+-------------+
+|bin2cw/state[2]_GND_ |              |      |      |            |             |
+|      19_o_Mux_103_o |         Local|      |    2 |  0.000     |  0.286      |
++---------------------+--------------+------+------+------------+-------------+
+|bin2cw/state[2]_GND_ |              |      |      |            |             |
+|      22_o_Mux_109_o |         Local|      |    1 |  0.000     |  0.523      |
++---------------------+--------------+------+------+------------+-------------+
+|bin2cw/state[2]_GND_ |              |      |      |            |             |
+|        7_o_Mux_79_o |         Local|      |    1 |  0.000     |  0.291      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  TS_clk = PERIOD TIMEGRP "clk" 400 MHz HIG | SETUP       |     0.034ns|     2.466ns|       0|           0
+  H 50%                                     | HOLD        |     0.029ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 30 secs 
+Total CPU time to PAR completion: 30 secs 
+
+Peak Memory Usage:  775 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 0
+
+Writing design to file encoder_top.ncd
+
+
+
+PAR done!

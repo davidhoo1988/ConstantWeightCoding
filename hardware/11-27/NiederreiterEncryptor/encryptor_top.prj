@@ -1,0 +1,7 @@
+verilog work "ipcore_dir/mul_12bits.v"
+verilog work "best_d.v"
+verilog work "ipcore_dir/fifo_8_to_1.v"
+verilog work "encoder_main.v"
+verilog work "ipcore_dir/PublicKey.v"
+verilog work "encoder_top.v"
+verilog work "encryptor_top.v"

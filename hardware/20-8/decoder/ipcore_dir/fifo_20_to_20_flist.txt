@@ -1,0 +1,24 @@
+# Output products list for <fifo_20_to_20>
+_xmsgs\pn_parser.xmsgs
+fifo_20_to_20.asy
+fifo_20_to_20.gise
+fifo_20_to_20.ngc
+fifo_20_to_20.sym
+fifo_20_to_20.v
+fifo_20_to_20.veo
+fifo_20_to_20.xco
+fifo_20_to_20.xise
+fifo_20_to_20_flist.txt
+fifo_20_to_20_ste\example_design\fifo_20_to_20_top.ucf
+fifo_20_to_20_ste\example_design\fifo_20_to_20_top.vhd
+fifo_20_to_20_ste\example_design\fifo_20_to_20_top.xdc
+fifo_20_to_20_ste\implement\implement.bat
+fifo_20_to_20_ste\implement\implement.sh
+fifo_20_to_20_ste\implement\planAhead_rdn.bat
+fifo_20_to_20_ste\implement\planAhead_rdn.sh
+fifo_20_to_20_ste\implement\planAhead_rdn.tcl
+fifo_20_to_20_ste\implement\xst.prj
+fifo_20_to_20_ste\implement\xst.scr
+fifo_20_to_20_xmdf.tcl
+fifo_generator_ug175.pdf
+fifo_generator_v8_2_readme.txt

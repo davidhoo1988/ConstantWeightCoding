@@ -1,0 +1,290 @@
+--------------------------------------------------------------------------------
+Release 13.2 Trace  (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\13.2\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml best_d.twx best_d.ncd -o best_d.twr best_d.pcf -ucf
+best_d.ucf
+
+Design file:              best_d.ncd
+Physical constraint file: best_d.pcf
+Device,package,speed:     xc6vlx240t,ff784,C,-3 (PRODUCTION 1.15 2011-06-20, STEPPING level 0)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_clk = PERIOD TIMEGRP "clk" 300 MHz HIGH 50%;
+
+ 423 paths analyzed, 71 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   3.263ns.
+--------------------------------------------------------------------------------
+
+Paths for end point multiplier/blk00000003 (DSP48_X0Y55.A2), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     0.070ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               theta_2 (FF)
+  Destination:          multiplier/blk00000003 (DSP)
+  Requirement:          3.333ns
+  Data Path Delay:      3.218ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.010ns (0.891 - 0.901)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 3.333ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: theta_2 to multiplier/blk00000003
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y135.BQ      Tcko                  0.283   theta<4>
+                                                       theta_2
+    DSP48_X0Y55.A2       net (fanout=1)        0.297   theta<2>
+    DSP48_X0Y55.CLK      Tdspdck_A_PREG_MULT   2.638   multiplier/blk00000003
+                                                       multiplier/blk00000003
+    -------------------------------------------------  ---------------------------
+    Total                                      3.218ns (2.921ns logic, 0.297ns route)
+                                                       (90.8% logic, 9.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point multiplier/blk00000003 (DSP48_X0Y55.A1), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     0.071ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               theta_1 (FF)
+  Destination:          multiplier/blk00000003 (DSP)
+  Requirement:          3.333ns
+  Data Path Delay:      3.217ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.010ns (0.891 - 0.901)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 3.333ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: theta_1 to multiplier/blk00000003
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y135.AQ      Tcko                  0.283   theta<4>
+                                                       theta_1
+    DSP48_X0Y55.A1       net (fanout=1)        0.296   theta<1>
+    DSP48_X0Y55.CLK      Tdspdck_A_PREG_MULT   2.638   multiplier/blk00000003
+                                                       multiplier/blk00000003
+    -------------------------------------------------  ---------------------------
+    Total                                      3.217ns (2.921ns logic, 0.296ns route)
+                                                       (90.8% logic, 9.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point multiplier/blk00000003 (DSP48_X0Y55.A4), 1 path
+--------------------------------------------------------------------------------
+Slack (setup path):     0.097ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               theta_4 (FF)
+  Destination:          multiplier/blk00000003 (DSP)
+  Requirement:          3.333ns
+  Data Path Delay:      3.191ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.010ns (0.891 - 0.901)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 3.333ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: theta_4 to multiplier/blk00000003
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X8Y135.DQ      Tcko                  0.283   theta<4>
+                                                       theta_4
+    DSP48_X0Y55.A4       net (fanout=1)        0.270   theta<4>
+    DSP48_X0Y55.CLK      Tdspdck_A_PREG_MULT   2.638   multiplier/blk00000003
+                                                       multiplier/blk00000003
+    -------------------------------------------------  ---------------------------
+    Total                                      3.191ns (2.921ns logic, 0.270ns route)
+                                                       (91.5% logic, 8.5% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_clk = PERIOD TIMEGRP "clk" 300 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point d_9 (SLICE_X8Y139.B5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.280ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               multiplier/blk00000003 (DSP)
+  Destination:          d_9 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.264ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.016ns (0.482 - 0.498)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 3.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: multiplier/blk00000003 to d_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    DSP48_X0Y55.P14      Tdspcko_P_PREG        0.134   multiplier/blk00000003
+                                                       multiplier/blk00000003
+    SLICE_X8Y139.B5      net (fanout=6)        0.207   p<14>
+    SLICE_X8Y139.CLK     Tah         (-Th)     0.077   d_4
+                                                       GND_1_o_p[15]_LessThan_20_o11
+                                                       d_9
+    -------------------------------------------------  ---------------------------
+    Total                                      0.264ns (0.057ns logic, 0.207ns route)
+                                                       (21.6% logic, 78.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point d_7 (SLICE_X9Y139.A6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.284ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               multiplier/blk00000003 (DSP)
+  Destination:          d_7 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.268ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.016ns (0.482 - 0.498)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 3.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: multiplier/blk00000003 to d_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    DSP48_X0Y55.P11      Tdspcko_P_PREG        0.134   multiplier/blk00000003
+                                                       multiplier/blk00000003
+    SLICE_X9Y139.A6      net (fanout=8)        0.189   p<11>
+    SLICE_X9Y139.CLK     Tah         (-Th)     0.055   d_8
+                                                       d_7_rstpot
+                                                       d_7
+    -------------------------------------------------  ---------------------------
+    Total                                      0.268ns (0.079ns logic, 0.189ns route)
+                                                       (29.5% logic, 70.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point d_3 (SLICE_X8Y139.C5), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.296ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               multiplier/blk00000003 (DSP)
+  Destination:          d_3 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.280ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.016ns (0.482 - 0.498)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 3.333ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: multiplier/blk00000003 to d_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    DSP48_X0Y55.P8       Tdspcko_P_PREG        0.134   multiplier/blk00000003
+                                                       multiplier/blk00000003
+    SLICE_X8Y139.C5      net (fanout=8)        0.222   p<8>
+    SLICE_X8Y139.CLK     Tah         (-Th)     0.076   d_4
+                                                       d_3_rstpot
+                                                       d_3
+    -------------------------------------------------  ---------------------------
+    Total                                      0.280ns (0.058ns logic, 0.222ns route)
+                                                       (20.7% logic, 79.3% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clk = PERIOD TIMEGRP "clk" 300 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 1.767ns (period - min period limit)
+  Period: 3.333ns
+  Min period limit: 1.566ns (638.570MHz) (Tdspper_PREG)
+  Physical resource: multiplier/blk00000003/CLK
+  Logical resource: multiplier/blk00000003/CLK
+  Location pin: DSP48_X0Y55.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 2.083ns (period - min period limit)
+  Period: 3.333ns
+  Min period limit: 1.250ns (800.000MHz) (Tbcper_I)
+  Physical resource: clk_BUFGP/BUFG/I0
+  Logical resource: clk_BUFGP/BUFG/I0
+  Location pin: BUFGCTRL_X0Y0.I0
+  Clock network: clk_BUFGP/IBUFG
+--------------------------------------------------------------------------------
+Slack: 2.605ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 3.333ns
+  Low pulse: 1.666ns
+  Low pulse limit: 0.364ns (Tcl)
+  Physical resource: theta<4>/CLK
+  Logical resource: theta_1/CK
+  Location pin: SLICE_X8Y135.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.263|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 423 paths, 0 nets, and 134 connections
+
+Design statistics:
+   Minimum period:   3.263ns{1}   (Maximum frequency: 306.466MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Thu Jan 07 22:39:06 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 612 MB
+
+
+

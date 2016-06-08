@@ -1,0 +1,13 @@
+CoreGen has not been configured with any user repositories.
+CoreGen has been configured with the following Xilinx repositories:
+ - 'C:\Xilinx\13.2\ISE_DS\ISE\coregen\' [reloaded]
+INFO:sim - Generating component instance 'mul_19bits' of
+   'xilinx.com:ip:mult_gen:11.2' from
+   'C:\Xilinx\13.2\ISE_DS\ISE\coregen\ip\xilinx\dsp\com\xilinx\ip\mult_gen_v11_2
+   \component.xml'.
+Applying current project options...
+Finished applying current project options.
+WARNING:sim - Verilog simulation file type 'Behavioral' is not valid for this
+   core. Overriding with simulation file type 'Structural'.
+Cancelled executing Tcl generator.
+Wrote CGP file for project 'mul_19bits'.

@@ -1,0 +1,761 @@
+# Reading C:/Program Files/Modelsim/tcl/vsim/pref.tcl 
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {decoder_top_tb.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module mul_21bits
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	mul_21bits
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module best_d
+# 
+# Top level modules:
+# 	best_d
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module fifo_20_to_20
+# 
+# Top level modules:
+# 	fifo_20_to_20
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module decoder_main
+# 
+# Top level modules:
+# 	decoder_main
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module decoder_top
+# 
+# Top level modules:
+# 	decoder_top
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module decoder_top_tb
+# 
+# Top level modules:
+# 	decoder_top_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# vsim -L xilinxcorelib_ver -L unisims_ver -L secureip -lib work -voptargs=\"+acc\" -t 1ps work.decoder_top_tb glbl 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading work.decoder_top_tb(fast)
+# Loading work.decoder_top(fast)
+# Loading work.fifo_20_to_20(fast)
+# Loading xilinxcorelib_ver.FIFO_GENERATOR_V8_2(fast)
+# Loading xilinxcorelib_ver.FIFO_GENERATOR_V8_2_CONV_VER(fast)
+# Loading xilinxcorelib_ver.fifo_generator_v8_2_bhv_ver_ss(fast)
+# Loading work.decoder_main(fast)
+# Loading work.best_d(fast)
+# Loading work.mul_21bits(fast)
+# Loading unisims_ver.GND(fast)
+# Loading unisims_ver.XORCY(fast)
+# Loading unisims_ver.MUXCY(fast)
+# Loading unisims_ver.MULT_AND(fast)
+# Loading unisims_ver.LUT2(fast)
+# Loading unisims_ver.FD(fast)
+# Loading unisims_ver.LUT4(fast)
+# Loading unisims_ver.LUT2(fast__1)
+# Loading unisims_ver.LUT1(fast)
+# Loading work.glbl(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do wave.do
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/NLW_blk00000003_PATTERNBDETECT_UNCONNECTED'.
+# Executing ONERROR command at macro ./wave.do line 609
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/NLW_blk00000003_MULTSIGNOUT_UNCONNECTED'.
+# Executing ONERROR command at macro ./wave.do line 610
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/NLW_blk00000003_MULTSIGNIN_UNCONNECTED'.
+# Executing ONERROR command at macro ./wave.do line 612
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/NLW_blk00000003_CARRYCASCOUT_UNCONNECTED'.
+# Executing ONERROR command at macro ./wave.do line 614
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/NLW_blk00000003_UNDERFLOW_UNCONNECTED'.
+# Executing ONERROR command at macro ./wave.do line 616
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/NLW_blk00000003_PATTERNDETECT_UNCONNECTED'.
+# Executing ONERROR command at macro ./wave.do line 618
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/NLW_blk00000003_OVERFLOW_UNCONNECTED'.
+# Executing ONERROR command at macro ./wave.do line 620
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/NLW_blk00000003_CARRYCASCIN_UNCONNECTED'.
+# Executing ONERROR command at macro ./wave.do line 622
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<29>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 624
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<28>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 626
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<27>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 628
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<26>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 630
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<25>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 632
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<24>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 634
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<23>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 636
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<22>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 638
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<21>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 640
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<20>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 642
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<19>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 644
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<18>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 646
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<17>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 648
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<16>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 650
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<15>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 652
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<14>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 654
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<13>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 656
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<12>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 658
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<11>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 660
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<10>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 662
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<9>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 664
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<8>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 666
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<7>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 668
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<6>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 670
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<5>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 672
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<4>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 674
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<3>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 676
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<2>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 678
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<1>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 680
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACOUT<0>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 682
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<47>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 684
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<46>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 686
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<45>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 688
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<44>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 690
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<43>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 692
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<42>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 694
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<41>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 696
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<40>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 698
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<39>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 700
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<38>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 702
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<37>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 704
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<36>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 706
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<35>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 708
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<34>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 710
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<33>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 712
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<32>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 714
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<31>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 716
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<30>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 718
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<29>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 720
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<28>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 722
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<27>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 724
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<26>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 726
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<25>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 728
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<24>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 730
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<23>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 732
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<22>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 734
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<21>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 736
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<20>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 738
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<19>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 740
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<18>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 742
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<17>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 744
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<16>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 746
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<15>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 748
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<14>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 750
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<13>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 752
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<12>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 754
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<11>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 756
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<10>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 758
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<9>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 760
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<8>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 762
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<7>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 764
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<6>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 766
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<5>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 768
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<4>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 770
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<3>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 772
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<2>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 774
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<1>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 776
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCIN<0>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 778
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<47>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 780
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<46>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 782
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<45>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 784
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<44>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 786
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<43>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 788
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<42>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 790
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<41>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 792
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<40>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 794
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<39>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 796
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<38>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 798
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<37>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 800
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<36>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 802
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<35>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 804
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<34>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 806
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<33>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 808
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<32>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 810
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<31>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 812
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<30>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 814
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<29>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 816
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<28>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 818
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<27>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 820
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<26>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 822
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<25>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 824
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<24>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 826
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<23>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 828
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<22>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 830
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<21>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 832
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<20>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 834
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<19>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 836
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<18>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 838
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<17>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 840
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<16>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 842
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<15>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 844
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<14>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 846
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<13>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 848
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<12>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 850
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<11>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 852
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<10>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 854
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<9>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 856
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<8>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 858
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<7>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 860
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<6>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 862
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<5>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 864
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<4>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 866
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<3>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 868
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<2>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 870
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<1>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 872
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_C<0>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 874
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_CARRYOUT<3>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 876
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_CARRYOUT<2>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 878
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_CARRYOUT<1>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 880
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_CARRYOUT<0>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 882
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCIN<17>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 884
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCIN<16>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 886
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCIN<15>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 888
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCIN<14>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 890
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCIN<13>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 892
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCIN<12>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 894
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCIN<11>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 896
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCIN<10>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 898
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCIN<9>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 900
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCIN<8>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 902
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCIN<7>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 904
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCIN<6>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 906
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCIN<5>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 908
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCIN<4>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 910
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCIN<3>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 912
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCIN<2>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 914
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCIN<1>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 916
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCIN<0>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 918
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCOUT<17>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 920
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCOUT<16>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 922
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCOUT<15>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 924
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCOUT<14>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 926
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCOUT<13>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 928
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCOUT<12>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 930
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCOUT<11>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 932
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCOUT<10>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 934
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCOUT<9>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 936
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCOUT<8>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 938
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCOUT<7>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 940
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCOUT<6>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 942
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCOUT<5>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 944
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCOUT<4>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 946
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCOUT<3>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 948
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCOUT<2>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 950
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCOUT<1>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 952
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_BCOUT<0>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 954
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_P<47>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 956
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_P<46>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 958
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_P<45>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 960
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_P<44>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 962
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_P<43>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 964
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_P<42>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 966
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_P<41>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 968
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_P<40>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 970
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_P<39>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 972
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_P<38>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 974
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_P<37>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 976
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_P<36>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 978
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_P<35>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 980
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_P<34>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 982
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_P<33>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 984
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_P<32>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 986
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_P<31>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 988
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_P<30>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 990
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_P<29>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 992
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_P<28>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 994
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_P<27>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 996
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_P<26>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 998
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_P<25>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1000
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_A<29>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1002
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_A<28>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1004
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_A<27>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1006
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_A<26>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1008
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_A<25>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1010
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<47>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1012
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<46>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1014
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<45>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1016
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<44>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1018
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<43>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1020
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<42>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1022
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<41>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1024
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<40>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1026
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<39>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1028
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<38>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1030
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<37>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1032
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<36>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1034
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<35>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1036
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<34>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1038
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<33>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1040
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<32>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1042
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<31>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1044
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<30>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1046
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<29>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1048
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<28>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1050
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<27>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1052
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<26>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1054
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<25>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1056
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<24>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1058
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<23>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1060
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<22>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1062
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<21>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1064
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<20>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1066
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<19>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1068
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<18>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1070
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<17>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1072
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<16>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1074
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<15>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1076
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<14>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1078
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<13>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1080
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<12>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1082
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<11>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1084
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<10>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1086
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<9>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1088
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<8>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1090
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<7>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1092
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<6>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1094
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<5>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1096
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<4>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1098
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<3>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1100
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<2>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1102
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<1>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1104
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_PCOUT<0>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1106
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<29>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1108
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<28>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1110
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<27>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1112
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<26>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1114
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<25>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1116
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<24>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1118
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<23>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1120
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<22>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1122
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<21>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1124
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<20>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1126
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<19>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1128
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<18>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1130
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<17>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1132
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<16>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1134
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<15>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1136
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<14>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1138
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<13>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1140
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<12>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1142
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<11>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1144
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<10>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1146
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<9>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1148
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<8>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1150
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<7>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1152
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<6>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1154
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<5>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1156
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<4>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1158
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<3>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1160
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<2>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1162
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<1>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1164
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\NLW_blk00000003_ACIN<0>_UNCONNECTED '.
+# Executing ONERROR command at macro ./wave.do line 1166
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/\U0/i_mult/gEMBEDDED_MULT.gEMB_MULTS_only.gDSP.iDSP/inferred_dsp.m_reg '.
+# Executing ONERROR command at macro ./wave.do line 1168
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000001/P'.
+# Executing ONERROR command at macro ./wave.do line 1170
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000002/G'.
+# Executing ONERROR command at macro ./wave.do line 1172
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/ACOUT'.
+# Executing ONERROR command at macro ./wave.do line 1174
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/BCOUT'.
+# Executing ONERROR command at macro ./wave.do line 1176
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/CARRYCASCOUT'.
+# Executing ONERROR command at macro ./wave.do line 1178
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/CARRYOUT'.
+# Executing ONERROR command at macro ./wave.do line 1180
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/MULTSIGNOUT'.
+# Executing ONERROR command at macro ./wave.do line 1182
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/OVERFLOW'.
+# Executing ONERROR command at macro ./wave.do line 1184
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/P'.
+# Executing ONERROR command at macro ./wave.do line 1186
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/PATTERNBDETECT'.
+# Executing ONERROR command at macro ./wave.do line 1188
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/PATTERNDETECT'.
+# Executing ONERROR command at macro ./wave.do line 1190
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/PCOUT'.
+# Executing ONERROR command at macro ./wave.do line 1192
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/UNDERFLOW'.
+# Executing ONERROR command at macro ./wave.do line 1194
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/A'.
+# Executing ONERROR command at macro ./wave.do line 1196
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/ACIN'.
+# Executing ONERROR command at macro ./wave.do line 1198
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/ALUMODE'.
+# Executing ONERROR command at macro ./wave.do line 1200
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/B'.
+# Executing ONERROR command at macro ./wave.do line 1202
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/BCIN'.
+# Executing ONERROR command at macro ./wave.do line 1204
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/C'.
+# Executing ONERROR command at macro ./wave.do line 1206
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/CARRYCASCIN'.
+# Executing ONERROR command at macro ./wave.do line 1208
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/CARRYIN'.
+# Executing ONERROR command at macro ./wave.do line 1210
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/CARRYINSEL'.
+# Executing ONERROR command at macro ./wave.do line 1212
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/CEA1'.
+# Executing ONERROR command at macro ./wave.do line 1214
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/CEA2'.
+# Executing ONERROR command at macro ./wave.do line 1216
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/CEAD'.
+# Executing ONERROR command at macro ./wave.do line 1218
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/CEALUMODE'.
+# Executing ONERROR command at macro ./wave.do line 1220
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/CEB1'.
+# Executing ONERROR command at macro ./wave.do line 1222
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/CEB2'.
+# Executing ONERROR command at macro ./wave.do line 1224
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/CEC'.
+# Executing ONERROR command at macro ./wave.do line 1226
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/CECARRYIN'.
+# Executing ONERROR command at macro ./wave.do line 1228
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/CECTRL'.
+# Executing ONERROR command at macro ./wave.do line 1230
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/CED'.
+# Executing ONERROR command at macro ./wave.do line 1232
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/CEINMODE'.
+# Executing ONERROR command at macro ./wave.do line 1234
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/CEM'.
+# Executing ONERROR command at macro ./wave.do line 1236
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/CEP'.
+# Executing ONERROR command at macro ./wave.do line 1238
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/CLK'.
+# Executing ONERROR command at macro ./wave.do line 1240
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/D'.
+# Executing ONERROR command at macro ./wave.do line 1242
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/INMODE'.
+# Executing ONERROR command at macro ./wave.do line 1244
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/MULTSIGNIN'.
+# Executing ONERROR command at macro ./wave.do line 1246
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/OPMODE'.
+# Executing ONERROR command at macro ./wave.do line 1248
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/PCIN'.
+# Executing ONERROR command at macro ./wave.do line 1250
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/RSTA'.
+# Executing ONERROR command at macro ./wave.do line 1252
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/RSTALLCARRYIN'.
+# Executing ONERROR command at macro ./wave.do line 1254
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/RSTALUMODE'.
+# Executing ONERROR command at macro ./wave.do line 1256
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/RSTB'.
+# Executing ONERROR command at macro ./wave.do line 1258
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/RSTC'.
+# Executing ONERROR command at macro ./wave.do line 1260
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/RSTCTRL'.
+# Executing ONERROR command at macro ./wave.do line 1262
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/RSTD'.
+# Executing ONERROR command at macro ./wave.do line 1264
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/RSTINMODE'.
+# Executing ONERROR command at macro ./wave.do line 1266
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/RSTM'.
+# Executing ONERROR command at macro ./wave.do line 1268
+# ** Error: (vish-4014) No objects found matching '/decoder_top_tb/uut/cw2bin/uut/multiplier/blk00000003/RSTP'.
+# Executing ONERROR command at macro ./wave.do line 1270
+restart
+# Loading work.decoder_top_tb(fast)
+# Loading work.decoder_top(fast)
+# Loading work.fifo_20_to_20(fast)
+# Loading xilinxcorelib_ver.FIFO_GENERATOR_V8_2(fast)
+# Loading xilinxcorelib_ver.FIFO_GENERATOR_V8_2_CONV_VER(fast)
+# Loading xilinxcorelib_ver.fifo_generator_v8_2_bhv_ver_ss(fast)
+# Loading work.decoder_main(fast)
+# Loading work.best_d(fast)
+# Loading work.mul_21bits(fast)
+# Loading unisims_ver.GND(fast)
+# Loading unisims_ver.XORCY(fast)
+# Loading unisims_ver.MUXCY(fast)
+# Loading unisims_ver.MULT_AND(fast)
+# Loading unisims_ver.LUT2(fast)
+# Loading unisims_ver.FD(fast)
+# Loading unisims_ver.LUT4(fast)
+# Loading unisims_ver.LUT2(fast__1)
+# Loading unisims_ver.LUT1(fast)
+# Loading work.glbl(fast)
+run 4us

@@ -1,0 +1,329 @@
+Release 13.2 Physical Synthesis Report O.61xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc. All rights reserved.
+
+TABLE OF CONTENTS
+  1) Physical Synthesis Options Summary
+  2) Optimizations statistics and details
+
+
+=========================================================================
+*                 Physical Synthesis Options Summary                    *
+=========================================================================
+---- Options
+Global Optimization                 : ON
+    Retiming                        : OFF
+    Equivalent Register Removal     : ON
+Timing-Driven Packing and Placement : ON
+    Logic Optimization              : ON
+    Register Duplication            : OFF
+
+---- Intelligent clock gating       : OFF
+
+---- Target Parameters
+Target Device                       : 6vlx240tff784-3
+
+=========================================================================
+
+
+=========================================================================
+*                        Optimizations                                  *
+=========================================================================
+---- Statistics
+   Number of registers added by Synchronous Optimization     | 13              
+   Number of LUTs added by Synchronous Optimization          | 12              
+   Number of LUTs removed by SmartOpt Trimming               | 210             
+   Number of registers removed by Trimming                   | 21              
+   Number of registers removed by Equivalence Removal        | 4               
+   Number of LUTs removed by Trimming                        | 16              
+
+   Overall change in number of design objects                |  -226            
+
+
+---- Details
+
+New or modified components                             | Optimization             | Objective           
+-------------------------------------------------------|--------------------------|----------------------
+bin2cw/uut/d_2                                         | Synchronous Optimization | Performance
+bin2cw/uut/d_2_rstpot                                  | Synchronous Optimization | Performance
+bin2cw/uut/d_3                                         | Synchronous Optimization | Performance
+bin2cw/uut/d_3_rstpot                                  | Synchronous Optimization | Performance
+bin2cw/uut/d_4                                         | Synchronous Optimization | Performance
+bin2cw/uut/d_4_rstpot                                  | Synchronous Optimization | Performance
+bin2cw/uut/d_5                                         | Synchronous Optimization | Performance
+bin2cw/uut/d_5_rstpot                                  | Synchronous Optimization | Performance
+bin2cw/uut/d_6                                         | Synchronous Optimization | Performance
+bin2cw/uut/d_6_rstpot                                  | Synchronous Optimization | Performance
+bin2cw/uut/d_7                                         | Synchronous Optimization | Performance
+bin2cw/uut/d_7_rstpot                                  | Synchronous Optimization | Performance
+bin2cw/uut/d_8                                         | Synchronous Optimization | Performance
+bin2cw/uut/d_8_rstpot                                  | Synchronous Optimization | Performance
+bin2cw/uut/d_9                                         | Synchronous Optimization | Performance
+bin2cw/uut/u_0                                         | Synchronous Optimization | Performance
+bin2cw/uut/u_0_rstpot                                  | Synchronous Optimization | Performance
+bin2cw/uut/u_1                                         | Synchronous Optimization | Performance
+bin2cw/uut/u_1_rstpot                                  | Synchronous Optimization | Performance
+bin2cw/uut/u_2                                         | Synchronous Optimization | Performance
+bin2cw/uut/u_2_rstpot                                  | Synchronous Optimization | Performance
+bin2cw/uut/u_3                                         | Synchronous Optimization | Performance
+bin2cw/uut/u_3_rstpot                                  | Synchronous Optimization | Performance
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg| Synchronous Optimization | Performance
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_rstpot| Synchronous Optimization | Performance
+
+
+Removed components                                     | Optimization             
+-------------------------------------------------------|--------------------------
+][10_103                                               | SmartOpt Trimming        
+][1129_313                                             | SmartOpt Trimming        
+][1291_359                                             | SmartOpt Trimming        
+][1296_361                                             | SmartOpt Trimming        
+][1301_363                                             | SmartOpt Trimming        
+][1307_365                                             | SmartOpt Trimming        
+][1416_14                                              | SmartOpt Trimming        
+][1417_15                                              | SmartOpt Trimming        
+][1418_16                                              | SmartOpt Trimming        
+][1419_17                                              | SmartOpt Trimming        
+][1430_28                                              | SmartOpt Trimming        
+][1431_29                                              | SmartOpt Trimming        
+][1432_30                                              | SmartOpt Trimming        
+][1433_31                                              | SmartOpt Trimming        
+][1447_62                                              | SmartOpt Trimming        
+][1449_63                                              | SmartOpt Trimming        
+][1455_73                                              | SmartOpt Trimming        
+][1457_77                                              | SmartOpt Trimming        
+][1475_93                                              | SmartOpt Trimming        
+][1477_94                                              | SmartOpt Trimming        
+][148_111                                              | SmartOpt Trimming        
+][14_104                                               | SmartOpt Trimming        
+][151_112                                              | SmartOpt Trimming        
+][157_113                                              | SmartOpt Trimming        
+][160_114                                              | SmartOpt Trimming        
+][168_115                                              | SmartOpt Trimming        
+][171_116                                              | SmartOpt Trimming        
+][18_105                                               | SmartOpt Trimming        
+][22_106                                               | SmartOpt Trimming        
+][26_107                                               | SmartOpt Trimming        
+][2_101                                                | SmartOpt Trimming        
+][30_108                                               | SmartOpt Trimming        
+][34_109                                               | SmartOpt Trimming        
+][38_110                                               | SmartOpt Trimming        
+][437_117                                              | SmartOpt Trimming        
+][448_118                                              | SmartOpt Trimming        
+][455_119                                              | SmartOpt Trimming        
+][462_120                                              | SmartOpt Trimming        
+][525_121                                              | SmartOpt Trimming        
+][6_102                                                | SmartOpt Trimming        
+][754_138                                              | SmartOpt Trimming        
+][759_149                                              | SmartOpt Trimming        
+][763_152                                              | SmartOpt Trimming        
+][767_155                                              | SmartOpt Trimming        
+][771_159                                              | SmartOpt Trimming        
+][775_162                                              | SmartOpt Trimming        
+][779_165                                              | SmartOpt Trimming        
+][783_168                                              | SmartOpt Trimming        
+][786_170                                              | SmartOpt Trimming        
+][787_172                                              | SmartOpt Trimming        
+][791_175                                              | SmartOpt Trimming        
+][795_178                                              | SmartOpt Trimming        
+][799_183                                              | SmartOpt Trimming        
+][807_188                                              | SmartOpt Trimming        
+][811_191                                              | SmartOpt Trimming        
+][815_195                                              | SmartOpt Trimming        
+][const_101_139                                        | SmartOpt Trimming        
+][const_103_150                                        | SmartOpt Trimming        
+][const_105_153                                        | SmartOpt Trimming        
+][const_107_156                                        | SmartOpt Trimming        
+][const_109_160                                        | SmartOpt Trimming        
+][const_111_163                                        | SmartOpt Trimming        
+][const_113_166                                        | SmartOpt Trimming        
+][const_115_169                                        | SmartOpt Trimming        
+][const_117_171                                        | SmartOpt Trimming        
+][const_119_176                                        | SmartOpt Trimming        
+][const_121_179                                        | SmartOpt Trimming        
+][const_123_182                                        | SmartOpt Trimming        
+][const_125_186                                        | SmartOpt Trimming        
+][const_127_189                                        | SmartOpt Trimming        
+][const_129_192                                        | SmartOpt Trimming        
+][const_131_196                                        | SmartOpt Trimming        
+][const_133_198                                        | SmartOpt Trimming        
+][const_134_199                                        | SmartOpt Trimming        
+][const_136_200                                        | SmartOpt Trimming        
+][const_137_201                                        | SmartOpt Trimming        
+][const_139_202                                        | SmartOpt Trimming        
+][const_140_203                                        | SmartOpt Trimming        
+][const_142_204                                        | SmartOpt Trimming        
+][const_143_205                                        | SmartOpt Trimming        
+][const_145_206                                        | SmartOpt Trimming        
+][const_146_207                                        | SmartOpt Trimming        
+][const_148_208                                        | SmartOpt Trimming        
+][const_149_209                                        | SmartOpt Trimming        
+][const_151_210                                        | SmartOpt Trimming        
+][const_152_211                                        | SmartOpt Trimming        
+][const_154_212                                        | SmartOpt Trimming        
+][const_155_213                                        | SmartOpt Trimming        
+][const_157_214                                        | SmartOpt Trimming        
+][const_158_215                                        | SmartOpt Trimming        
+][const_160_216                                        | SmartOpt Trimming        
+][const_161_217                                        | SmartOpt Trimming        
+][const_163_218                                        | SmartOpt Trimming        
+][const_164_219                                        | SmartOpt Trimming        
+][const_166_220                                        | SmartOpt Trimming        
+][const_167_221                                        | SmartOpt Trimming        
+][const_170_223                                        | SmartOpt Trimming        
+][const_172_225                                        | SmartOpt Trimming        
+][const_174_227                                        | SmartOpt Trimming        
+][const_176_229                                        | SmartOpt Trimming        
+][const_178_231                                        | SmartOpt Trimming        
+][const_180_233                                        | SmartOpt Trimming        
+][const_182_234                                        | SmartOpt Trimming        
+][const_184_236                                        | SmartOpt Trimming        
+][const_186_238                                        | SmartOpt Trimming        
+][const_188_240                                        | SmartOpt Trimming        
+][const_190_242                                        | SmartOpt Trimming        
+][const_192_244                                        | SmartOpt Trimming        
+][const_194_245                                        | SmartOpt Trimming        
+][const_196_246                                        | SmartOpt Trimming        
+][const_198_247                                        | SmartOpt Trimming        
+][const_200_248                                        | SmartOpt Trimming        
+][const_202_249                                        | SmartOpt Trimming        
+][const_204_250                                        | SmartOpt Trimming        
+][const_206_251                                        | SmartOpt Trimming        
+][const_208_252                                        | SmartOpt Trimming        
+][const_210_253                                        | SmartOpt Trimming        
+][const_212_254                                        | SmartOpt Trimming        
+][const_214_255                                        | SmartOpt Trimming        
+][const_216_256                                        | SmartOpt Trimming        
+][const_218_257                                        | SmartOpt Trimming        
+][const_220_258                                        | SmartOpt Trimming        
+][const_222_259                                        | SmartOpt Trimming        
+][const_224_260                                        | SmartOpt Trimming        
+][const_226_261                                        | SmartOpt Trimming        
+][const_228_262                                        | SmartOpt Trimming        
+][const_230_263                                        | SmartOpt Trimming        
+][const_232_264                                        | SmartOpt Trimming        
+][const_234_265                                        | SmartOpt Trimming        
+][const_236_266                                        | SmartOpt Trimming        
+][const_238_267                                        | SmartOpt Trimming        
+][const_240_268                                        | SmartOpt Trimming        
+][const_242_269                                        | SmartOpt Trimming        
+][const_244_274                                        | SmartOpt Trimming        
+][const_246_276                                        | SmartOpt Trimming        
+][const_248_279                                        | SmartOpt Trimming        
+][const_250_281                                        | SmartOpt Trimming        
+][const_252_283                                        | SmartOpt Trimming        
+][const_254_284                                        | SmartOpt Trimming        
+][const_256_289                                        | SmartOpt Trimming        
+][const_258_291                                        | SmartOpt Trimming        
+][const_260_294                                        | SmartOpt Trimming        
+][const_262_296                                        | SmartOpt Trimming        
+][const_264_298                                        | SmartOpt Trimming        
+][const_266_299                                        | SmartOpt Trimming        
+][const_267_301                                        | SmartOpt Trimming        
+][const_268_304                                        | SmartOpt Trimming        
+][const_269_307                                        | SmartOpt Trimming        
+][const_270_310                                        | SmartOpt Trimming        
+][const_271_312                                        | SmartOpt Trimming        
+][const_272_314                                        | SmartOpt Trimming        
+][const_273_315                                        | SmartOpt Trimming        
+][const_274_316                                        | SmartOpt Trimming        
+][const_275_317                                        | SmartOpt Trimming        
+][const_276_318                                        | SmartOpt Trimming        
+][const_277_319                                        | SmartOpt Trimming        
+][const_278_320                                        | SmartOpt Trimming        
+][const_279_321                                        | SmartOpt Trimming        
+][const_280_322                                        | SmartOpt Trimming        
+][const_281_323                                        | SmartOpt Trimming        
+][const_282_326                                        | SmartOpt Trimming        
+][const_283_329                                        | SmartOpt Trimming        
+][const_284_332                                        | SmartOpt Trimming        
+][const_285_335                                        | SmartOpt Trimming        
+][const_286_338                                        | SmartOpt Trimming        
+][const_287_342                                        | SmartOpt Trimming        
+][const_288_345                                        | SmartOpt Trimming        
+][const_289_348                                        | SmartOpt Trimming        
+][const_290_350                                        | SmartOpt Trimming        
+][const_291_351                                        | SmartOpt Trimming        
+][const_292_352                                        | SmartOpt Trimming        
+][const_293_353                                        | SmartOpt Trimming        
+][const_294_354                                        | SmartOpt Trimming        
+][const_295_355                                        | SmartOpt Trimming        
+][const_296_356                                        | SmartOpt Trimming        
+][const_297_357                                        | SmartOpt Trimming        
+][const_298_358                                        | SmartOpt Trimming        
+][const_300_360                                        | SmartOpt Trimming        
+][const_302_362                                        | SmartOpt Trimming        
+][const_303_364                                        | SmartOpt Trimming        
+][const_305_366                                        | SmartOpt Trimming        
+][const_307_367                                        | SmartOpt Trimming        
+][const_308_368                                        | SmartOpt Trimming        
+][const_309_369                                        | SmartOpt Trimming        
+][const_311_370                                        | SmartOpt Trimming        
+][const_312_371                                        | SmartOpt Trimming        
+][const_315_372                                        | SmartOpt Trimming        
+][const_316_373                                        | SmartOpt Trimming        
+][const_317_374                                        | SmartOpt Trimming        
+][const_319_375                                        | SmartOpt Trimming        
+][const_320_376                                        | SmartOpt Trimming        
+][const_323_377                                        | SmartOpt Trimming        
+][const_325_384                                        | SmartOpt Trimming        
+][const_327_387                                        | SmartOpt Trimming        
+][const_80_122                                         | SmartOpt Trimming        
+][const_81_123                                         | SmartOpt Trimming        
+][const_82_124                                         | SmartOpt Trimming        
+][const_83_125                                         | SmartOpt Trimming        
+][const_84_126                                         | SmartOpt Trimming        
+][const_85_127                                         | SmartOpt Trimming        
+][const_86_128                                         | SmartOpt Trimming        
+][const_87_129                                         | SmartOpt Trimming        
+][const_88_130                                         | SmartOpt Trimming        
+][const_90_131                                         | SmartOpt Trimming        
+][const_92_132                                         | SmartOpt Trimming        
+][const_94_133                                         | SmartOpt Trimming        
+][const_95_134                                         | SmartOpt Trimming        
+][const_96_135                                         | SmartOpt Trimming        
+][const_98_136                                         | SmartOpt Trimming        
+][const_99_137                                         | SmartOpt Trimming        
+bin2cw/uut/multiplier/blk00000096                      | Trimming                 
+bin2cw/uut/multiplier/blk00000097                      | Trimming                 
+bin2cw/uut/multiplier/blk00000098                      | Trimming                 
+bin2cw/uut/multiplier/blk00000099                      | Trimming                 
+bin2cw/uut/multiplier/blk0000009a                      | Trimming                 
+bin2cw/uut/multiplier/blk000000b1                      | Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/Msub_GND_192_o_GND_192_o_sub_3_OUT<8:0>_lut<0>1_INV_0| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/Msub_GND_192_o_GND_192_o_sub_3_OUT<8:0>_lut<1>_INV_0| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/Msub_GND_192_o_GND_192_o_sub_3_OUT<8:0>_lut<2>_INV_0| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/Msub_GND_192_o_GND_192_o_sub_3_OUT<8:0>_lut<3>| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/Msub_GND_192_o_GND_192_o_sub_3_OUT<8:0>_lut<4>| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/Msub_GND_192_o_GND_192_o_sub_3_OUT<8:0>_lut<5>| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/Msub_GND_192_o_GND_192_o_sub_3_OUT<8:0>_lut<6>| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/Msub_GND_192_o_GND_192_o_sub_3_OUT<8:0>_lut<7>| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/Msub_GND_192_o_GND_192_o_sub_3_OUT<8:0>_lut<8>| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_0| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_1| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_2| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_3| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_4| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_5| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_6| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_7| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_8| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i| Equivalence Removal      
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_GND_199_o_GND_199_o_sub_2_OUT<5:0>_lut<0>| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_GND_199_o_GND_199_o_sub_2_OUT<5:0>_lut<1>| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_GND_199_o_GND_199_o_sub_2_OUT<5:0>_lut<2>| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_GND_199_o_GND_199_o_sub_2_OUT<5:0>_lut<3>| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_GND_199_o_GND_199_o_sub_2_OUT<5:0>_lut<4>| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_GND_199_o_GND_199_o_sub_2_OUT<5:0>_lut<5>| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_0| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_1| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_2| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_3| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_4| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_5| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i| Trimming                 
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_1| Equivalence Removal      
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2| Equivalence Removal      
+fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1| Equivalence Removal      
+
+
+   Flops added for Enable Generation                       
+-------------------------

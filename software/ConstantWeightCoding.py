@@ -46,15 +46,17 @@ class ConstantWeightCoding:
 		
 	def best_d(self, n, t):
 		#choose best of d
-		#d = int ((n - (t-1)/2.0) * (1 - pow(2,-1/t)));
-		#d = math.log(2)/t * (n-(t-1)/2)
-		#d = FixedPoint_20_1(n - (t-1)/2.0) * FixedPoint_0_4(1 - pow(2,-1/t))
-		d = n * FixedPoint_0_8(1 - pow(2,-1/t))
+		#d = int ((n - (t-1)/2.0) * (1 - pow(2,-1.0/t)));
+		#d = math.log(2)/t * (n-(t-1)/2.0)
+		#d = FixedPoint_20_1(n - (t-1)/2.0) * FixedPoint_0_4(1 - pow(2,-1.0/t))
+		
+		d = n * FixedPoint_0_7(1 - pow(2,-1.0/t))
 		
 		if d == 0:
 			d = 1
 		u = int(math.ceil(math.log(d)/math.log(2)));
 		d = 2**u;
+		
 		#u = self.table[(n & self.T_MASK_MSB) + t]
 		#d = 1 << u;
 		return d;
@@ -120,14 +122,13 @@ class ConstantWeightCoding:
 		bin = '';
 		while t != 0 and n > t:
 			#choose best of d
-			d = self.best_d(n,t);
+			d = self.best_d(n,t)			
 			'''print ("");
 			print ("n",n);
 			print ("t",t);
 			print ("d",d);
 			print ("u",math.ceil(math.log(d,2)))
-			print ("delta", index[0]);'''
-			
+			print ("delta", index[0])'''
 			if index[0] >= d:
 				n = n - d;
 				index[0] = index[0] - d;

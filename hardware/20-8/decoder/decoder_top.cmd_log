@@ -1,0 +1,33 @@
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/20-8/decoder/decoder_top.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/20-8/decoder/decoder_top.syr" 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/20-8/decoder/decoder_top.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/20-8/decoder/decoder_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6vlx240t-ff784-3 decoder_top.ngc decoder_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc decoder_top.ucf -p xc6vlx240t-ff784-3 decoder_top.ngc decoder_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o decoder_top_map.ncd decoder_top.ngd decoder_top.pcf 
+par -w -intstyle ise -ol high -mt off decoder_top_map.ncd decoder_top.ncd decoder_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml decoder_top.twx decoder_top.ncd -o decoder_top.twr decoder_top.pcf -ucf decoder_top.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc decoder_top.ucf -p xc6vlx240t-ff784-3 decoder_top.ngc decoder_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o decoder_top_map.ncd decoder_top.ngd decoder_top.pcf 
+par -w -intstyle ise -ol high -mt off decoder_top_map.ncd decoder_top.ncd decoder_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml decoder_top.twx decoder_top.ncd -o decoder_top.twr decoder_top.pcf -ucf decoder_top.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc decoder_top.ucf -p xc6vlx240t-ff784-3 decoder_top.ngc decoder_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o decoder_top_map.ncd decoder_top.ngd decoder_top.pcf 
+par -w -intstyle ise -ol high -mt off decoder_top_map.ncd decoder_top.ncd decoder_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml decoder_top.twx decoder_top.ncd -o decoder_top.twr decoder_top.pcf -ucf decoder_top.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc decoder_top.ucf -p xc6vlx240t-ff784-3 decoder_top.ngc decoder_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o decoder_top_map.ncd decoder_top.ngd decoder_top.pcf 
+par -w -intstyle ise -ol high -mt off decoder_top_map.ncd decoder_top.ncd decoder_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml decoder_top.twx decoder_top.ncd -o decoder_top.twr decoder_top.pcf -ucf decoder_top.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc decoder_top.ucf -p xc6vlx240t-ff784-3 decoder_top.ngc decoder_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o decoder_top_map.ncd decoder_top.ngd decoder_top.pcf 
+par -w -intstyle ise -ol high -mt off decoder_top_map.ncd decoder_top.ncd decoder_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml decoder_top.twx decoder_top.ncd -o decoder_top.twr decoder_top.pcf -ucf decoder_top.ucf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/20-8/decoder/decoder_top.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/20-8/decoder/decoder_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc decoder_top.ucf -p xc6vlx240t-ff784-3 decoder_top.ngc decoder_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc decoder_top.ucf -p xc6vlx240t-ff784-3 decoder_top.ngc decoder_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o decoder_top_map.ncd decoder_top.ngd decoder_top.pcf 
+par -w -intstyle ise -ol high -mt off decoder_top_map.ncd decoder_top.ncd decoder_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml decoder_top.twx decoder_top.ncd -o decoder_top.twr decoder_top.pcf -ucf decoder_top.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc decoder_top.ucf -p xc6vlx240t-ff784-3 decoder_top.ngc decoder_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o decoder_top_map.ncd decoder_top.ngd decoder_top.pcf 
+par -w -intstyle ise -ol high -mt off decoder_top_map.ncd decoder_top.ncd decoder_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml decoder_top.twx decoder_top.ncd -o decoder_top.twr decoder_top.pcf -ucf decoder_top.ucf 

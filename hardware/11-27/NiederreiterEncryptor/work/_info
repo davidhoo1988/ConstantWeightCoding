@@ -1,0 +1,176 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\RSPC\Dropbox\ConstantWeightCoding\hardware\11-27\NiederreiterEncryptor
+T_opt
+V@XBb=D<L9eM1WI^U:6`a30
+04 16 4 work encryptor_top_tb fast 0
+04 4 4 work glbl fast 0
+=1-f8b156b053e7-569c5742-1c7-7cf4
+o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L secureip +acc
+n@_opt
+OL;O;10.1c;51
+vbest_d
+IUdb5Sz0P1@R9dhJg>Njj?3
+V7nXkdiXZZJ0BPfn1d@[]?0
+Z1 dC:\Users\RSPC\Dropbox\ConstantWeightCoding\hardware\11-27\NiederreiterEncryptor
+w1452086106
+8best_d.v
+Fbest_d.v
+L0 21
+Z2 OL;L;10.1c;51
+r1
+31
+Z3 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 1:7Hddl^3WG6HfeZBMVJo0
+!s90 -reportprogress|300|best_d.v|
+!s108 1453086528.043000
+!s107 best_d.v|
+!i10b 1
+!s85 0
+vencoder_main
+ID_P]4GNoSWQkW@S:@z5L41
+V<M2>J>>0ll5[QCo0XVH;L3
+R1
+w1452086302
+8encoder_main.v
+Fencoder_main.v
+L0 21
+R2
+r1
+31
+R3
+!s100 iGzchbRIe56F>;ZgOf:`Z1
+!s90 -reportprogress|300|encoder_main.v|
+!s108 1453086528.753000
+!s107 encoder_main.v|
+!i10b 1
+!s85 0
+vencoder_top
+In90zjaCl@8V?;ljmU]elk0
+V0kT;hN0PUWV0Y;L6nSY4o2
+R1
+w1452086377
+8encoder_top.v
+Fencoder_top.v
+L0 21
+R2
+r1
+31
+R3
+!s100 QQg]DG2>7GJOcZ:U4hR5b1
+!s90 -reportprogress|300|encoder_top.v|
+!s108 1453086529.854000
+!s107 encoder_top.v|
+!i10b 1
+!s85 0
+vencryptor_top
+I91MB33=KEVLBE^9I1:U6B2
+V<mSihkD7LVe9d<A5<^n`e1
+R1
+w1453086128
+8encryptor_top.v
+Fencryptor_top.v
+L0 21
+R2
+r1
+31
+R3
+!s90 -reportprogress|300|encryptor_top.v|
+!s100 fVDPO6ToZ88:]n1WQkeJ91
+!s108 1453086529.944000
+!s107 encryptor_top.v|
+!i10b 1
+!s85 0
+vencryptor_top_tb
+ID17j^NjknAmNTzI[LKhMV2
+VDokD_Vej;N37kLUX8[<Zn2
+R1
+w1453020733
+8encryptor_top_tb.v
+Fencryptor_top_tb.v
+L0 25
+R2
+r1
+31
+R3
+!s100 DbO;l=aiiC>QQL87>73>d3
+!s90 -reportprogress|300|encryptor_top_tb.v|
+!s108 1453086530.055000
+!s107 encryptor_top_tb.v|
+!i10b 1
+!s85 0
+vfifo_8_to_1
+I?g;Q[ODTAljTX4ceaJkcj1
+V6SRNHGBCX6QjL2SnzS[[P0
+R1
+w1452085703
+8ipcore_dir/fifo_8_to_1.v
+Fipcore_dir/fifo_8_to_1.v
+L0 39
+R2
+r1
+31
+R3
+!s100 9PjLYJN1]@Xg3f41RTP8Z2
+!s90 -reportprogress|300|ipcore_dir/fifo_8_to_1.v|
+!s108 1453086528.443000
+!s107 ipcore_dir/fifo_8_to_1.v|
+!i10b 1
+!s85 0
+vglbl
+I_HnChG<D0B6oX2@hOo5Bb0
+VM[9mS]S:KA1i4VeCMX35[3
+R1
+w1308634177
+8C:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v
+FC:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v
+L0 5
+R2
+r1
+31
+R3
+!i10b 1
+!s100 iU?KY@Vm^ibNkUiOGIChA3
+!s85 0
+!s108 1453086530.155000
+!s107 C:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v|
+!s90 -reportprogress|300|C:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v|
+vmul_12bits
+IH6nf3lVA3[HVgmCg0cdke1
+VD^RGI<GTTDa6G4=hLK1a71
+R1
+w1452669652
+8ipcore_dir/mul_12bits.v
+Fipcore_dir/mul_12bits.v
+L0 36
+R2
+r1
+31
+R3
+!s100 `2@]ESBfUhO5nedmiOo`L3
+!s108 1453086527.493000
+!s107 ipcore_dir/mul_12bits.v|
+!s90 -reportprogress|300|ipcore_dir/mul_12bits.v|
+!i10b 1
+!s85 0
+vPublicKey
+Ia5AVX@PhdP_8[f>Te6nYi2
+VSZ8Jc=SHmNnT9M?P6GXg^2
+R1
+w1453022907
+8ipcore_dir/PublicKey.v
+Fipcore_dir/PublicKey.v
+L0 39
+R2
+r1
+31
+R3
+n@public@key
+!s100 b59jzim;E;hBGXlXLcBbh1
+!s90 -reportprogress|300|ipcore_dir/PublicKey.v|
+!s108 1453086529.534000
+!s107 ipcore_dir/PublicKey.v|
+!i10b 1
+!s85 0

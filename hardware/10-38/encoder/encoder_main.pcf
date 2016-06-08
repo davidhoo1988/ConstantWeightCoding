@@ -1,0 +1,163 @@
+//! **************************************************************************
+// Written by: Map O.61xd on Wed Dec 30 12:12:25 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+PIN cnt1_pins<69> = BEL "cnt1" PINNAME CLK;
+PIN Msub_t[5]_GND_1_o_sub_61_OUT1_pins<117> = BEL
+        "Msub_t[5]_GND_1_o_sub_61_OUT1" PINNAME CLK;
+PIN Msub_n[10]_GND_1_o_sub_59_OUT1_pins<69> = BEL
+        "Msub_n[10]_GND_1_o_sub_59_OUT1" PINNAME CLK;
+PIN Madd_cw_word[9]_GND_1_o_add_61_OUT1_pins<117> = BEL
+        "Madd_cw_word[9]_GND_1_o_add_61_OUT1" PINNAME CLK;
+PIN Mmux_state[2]_n[10]_wide_mux_82_OUT_rs1_pins<117> = BEL
+        "Mmux_state[2]_n[10]_wide_mux_82_OUT_rs1" PINNAME CLK;
+PIN Madd_cw_word[9]_d[9]_add_35_OUT1_pins<117> = BEL
+        "Madd_cw_word[9]_d[9]_add_35_OUT1" PINNAME CLK;
+PIN uut/multiplier/blk00000003_pins<64> = BEL "uut/multiplier/blk00000003"
+        PINNAME CLK;
+TIMEGRP clk = BEL "i_0" BEL "i_1" BEL "i_2" BEL "i_3" BEL "i_4" BEL "i_5" BEL
+        "i_6" BEL "i_7" BEL "i_8" BEL "msg_buffer_0" BEL "msg_buffer_1" BEL
+        "msg_buffer_2" BEL "msg_buffer_3" BEL "msg_buffer_4" BEL
+        "msg_buffer_5" BEL "msg_buffer_6" BEL "msg_buffer_7" BEL
+        "msg_buffer_8" BEL "msg_buffer_9" BEL "msg_buffer_10" BEL
+        "msg_buffer_11" BEL "msg_buffer_12" BEL "msg_buffer_13" BEL
+        "msg_buffer_14" BEL "msg_buffer_15" BEL "msg_buffer_16" BEL
+        "msg_buffer_17" BEL "msg_buffer_18" BEL "msg_buffer_19" BEL
+        "msg_buffer_20" BEL "msg_buffer_21" BEL "msg_buffer_22" BEL
+        "msg_buffer_23" BEL "msg_buffer_24" BEL "msg_buffer_25" BEL
+        "msg_buffer_26" BEL "msg_buffer_27" BEL "msg_buffer_28" BEL
+        "msg_buffer_29" BEL "msg_buffer_30" BEL "msg_buffer_31" BEL
+        "msg_buffer_32" BEL "msg_buffer_33" BEL "msg_buffer_34" BEL
+        "msg_buffer_35" BEL "msg_buffer_36" BEL "msg_buffer_37" BEL
+        "msg_buffer_38" BEL "msg_buffer_39" BEL "msg_buffer_40" BEL
+        "msg_buffer_41" BEL "msg_buffer_42" BEL "msg_buffer_43" BEL
+        "msg_buffer_44" BEL "msg_buffer_45" BEL "msg_buffer_46" BEL
+        "msg_buffer_47" BEL "msg_buffer_48" BEL "msg_buffer_49" BEL
+        "msg_buffer_50" BEL "msg_buffer_51" BEL "msg_buffer_52" BEL
+        "msg_buffer_53" BEL "msg_buffer_54" BEL "msg_buffer_55" BEL
+        "msg_buffer_56" BEL "msg_buffer_57" BEL "msg_buffer_58" BEL
+        "msg_buffer_59" BEL "msg_buffer_60" BEL "msg_buffer_61" BEL
+        "msg_buffer_62" BEL "msg_buffer_63" BEL "msg_buffer_64" BEL
+        "msg_buffer_65" BEL "msg_buffer_66" BEL "msg_buffer_67" BEL
+        "msg_buffer_68" BEL "msg_buffer_69" BEL "msg_buffer_70" BEL
+        "msg_buffer_71" BEL "msg_buffer_72" BEL "msg_buffer_73" BEL
+        "msg_buffer_74" BEL "msg_buffer_75" BEL "msg_buffer_76" BEL
+        "msg_buffer_77" BEL "msg_buffer_78" BEL "msg_buffer_79" BEL
+        "msg_buffer_80" BEL "msg_buffer_81" BEL "msg_buffer_82" BEL
+        "msg_buffer_83" BEL "msg_buffer_84" BEL "msg_buffer_85" BEL
+        "msg_buffer_86" BEL "msg_buffer_87" BEL "msg_buffer_88" BEL
+        "msg_buffer_89" BEL "msg_buffer_90" BEL "msg_buffer_91" BEL
+        "msg_buffer_92" BEL "msg_buffer_93" BEL "msg_buffer_94" BEL
+        "msg_buffer_95" BEL "msg_buffer_96" BEL "msg_buffer_97" BEL
+        "msg_buffer_98" BEL "msg_buffer_99" BEL "msg_buffer_100" BEL
+        "msg_buffer_101" BEL "msg_buffer_102" BEL "msg_buffer_103" BEL
+        "msg_buffer_104" BEL "msg_buffer_105" BEL "msg_buffer_106" BEL
+        "msg_buffer_107" BEL "msg_buffer_108" BEL "msg_buffer_109" BEL
+        "msg_buffer_110" BEL "msg_buffer_111" BEL "msg_buffer_112" BEL
+        "msg_buffer_113" BEL "msg_buffer_114" BEL "msg_buffer_115" BEL
+        "msg_buffer_116" BEL "msg_buffer_117" BEL "msg_buffer_118" BEL
+        "msg_buffer_119" BEL "msg_buffer_120" BEL "msg_buffer_121" BEL
+        "msg_buffer_122" BEL "msg_buffer_123" BEL "msg_buffer_124" BEL
+        "msg_buffer_125" BEL "msg_buffer_126" BEL "msg_buffer_127" BEL
+        "msg_buffer_128" BEL "msg_buffer_129" BEL "msg_buffer_130" BEL
+        "msg_buffer_131" BEL "msg_buffer_132" BEL "msg_buffer_133" BEL
+        "msg_buffer_134" BEL "msg_buffer_135" BEL "msg_buffer_136" BEL
+        "msg_buffer_137" BEL "msg_buffer_138" BEL "msg_buffer_139" BEL
+        "msg_buffer_140" BEL "msg_buffer_141" BEL "msg_buffer_142" BEL
+        "msg_buffer_143" BEL "msg_buffer_144" BEL "msg_buffer_145" BEL
+        "msg_buffer_146" BEL "msg_buffer_147" BEL "msg_buffer_148" BEL
+        "msg_buffer_149" BEL "msg_buffer_150" BEL "msg_buffer_151" BEL
+        "msg_buffer_152" BEL "msg_buffer_153" BEL "msg_buffer_154" BEL
+        "msg_buffer_155" BEL "msg_buffer_156" BEL "msg_buffer_157" BEL
+        "msg_buffer_158" BEL "msg_buffer_159" BEL "msg_buffer_160" BEL
+        "msg_buffer_161" BEL "msg_buffer_162" BEL "msg_buffer_163" BEL
+        "msg_buffer_164" BEL "msg_buffer_165" BEL "msg_buffer_166" BEL
+        "msg_buffer_167" BEL "msg_buffer_168" BEL "msg_buffer_169" BEL
+        "msg_buffer_170" BEL "msg_buffer_171" BEL "msg_buffer_172" BEL
+        "msg_buffer_173" BEL "msg_buffer_174" BEL "msg_buffer_175" BEL
+        "msg_buffer_176" BEL "msg_buffer_177" BEL "msg_buffer_178" BEL
+        "msg_buffer_179" BEL "msg_buffer_180" BEL "msg_buffer_181" BEL
+        "msg_buffer_182" BEL "msg_buffer_183" BEL "msg_buffer_184" BEL
+        "msg_buffer_185" BEL "msg_buffer_186" BEL "msg_buffer_187" BEL
+        "msg_buffer_188" BEL "msg_buffer_189" BEL "msg_buffer_190" BEL
+        "msg_buffer_191" BEL "msg_buffer_192" BEL "msg_buffer_193" BEL
+        "msg_buffer_194" BEL "msg_buffer_195" BEL "msg_buffer_196" BEL
+        "msg_buffer_197" BEL "msg_buffer_198" BEL "msg_buffer_199" BEL
+        "msg_buffer_200" BEL "msg_buffer_201" BEL "msg_buffer_202" BEL
+        "msg_buffer_203" BEL "msg_buffer_204" BEL "msg_buffer_205" BEL
+        "msg_buffer_206" BEL "msg_buffer_207" BEL "msg_buffer_208" BEL
+        "msg_buffer_209" BEL "msg_buffer_210" BEL "msg_buffer_211" BEL
+        "msg_buffer_212" BEL "msg_buffer_213" BEL "msg_buffer_214" BEL
+        "msg_buffer_215" BEL "msg_buffer_216" BEL "msg_buffer_217" BEL
+        "msg_buffer_218" BEL "msg_buffer_219" BEL "msg_buffer_220" BEL
+        "msg_buffer_221" BEL "msg_buffer_222" BEL "msg_buffer_223" BEL
+        "msg_buffer_224" BEL "msg_buffer_225" BEL "msg_buffer_226" BEL
+        "msg_buffer_227" BEL "msg_buffer_228" BEL "msg_buffer_229" BEL
+        "msg_buffer_230" BEL "msg_buffer_231" BEL "msg_buffer_232" BEL
+        "msg_buffer_233" BEL "msg_buffer_234" BEL "msg_buffer_235" BEL
+        "msg_buffer_236" BEL "msg_buffer_237" BEL "msg_buffer_238" BEL
+        "msg_buffer_239" BEL "msg_buffer_240" BEL "msg_buffer_241" BEL
+        "msg_buffer_242" BEL "msg_buffer_243" BEL "msg_buffer_244" BEL
+        "msg_buffer_245" BEL "msg_buffer_246" BEL "msg_buffer_247" BEL
+        "msg_buffer_248" BEL "msg_buffer_249" BEL "msg_buffer_250" BEL
+        "msg_buffer_251" BEL "msg_buffer_252" BEL "msg_buffer_253" BEL
+        "msg_buffer_254" BEL "msg_buffer_255" BEL "msg_buffer_256" BEL
+        "msg_buffer_257" BEL "msg_buffer_258" BEL "msg_buffer_259" BEL
+        "msg_buffer_260" BEL "msg_buffer_261" BEL "msg_buffer_262" BEL
+        "msg_buffer_263" BEL "msg_buffer_264" BEL "msg_buffer_265" BEL
+        "msg_buffer_266" BEL "msg_buffer_267" BEL "msg_buffer_268" BEL
+        "msg_buffer_269" BEL "msg_buffer_270" BEL "msg_buffer_271" BEL
+        "msg_buffer_272" BEL "msg_buffer_273" BEL "msg_buffer_274" BEL
+        "msg_buffer_275" BEL "msg_buffer_276" BEL "msg_buffer_277" BEL
+        "msg_buffer_278" BEL "msg_buffer_279" BEL "msg_buffer_280" BEL
+        "msg_buffer_281" BEL "msg_buffer_282" BEL "msg_buffer_283" BEL
+        "msg_buffer_284" BEL "msg_buffer_285" BEL "msg_buffer_286" BEL
+        "msg_buffer_287" BEL "msg_buffer_288" BEL "msg_buffer_289" BEL
+        "msg_buffer_290" BEL "msg_buffer_291" BEL "msg_buffer_292" BEL
+        "msg_buffer_293" BEL "msg_buffer_294" BEL "msg_buffer_295" BEL
+        "msg_buffer_296" BEL "msg_buffer_297" BEL "msg_buffer_298" BEL
+        "msg_buffer_299" BEL "msg_buffer_300" BEL "msg_buffer_301" BEL
+        "msg_buffer_302" BEL "msg_buffer_303" BEL "msg_buffer_304" BEL
+        "msg_buffer_305" BEL "msg_buffer_306" BEL "msg_buffer_307" BEL
+        "msg_buffer_308" BEL "msg_buffer_309" BEL "msg_buffer_310" BEL
+        "msg_buffer_311" BEL "msg_buffer_312" BEL "msg_buffer_313" BEL
+        "msg_buffer_314" BEL "msg_buffer_315" BEL "msg_buffer_316" BEL
+        "msg_buffer_317" BEL "msg_buffer_318" BEL "msg_buffer_319" BEL
+        "msg_buffer_320" BEL "msg_buffer_321" BEL "msg_buffer_322" BEL
+        "msg_buffer_323" BEL "msg_buffer_324" BEL "msg_buffer_325" BEL
+        "msg_buffer_326" BEL "msg_buffer_327" BEL "msg_buffer_328" BEL
+        "msg_buffer_329" BEL "msg_buffer_330" BEL "msg_buffer_331" BEL
+        "msg_buffer_332" BEL "msg_buffer_333" BEL "msg_buffer_334" BEL
+        "msg_buffer_335" BEL "msg_buffer_336" BEL "msg_buffer_337" BEL
+        "msg_buffer_338" BEL "msg_buffer_339" BEL "msg_buffer_340" BEL
+        "msg_buffer_341" BEL "msg_buffer_342" BEL "msg_buffer_343" BEL
+        "msg_buffer_344" BEL "msg_buffer_345" BEL "msg_buffer_346" BEL
+        "msg_buffer_347" BEL "msg_buffer_348" BEL "msg_buffer_349" BEL
+        "msg_buffer_350" BEL "msg_buffer_351" BEL "msg_buffer_352" BEL
+        "msg_buffer_353" BEL "msg_buffer_354" BEL "msg_buffer_355" BEL
+        "msg_buffer_356" BEL "msg_buffer_357" BEL "msg_buffer_358" BEL
+        "msg_buffer_359" BEL "msg_buffer_360" BEL "msg_buffer_361" BEL
+        "msg_buffer_362" BEL "msg_buffer_363" BEL "msg_buffer_364" BEL
+        "msg_buffer_365" BEL "msg_buffer_366" BEL "msg_buffer_367" BEL
+        "msg_buffer_368" BEL "msg_buffer_369" BEL "msg_buffer_370" BEL
+        "msg_buffer_371" BEL "msg_buffer_372" BEL "msg_buffer_373" BEL
+        "msg_buffer_374" BEL "msg_buffer_375" BEL "msg_buffer_376" BEL
+        "msg_buffer_377" BEL "msg_buffer_378" BEL "msg_buffer_379" BEL
+        "uut/d_2" BEL "uut/d_3" BEL "uut/d_4" BEL "uut/d_5" BEL "uut/d_6" BEL
+        "uut/d_7" BEL "uut/d_8" BEL "uut/d_9" BEL "read_one" BEL "read_zero"
+        BEL "done" BEL "ready" BEL "state_0" BEL "state_1" BEL "state_2" BEL
+        "t_0" BEL "t_1" BEL "t_2" BEL "t_3" BEL "t_4" BEL "t_5" BEL "clr" BEL
+        "n_relate_t_0" BEL "n_relate_t_1" BEL "uut/u_0" BEL "uut/u_1" BEL
+        "uut/u_2" BEL "uut/u_3" BEL "cw_word_0" BEL "cw_word_1" BEL
+        "cw_word_2" BEL "cw_word_3" BEL "cw_word_4" BEL "cw_word_5" BEL
+        "cw_word_6" BEL "cw_word_7" BEL "cw_word_8" BEL "cw_word_9" PIN
+        "cnt1_pins<69>" PIN "Msub_t[5]_GND_1_o_sub_61_OUT1_pins<117>" PIN
+        "Msub_n[10]_GND_1_o_sub_59_OUT1_pins<69>" PIN
+        "Madd_cw_word[9]_GND_1_o_add_61_OUT1_pins<117>" PIN
+        "Mmux_state[2]_n[10]_wide_mux_82_OUT_rs1_pins<117>" PIN
+        "Madd_cw_word[9]_d[9]_add_35_OUT1_pins<117>" BEL "clk_BUFGP/BUFG" PIN
+        "uut/multiplier/blk00000003_pins<64>";
+TS_clk = PERIOD TIMEGRP "clk" 3.333 ns HIGH 50%;
+SCHEMATIC END;
+

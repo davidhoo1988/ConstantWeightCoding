@@ -1,0 +1,96 @@
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc best_d.ucf -p xc6vlx240t-ff784-3 encoder_main.ngc encoder_main.ngd  
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc best_d.ucf -p xc6vlx240t-ff784-3 encoder_main.ngc encoder_main.ngd  
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc best_d.ucf -p xc6vlx240t-ff784-3 encoder_main.ngc encoder_main.ngd  
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc best_d.ucf -p xc6vlx240t-ff784-3 encoder_main.ngc encoder_main.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encoder_main_map.ncd encoder_main.ngd encoder_main.pcf 
+par -w -intstyle ise -ol high -mt off encoder_main_map.ncd encoder_main.ncd encoder_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml encoder_main.twx encoder_main.ncd -o encoder_main.twr encoder_main.pcf -ucf best_d.ucf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc best_d.ucf -p xc6vlx240t-ff784-3 encoder_main.ngc encoder_main.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encoder_main_map.ncd encoder_main.ngd encoder_main.pcf 
+par -w -intstyle ise -ol high -mt off encoder_main_map.ncd encoder_main.ncd encoder_main.pcf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc best_d.ucf -p xc6vlx240t-ff784-3 encoder_main.ngc encoder_main.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encoder_main_map.ncd encoder_main.ngd encoder_main.pcf 
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encoder_main_map.ncd encoder_main.ngd encoder_main.pcf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc best_d.ucf -p xc6vlx240t-ff784-3 encoder_main.ngc encoder_main.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encoder_main_map.ncd encoder_main.ngd encoder_main.pcf 
+par -w -intstyle ise -ol high -mt off encoder_main_map.ncd encoder_main.ncd encoder_main.pcf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc best_d.ucf -p xc6vlx240t-ff784-3 encoder_main.ngc encoder_main.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encoder_main_map.ncd encoder_main.ngd encoder_main.pcf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc best_d.ucf -p xc6vlx240t-ff784-3 encoder_main.ngc encoder_main.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encoder_main_map.ncd encoder_main.ngd encoder_main.pcf 
+par -w -intstyle ise -ol high -mt off encoder_main_map.ncd encoder_main.ncd encoder_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml encoder_main.twx encoder_main.ncd -o encoder_main.twr encoder_main.pcf -ucf best_d.ucf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc best_d.ucf -p xc6vlx240t-ff784-3 encoder_main.ngc encoder_main.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encoder_main_map.ncd encoder_main.ngd encoder_main.pcf 
+par -w -intstyle ise -ol high -mt off encoder_main_map.ncd encoder_main.ncd encoder_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml encoder_main.twx encoder_main.ncd -o encoder_main.twr encoder_main.pcf -ucf best_d.ucf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc best_d.ucf -p xc6vlx240t-ff784-3 encoder_main.ngc encoder_main.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encoder_main_map.ncd encoder_main.ngd encoder_main.pcf 
+par -w -intstyle ise -ol high -mt off encoder_main_map.ncd encoder_main.ncd encoder_main.pcf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc best_d.ucf -p xc6vlx240t-ff784-3 encoder_main.ngc encoder_main.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encoder_main_map.ncd encoder_main.ngd encoder_main.pcf 
+par -w -intstyle ise -ol high -mt off encoder_main_map.ncd encoder_main.ncd encoder_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml encoder_main.twx encoder_main.ncd -o encoder_main.twr encoder_main.pcf -ucf best_d.ucf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc best_d.ucf -p xc6vlx240t-ff784-3 encoder_main.ngc encoder_main.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encoder_main_map.ncd encoder_main.ngd encoder_main.pcf 
+par -w -intstyle ise -ol high -mt off encoder_main_map.ncd encoder_main.ncd encoder_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml encoder_main.twx encoder_main.ncd -o encoder_main.twr encoder_main.pcf -ucf best_d.ucf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc best_d.ucf -p xc6vlx240t-ff784-3 encoder_main.ngc encoder_main.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encoder_main_map.ncd encoder_main.ngd encoder_main.pcf 
+par -w -intstyle ise -ol high -mt off encoder_main_map.ncd encoder_main.ncd encoder_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml encoder_main.twx encoder_main.ncd -o encoder_main.twr encoder_main.pcf -ucf best_d.ucf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc best_d.ucf -p xc6vlx240t-ff784-3 encoder_main.ngc encoder_main.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encoder_main_map.ncd encoder_main.ngd encoder_main.pcf 
+par -w -intstyle ise -ol high -mt off encoder_main_map.ncd encoder_main.ncd encoder_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml encoder_main.twx encoder_main.ncd -o encoder_main.twr encoder_main.pcf -ucf best_d.ucf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc best_d.ucf -p xc6vlx240t-ff784-3 encoder_main.ngc encoder_main.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encoder_main_map.ncd encoder_main.ngd encoder_main.pcf 
+par -w -intstyle ise -ol high -mt off encoder_main_map.ncd encoder_main.ncd encoder_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml encoder_main.twx encoder_main.ncd -o encoder_main.twr encoder_main.pcf -ucf best_d.ucf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc best_d.ucf -p xc6vlx240t-ff784-3 encoder_main.ngc encoder_main.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encoder_main_map.ncd encoder_main.ngd encoder_main.pcf 
+par -w -intstyle ise -ol high -mt off encoder_main_map.ncd encoder_main.ncd encoder_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml encoder_main.twx encoder_main.ncd -o encoder_main.twr encoder_main.pcf -ucf best_d.ucf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc best_d.ucf -p xc6vlx240t-ff784-3 encoder_main.ngc encoder_main.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encoder_main_map.ncd encoder_main.ngd encoder_main.pcf 
+par -w -intstyle ise -ol high -mt off encoder_main_map.ncd encoder_main.ncd encoder_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml encoder_main.twx encoder_main.ncd -o encoder_main.twr encoder_main.pcf -ucf best_d.ucf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc best_d.ucf -p xc6vlx240t-ff784-3 encoder_main.ngc encoder_main.ngd  
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/encoder_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc best_d.ucf -p xc6vlx240t-ff784-3 encoder_main.ngc encoder_main.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encoder_main_map.ncd encoder_main.ngd encoder_main.pcf 
+par -w -intstyle ise -ol high -mt off encoder_main_map.ncd encoder_main.ncd encoder_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml encoder_main.twx encoder_main.ncd -o encoder_main.twr encoder_main.pcf -ucf best_d.ucf 

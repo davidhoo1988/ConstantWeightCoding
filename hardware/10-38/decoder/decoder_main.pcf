@@ -1,0 +1,21 @@
+//! **************************************************************************
+// Written by: Map O.61xd on Thu Jan 07 22:34:16 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+PIN uut/multiplier/blk00000003_pins<64> = BEL "uut/multiplier/blk00000003"
+        PINNAME CLK;
+TIMEGRP clk = BEL "ready" BEL "done" BEL "state_0" BEL "state_1" BEL "i_0" BEL
+        "i_1" BEL "i_2" BEL "i_3" BEL "i_4" BEL "i_5" BEL "i_6" BEL "i_7" BEL
+        "i_8" BEL "t_0" BEL "t_1" BEL "t_2" BEL "t_3" BEL "t_4" BEL "n_0" BEL
+        "n_1" BEL "n_2" BEL "n_3" BEL "n_4" BEL "n_5" BEL "n_6" BEL "n_7" BEL
+        "n_8" BEL "n_9" BEL "cnt_0" BEL "cnt_1" BEL "cnt_2" BEL "cnt_3" BEL
+        "t_5" BEL "n_10" BEL "uut/d_9" BEL "uut/d_8" BEL "uut/d_7" BEL
+        "uut/d_6" BEL "uut/d_5" BEL "uut/d_4" BEL "uut/d_3" BEL "uut/d_2" BEL
+        "uut/u_3" BEL "uut/u_2" BEL "uut/u_1" BEL "uut/u_0" BEL "uut/theta_4"
+        BEL "uut/theta_3" BEL "uut/theta_2" BEL "uut/theta_1" BEL
+        "uut/theta_0" BEL "bin_msg" BEL "clk_BUFGP/BUFG" BEL "done_1" PIN
+        "uut/multiplier/blk00000003_pins<64>";
+TS_clk = PERIOD TIMEGRP "clk" 300 MHz HIGH 50%;
+SCHEMATIC END;
+

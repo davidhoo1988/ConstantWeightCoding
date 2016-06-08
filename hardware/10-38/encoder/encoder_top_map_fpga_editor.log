@@ -1,0 +1,90 @@
+#:C29    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 O.61xd
+#Current Working Directory:
+#:D   C:\Users\RSPC\Dropbox\ConstantWeightCoding\hardware\10-38\encoder
+#Date/Time:
+#:T   Tue Jan 05 14:38:10 2016
+#------------------------------
+	#Reading encoder_top_map.ncd...
+	#Loading device for application Rf_Device from file '6vlx240t.nph' in environment C:\Xilinx\13.2\ISE_DS\ISE\.
+	#   "encoder_top" is an NCD, version 3.2, device xc6vlx240t, package ff784, speed -3
+	#Design creation date: 2016.01.05.06.35.14
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+select -k comp 'bin2cw/clr'
+	#3
+unselect comp 'bin2cw/clr'
+	#4
+select -k comp 'bin2cw/cnt1'
+	#5
+unselect comp 'bin2cw/cnt1'
+	#6
+select -k comp 'bin2cw/decodefd_done'
+	#7
+unselect comp 'bin2cw/decodefd_done'
+	#8
+select -k comp 'bin2cw/i<3>'
+	#9
+unselect comp 'bin2cw/i<3>'
+	#10
+select -k comp 'bin2cw/i<8>'
+	#11
+unselect comp 'bin2cw/i<8>'
+	#12
+select -k comp 'bin2cw/cnt1'
+	#13
+unselect comp 'bin2cw/cnt1'
+	#14
+select -k comp '][925_89'
+	#15
+unselect comp '][925_89'
+	#16
+select -k comp '][969_129'
+	#17
+unselect -all
+	#18
+select site 'SLICE_X137Y96'
+	#site "SLICE_X137Y96",  type = SLICEL  (RPM grid X359Y192)
+	#19
+unselect -all
+	#20
+select site 'SLICE_X113Y103'
+	#site "SLICE_X113Y103",  type = SLICEL  (RPM grid X299Y206)
+	#21
+unselect -all
+	#22
+select site 'RAMB18_X5Y49'
+	#site "RAMB18_X5Y49",  type = RAMB18E1  (RPM grid X306Y241)
+	#23
+unselect -all
+	#24
+select site 'SLICE_X113Y154'
+	#site "SLICE_X113Y154",  type = SLICEL  (RPM grid X299Y308)
+	#25
+unselect -all
+	#26
+select site 'SLICE_X68Y146'
+	#site "SLICE_X68Y146",  type = SLICEM  (RPM grid X185Y292)
+	#27
+unselect -all
+	#28
+select site 'RAMB36_X3Y29'
+	#site "RAMB36_X3Y29",  type = RAMBFIFO36E1  (RPM grid X149Y290)
+	#29
+unselect -all
+	#30
+select comp 'bin2cw/Msub_read0_update_t1'
+	#comp "bin2cw/Msub_read0_update_t1",  site "DSP48_X2Y58",  type = DSP48E1  (RPM grid X117Y290)
+	#31
+unselect -all
+	#32
+select comp 'bin2cw/t<3>'
+	#comp "bin2cw/t<3>",  site "SLICE_X41Y145",  type = SLICEL  (RPM grid X111Y290)
+	#Crossprobing - Hilite bell bin2cw/Msub_GND_3_o_GND_3_o_sub_49_OUT1.
+	#Crossprobing - Hilite bell bin2cw/Msub_GND_3_o_GND_3_o_sub_49_OUT1.
+	#Crossprobing - Hilite bell bin2cw/Msub_GND_3_o_GND_3_o_sub_49_OUT1.

@@ -1,0 +1,166 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\RSPC\Dropbox\ConstantWeightCoding\hardware\16-9\encoder
+T_opt
+VVnd;8JoN6h]aj^z@OM^RO0
+04 9 4 work best_d_tb fast 0
+Z1 04 4 4 work glbl fast 0
+=1-f8b156b053e7-567a19fa-3d3-962c
+Z2 o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L secureip +acc
+n@_opt
+Z3 OL;O;10.1c;51
+Z4 dC:\Users\RSPC\Dropbox\ConstantWeightCoding\hardware\16-9\encoder
+T_opt1
+Vj2`<;<5FnRRWO^Q`Fkl<z2
+04 14 4 work encoder_top_tb fast 0
+R1
+=1-f8b156b053e7-56961bba-3bc-3410
+R2
+n@_opt1
+R3
+vbest_d
+IhHVZH99LQzA`?X3_cXj>d0
+VC[9jojhDT5gcXfdg4[z411
+R4
+w1452089080
+8best_d.v
+Fbest_d.v
+L0 21
+Z5 OL;L;10.1c;51
+r1
+31
+Z6 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 6MGibWhW;`5F_n?z=LYNd3
+!s90 -reportprogress|300|best_d.v|
+!s108 1452678072.118000
+!s107 best_d.v|
+!i10b 1
+!s85 0
+vbest_d_tb
+IA51NoOJD1BBEk=S0og5h00
+Vbb^09<n=nD[TX6R=Y2II=3
+R4
+w1450838572
+8best_d_tb.v
+Fbest_d_tb.v
+L0 25
+R5
+r1
+31
+R6
+!s100 b4feVi1R`dAcnM4^1;4Vn2
+!s90 -reportprogress|300|best_d_tb.v|
+!s108 1452089669.869000
+!s107 best_d_tb.v|
+!i10b 1
+!s85 0
+vencoder_main
+IJ:J`5<;7`9ZV:PE3EFhd41
+V3bGX8:VmZe[OWHjQYCeV01
+R4
+w1452089433
+8encoder_main.v
+Fencoder_main.v
+L0 21
+R5
+r1
+31
+R6
+!s100 eDniH8nU6U=093iURBdo32
+!s90 -reportprogress|300|encoder_main.v|
+!s108 1452678073.063000
+!s107 encoder_main.v|
+!i10b 1
+!s85 0
+vencoder_top
+ILNJeYolaM[;=0Yf?7l0Ui1
+VKk@Mi@?;^fFzeLjgMc[<c1
+R4
+w1452088882
+8encoder_top.v
+Fencoder_top.v
+L0 21
+R5
+r1
+31
+R6
+!s100 gGU9T=RfbefJZa;Qke68N1
+!s90 -reportprogress|300|encoder_top.v|
+!s108 1452678073.496000
+!s107 encoder_top.v|
+!i10b 1
+!s85 0
+vencoder_top_tb
+I_[2G755VeO?z@SG]kMO`;3
+V`e@80IhGgIB:Ob^dJBDWh2
+R4
+w1452068693
+8encoder_top_tb.v
+Fencoder_top_tb.v
+L0 25
+R5
+r1
+31
+R6
+!s100 dK8JL?_j<_R9?WTWj_UK81
+!s90 -reportprogress|300|encoder_top_tb.v|
+!s108 1452678073.847000
+!s107 encoder_top_tb.v|
+!i10b 1
+!s85 0
+vfifo_8_to_1
+I?g;Q[ODTAljTX4ceaJkcj1
+V6SRNHGBCX6QjL2SnzS[[P0
+R4
+w1452088614
+8ipcore_dir/fifo_8_to_1.v
+Fipcore_dir/fifo_8_to_1.v
+L0 39
+R5
+r1
+31
+R6
+!s100 9PjLYJN1]@Xg3f41RTP8Z2
+!s90 -reportprogress|300|ipcore_dir/fifo_8_to_1.v|
+!s108 1452678072.465000
+!s107 ipcore_dir/fifo_8_to_1.v|
+!i10b 1
+!s85 0
+vglbl
+I_HnChG<D0B6oX2@hOo5Bb0
+VM[9mS]S:KA1i4VeCMX35[3
+R4
+w1308634177
+8C:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v
+FC:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v
+L0 5
+R5
+r1
+31
+R6
+!i10b 1
+!s100 iU?KY@Vm^ibNkUiOGIChA3
+!s85 0
+!s108 1452678074.119000
+!s107 C:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v|
+!s90 -reportprogress|300|C:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v|
+vmul_17bits
+IZz::SEHLZ>nmMUF?OEn0l2
+VVd`<GJ?HJ0DYiWZ@bdYOi3
+R4
+w1452657979
+8ipcore_dir/mul_17bits.v
+Fipcore_dir/mul_17bits.v
+L0 36
+R5
+r1
+31
+R6
+!s108 1452678071.556000
+!s107 ipcore_dir/mul_17bits.v|
+!s90 -reportprogress|300|ipcore_dir/mul_17bits.v|
+!s100 10a^^2OJkd;k=OI[FWh0z2
+!i10b 1
+!s85 0

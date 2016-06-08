@@ -1,0 +1,5 @@
+verilog work "ipcore_dir/mul_21bits.v"
+verilog work "best_d.v"
+verilog work "ipcore_dir/fifo_20_to_20.v"
+verilog work "decoder_main.v"
+verilog work "decoder_top.v"

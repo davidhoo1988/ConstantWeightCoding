@@ -1,0 +1,815 @@
+Release 13.2 - par O.61xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Wed Dec 30 12:13:18 2015
+
+
+INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
+1. The <design name>_pad.txt file (this file) designed to provide information on IO usage in a human readable ASCII text format viewable through common text editors.
+2. The <design namd>_pad.csv file for use with spreadsheet programs such as MS Excel. This file can also be read by PACE to communicate post PAR IO information.
+3. The <design name>.pad file designed for parsing by customers.  It uses the "|" as a data field separator.
+
+INPUT FILE:       encoder_main_map.ncd
+OUTPUT FILE:      encoder_main_pad.txt
+PART TYPE:        xc6vlx240t
+SPEED GRADE:      -3
+PACKAGE:          ff784
+
+Pinout by Pin Number:
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|Pin Number|Signal Name |Pin Usage|Pin Name                  |Direction|IO Standard|IO Bank Number|Drive (mA)|Slew Rate|Termination|IOB Delay|Voltage  |Constraint|IO Register|Signal Integrity|
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|A1        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|A2        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|A3        |            |IPAD     |MGTRXP3_116               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|A4        |            |IPAD     |MGTRXN3_116               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|A5        |            |         |MGTAVTTRCAL_115           |         |           |              |          |         |           |         |         |          |           |                |
+|A6        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|A7        |bin_msg<231>|IOB      |IO_L3P_36                 |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|A8        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|A9        |bin_msg<230>|IOB      |IO_L2N_36                 |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|A10       |bin_msg<229>|IOB      |IO_L2P_36                 |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|A11       |bin_msg<213>|IOB      |IO_L14P_26                |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|A12       |bin_msg<214>|IOB      |IO_L14N_VREF_26           |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|A13       |            |         |VCCO_26                   |         |           |26            |          |         |           |         |2.50     |          |           |                |
+|A14       |bin_msg<204>|IOB      |IO_L9N_MRCC_26            |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|A15       |bin_msg<211>|IOB      |IO_L13P_26                |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|A16       |bin_msg<212>|IOB      |IO_L13N_26                |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|A17       |bin_msg<219>|IOB      |IO_L17P_26                |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|A18       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|A19       |bin_msg<162>|IOB      |IO_L8N_SRCC_25            |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|A20       |bin_msg<161>|IOB      |IO_L8P_SRCC_25            |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|A21       |bin_msg<167>|IOB      |IO_L11P_SRCC_25           |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|A22       |bin_msg<168>|IOB      |IO_L11N_SRCC_25           |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|A23       |            |         |VCCO_25                   |         |           |25            |          |         |           |         |2.50     |          |           |                |
+|A24       |bin_msg<175>|IOB      |IO_L15P_25                |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|A25       |bin_msg<176>|IOB      |IO_L15N_25                |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|A26       |bin_msg<79> |IOB      |IO_L7P_16                 |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|A27       |bin_msg<80> |IOB      |IO_L7N_16                 |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|A28       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AA1       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AA2       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AA3       |            |IPAD     |MGTREFCLK0N_114           |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|AA4       |            |IPAD     |MGTREFCLK0P_114           |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|AA5       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AA6       |            |         |TDI_0                     |         |           |              |          |         |           |         |         |          |           |                |
+|AA7       |bin_msg<149>|IOB      |IO_L2P_SM0P_35            |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AA8       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AA9       |bin_msg<153>|IOB      |IO_L4P_35                 |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AA10      |bin_msg<148>|IOB      |IO_L1N_35                 |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AA11      |bin_msg<45> |IOB      |IO_L9N_MRCC_35            |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AA12      |bin_msg<122>|IOB      |IO_L8N_SRCC_34            |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AA13      |            |         |VCCO_34                   |         |           |34            |          |         |           |         |2.50     |          |           |                |
+|AA14      |bin_msg<112>|IOB      |IO_L3N_A12_D28_34         |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AA15      |bin_msg<137>|IOB      |IO_L16P_A21_34            |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AA16      |bin_msg<139>|IOB      |IO_L17P_A19_34            |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AA17      |bin_msg<144>|IOB      |IO_L19N_VRP_34            |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AA18      |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AA19      |bin_msg<10> |IOB      |IO_L12P_VRN_23            |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AA20      |bin_msg<9>  |IOB      |IO_L11N_SRCC_23           |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AA21      |cw_word<7>  |IOB      |IO_L5P_23                 |OUTPUT   |LVCMOS25*  |23            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
+|AA22      |bin_msg<304>|IOB      |IO_L19N_24                |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AA23      |            |         |VCCO_24                   |         |           |24            |          |         |           |         |2.50     |          |           |                |
+|AA24      |bin_msg<277>|IOB      |IO_L6P_D7_24              |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AA25      |bin_msg<278>|IOB      |IO_L6N_D6_24              |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AA26      |bin_msg<265>|IOB      |IO_L0P_GC_24              |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AA27      |bin_msg<266>|IOB      |IO_L0N_GC_24              |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AA28      |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AB1       |            |OPAD     |MGTTXP2_114               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|AB2       |            |OPAD     |MGTTXN2_114               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|AB3       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AB4       |            |         |MGTAVCC                   |         |           |              |          |         |           |         |         |          |           |                |
+|AB5       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AB6       |            |         |TCK_0                     |         |           |              |          |         |           |         |         |          |           |                |
+|AB7       |bin_msg<150>|IOB      |IO_L2N_SM0N_35            |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AB8       |bin_msg<40> |IOB      |IO_L6N_SM3N_35            |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AB9       |bin_msg<154>|IOB      |IO_L4N_VREF_35            |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AB10      |            |         |VCCO_35                   |         |           |35            |          |         |           |         |2.50     |          |           |                |
+|AB11      |bin_msg<44> |IOB      |IO_L9P_MRCC_35            |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AB12      |bin_msg<107>|IOB      |IO_L1P_GC_34              |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AB13      |bin_msg<111>|IOB      |IO_L3P_A13_D29_34         |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AB14      |bin_msg<115>|IOB      |IO_L5P_A09_D25_34         |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AB15      |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AB16      |bin_msg<133>|IOB      |IO_L14P_A25_34            |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AB17      |bin_msg<140>|IOB      |IO_L17N_A18_34            |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AB18      |bin_msg<18> |IOB      |IO_L16P_23                |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AB19      |bin_msg<17> |IOB      |IO_L15N_23                |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AB20      |            |         |VCCO_23                   |         |           |23            |          |         |           |         |2.50     |          |           |                |
+|AB21      |cw_word<8>  |IOB      |IO_L5N_23                 |OUTPUT   |LVCMOS25*  |23            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
+|AB22      |bin_msg<303>|IOB      |IO_L19P_24                |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AB23      |bin_msg<287>|IOB      |IO_L11P_SRCC_24           |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AB24      |bin_msg<298>|IOB      |IO_L16N_CSO_B_24          |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AB25      |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AB26      |bin_msg<282>|IOB      |IO_L8N_SRCC_24            |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AB27      |bin_msg<281>|IOB      |IO_L8P_SRCC_24            |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AB28      |bin_msg<270>|IOB      |IO_L2N_D14_24             |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AC1       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AC2       |            |         |MGTAVTT                   |         |           |              |          |         |           |         |         |          |           |                |
+|AC3       |            |IPAD     |MGTRXP3_114               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|AC4       |            |IPAD     |MGTRXN3_114               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|AC5       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AC6       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AC7       |            |         |VCCO_35                   |         |           |35            |          |         |           |         |2.50     |          |           |                |
+|AC8       |bin_msg<41> |IOB      |IO_L6P_SM3P_35            |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AC9       |bin_msg<32> |IOB      |IO_L3P_SM1P_35            |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AC10      |bin_msg<36> |IOB      |IO_L5P_SM2P_35            |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AC11      |bin_msg<157>|IOB      |IO_L7N_SM4N_35            |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AC12      |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AC13      |bin_msg<108>|IOB      |IO_L1N_GC_34              |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AC14      |bin_msg<116>|IOB      |IO_L5N_A08_D24_34         |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AC15      |bin_msg<128>|IOB      |IO_L11N_SRCC_34           |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AC16      |bin_msg<134>|IOB      |IO_L14N_VREF_A24_34       |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AC17      |            |         |VCCO_34                   |         |           |34            |          |         |           |         |2.50     |          |           |                |
+|AC18      |bin_msg<19> |IOB      |IO_L16N_23                |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AC19      |bin_msg<16> |IOB      |IO_L15P_23                |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AC20      |bin_msg<5>  |IOB      |IO_L9N_MRCC_23            |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AC21      |cw_word<0>  |IOB      |IO_L1N_23                 |OUTPUT   |LVCMOS25*  |23            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
+|AC22      |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AC23      |bin_msg<288>|IOB      |IO_L11N_SRCC_24           |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AC24      |bin_msg<297>|IOB      |IO_L16P_RS0_24            |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AC25      |bin_msg<279>|IOB      |IO_L7P_D5_24              |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AC26      |bin_msg<289>|IOB      |IO_L12P_D3_24             |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AC27      |            |         |VCCO_24                   |         |           |24            |          |         |           |         |2.50     |          |           |                |
+|AC28      |bin_msg<269>|IOB      |IO_L2P_D15_24             |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AD1       |            |OPAD     |MGTTXP1_114               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|AD2       |            |OPAD     |MGTTXN1_114               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|AD3       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AD4       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AD5       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AD6       |            |         |VFS_0                     |         |           |              |          |         |           |         |         |          |           |                |
+|AD7       |bin_msg<46> |IOB      |IO_L10P_MRCC_35           |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AD8       |bin_msg<33> |IOB      |IO_L3N_SM1N_35            |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AD9       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AD10      |bin_msg<37> |IOB      |IO_L5N_SM2N_35            |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AD11      |bin_msg<158>|IOB      |IO_L7P_SM4P_35            |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AD12      |bin_msg<106>|IOB      |IO_L0N_GC_34              |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AD13      |bin_msg<117>|IOB      |IO_L6P_A07_D23_34         |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AD14      |            |         |VCCO_34                   |         |           |34            |          |         |           |         |2.50     |          |           |                |
+|AD15      |bin_msg<127>|IOB      |IO_L11P_SRCC_34           |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AD16      |bin_msg<135>|IOB      |IO_L15P_A23_34            |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AD17      |bin_msg<130>|IOB      |IO_L12N_A02_D18_34        |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AD18      |bin_msg<14> |IOB      |IO_L14P_23                |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AD19      |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AD20      |bin_msg<2>  |IOB      |IO_L8P_SRCC_23            |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AD21      |bin_msg<4>  |IOB      |IO_L9P_MRCC_23            |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AD22      |ready       |IOB      |IO_L1P_23                 |OUTPUT   |LVCMOS25*  |23            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
+|AD23      |bin_msg<302>|IOB      |IO_L18N_24                |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AD24      |            |         |VCCO_24                   |         |           |24            |          |         |           |         |2.50     |          |           |                |
+|AD25      |bin_msg<280>|IOB      |IO_L7N_D4_24              |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AD26      |bin_msg<290>|IOB      |IO_L12N_D2_FS2_24         |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AD27      |bin_msg<268>|IOB      |IO_L1N_GC_24              |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AD28      |bin_msg<267>|IOB      |IO_L1P_GC_24              |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AE1       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AE2       |            |         |MGTAVTT                   |         |           |              |          |         |           |         |         |          |           |                |
+|AE3       |            |IPAD     |MGTRXP2_114               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|AE4       |            |IPAD     |MGTRXN2_114               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|AE5       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AE6       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AE7       |bin_msg<47> |IOB      |IO_L10N_MRCC_35           |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AE8       |bin_msg<51> |IOB      |IO_L12N_SM5N_35           |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AE9       |bin_msg<54> |IOB      |IO_L14P_35                |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AE10      |bin_msg<62> |IOB      |IO_L18N_GC_35             |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AE11      |            |         |VCCO_35                   |         |           |35            |          |         |           |         |2.50     |          |           |                |
+|AE12      |bin_msg<57> |IOB      |IO_L15N_SM7N_35           |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AE13      |bin_msg<105>|IOB      |IO_L0P_GC_34              |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AE14      |bin_msg<118>|IOB      |IO_L6N_A06_D22_34         |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AE15      |bin_msg<136>|IOB      |IO_L15N_A22_34            |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AE16      |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AE17      |bin_msg<129>|IOB      |IO_L12P_A03_D19_34        |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AE18      |bin_msg<15> |IOB      |IO_L14N_VREF_23           |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AE19      |bin_msg<7>  |IOB      |IO_L10N_MRCC_23           |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AE20      |bin_msg<3>  |IOB      |IO_L8N_SRCC_23            |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AE21      |            |         |VCCO_23                   |         |           |23            |          |         |           |         |2.50     |          |           |                |
+|AE22      |cw_word<6>  |IOB      |IO_L4N_VREF_23            |OUTPUT   |LVCMOS25*  |23            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
+|AE23      |bin_msg<301>|IOB      |IO_L18P_24                |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AE24      |bin_msg<293>|IOB      |IO_L14P_FCS_B_24          |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AE25      |bin_msg<285>|IOB      |IO_L10P_MRCC_24           |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AE26      |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AE27      |bin_msg<276>|IOB      |IO_L5N_D8_24              |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AE28      |bin_msg<275>|IOB      |IO_L5P_D9_24              |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AF1       |            |OPAD     |MGTTXP0_114               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|AF2       |            |OPAD     |MGTTXN0_114               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|AF3       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AF4       |            |         |MGTAVCC                   |         |           |              |          |         |           |         |         |          |           |                |
+|AF5       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AF6       |            |         |DOUT_BUSY_0               |         |           |              |          |         |           |         |         |          |           |                |
+|AF7       |bin_msg<50> |IOB      |IO_L12P_SM5P_35           |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AF8       |            |         |VCCO_35                   |         |           |35            |          |         |           |         |2.50     |          |           |                |
+|AF9       |bin_msg<55> |IOB      |IO_L14N_VREF_35           |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AF10      |clk         |IOB      |IO_L18P_GC_35             |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AF11      |bin_msg<48> |IOB      |IO_L11P_SRCC_35           |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AF12      |bin_msg<56> |IOB      |IO_L15P_SM7P_35           |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AF13      |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AF14      |bin_msg<113>|IOB      |IO_L4P_A11_D27_34         |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AF15      |bin_msg<126>|IOB      |IO_L10N_MRCC_34           |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AF16      |bin_msg<131>|IOB      |IO_L13P_A01_D17_34        |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AF17      |bin_msg<13> |IOB      |IO_L13N_23                |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AF18      |            |         |VCCO_23                   |         |           |23            |          |         |           |         |2.50     |          |           |                |
+|AF19      |bin_msg<6>  |IOB      |IO_L10P_MRCC_23           |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AF20      |bin_msg<1>  |IOB      |IO_L7N_23                 |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AF21      |cw_word<4>  |IOB      |IO_L3N_23                 |OUTPUT   |LVCMOS25*  |23            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
+|AF22      |cw_word<5>  |IOB      |IO_L4P_23                 |OUTPUT   |LVCMOS25*  |23            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
+|AF23      |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AF24      |bin_msg<294>|IOB      |IO_L14N_VREF_FOE_B_MOSI_24|INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AF25      |bin_msg<286>|IOB      |IO_L10N_MRCC_24           |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AF26      |bin_msg<283>|IOB      |IO_L9P_MRCC_24            |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AF27      |bin_msg<272>|IOB      |IO_L3N_D12_24             |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AF28      |            |         |VCCO_24                   |         |           |24            |          |         |           |         |2.50     |          |           |                |
+|AG1       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AG2       |            |         |MGTAVTT                   |         |           |              |          |         |           |         |         |          |           |                |
+|AG3       |            |IPAD     |MGTRXP1_114               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|AG4       |            |IPAD     |MGTRXN1_114               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|AG5       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AG6       |            |         |CSI_B_0                   |         |           |              |          |         |           |         |         |          |           |                |
+|AG7       |bin_msg<58> |IOB      |IO_L16P_VRN_35            |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AG8       |bin_msg<59> |IOB      |IO_L16N_VRP_35            |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AG9       |bin_msg<52> |IOB      |IO_L13P_SM6P_35           |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AG10      |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AG11      |bin_msg<49> |IOB      |IO_L11N_SRCC_35           |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AG12      |bin_msg<64> |IOB      |IO_L19N_GC_35             |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AG13      |bin_msg<114>|IOB      |IO_L4N_VREF_A10_D26_34    |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AG14      |bin_msg<125>|IOB      |IO_L10P_MRCC_34           |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AG15      |            |         |VCCO_34                   |         |           |34            |          |         |           |         |2.50     |          |           |                |
+|AG16      |bin_msg<132>|IOB      |IO_L13N_A00_D16_34        |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AG17      |bin_msg<12> |IOB      |IO_L13P_23                |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AG18      |bin_msg<22> |IOB      |IO_L18P_23                |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AG19      |bin_msg<25> |IOB      |IO_L19N_23                |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AG20      |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AG21      |bin_msg<0>  |IOB      |IO_L7P_23                 |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AG22      |cw_word<3>  |IOB      |IO_L3P_23                 |OUTPUT   |LVCMOS25*  |23            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
+|AG23      |bin_msg<300>|IOB      |IO_L17N_VRP_24            |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AG24      |bin_msg<295>|IOB      |IO_L15P_FWE_B_24          |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AG25      |            |         |VCCO_24                   |         |           |24            |          |         |           |         |2.50     |          |           |                |
+|AG26      |bin_msg<284>|IOB      |IO_L9N_MRCC_24            |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AG27      |bin_msg<273>|IOB      |IO_L4P_D11_24             |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AG28      |bin_msg<271>|IOB      |IO_L3P_D13_24             |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AH1       |            |IPAD     |MGTRXP0_114               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|AH2       |            |IPAD     |MGTRXN0_114               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|AH3       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AH4       |            |         |MGTAVCC                   |         |           |              |          |         |           |         |         |          |           |                |
+|AH5       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AH6       |            |         |CCLK_0                    |         |           |              |          |         |           |         |         |          |           |                |
+|AH7       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AH8       |bin_msg<53> |IOB      |IO_L13N_SM6N_35           |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AH9       |bin_msg<60> |IOB      |IO_L17P_35                |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AH10      |bin_msg<61> |IOB      |IO_L17N_35                |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AH11      |bin_msg<63> |IOB      |IO_L19P_GC_35             |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AH12      |            |         |VCCO_35                   |         |           |35            |          |         |           |         |2.50     |          |           |                |
+|AH13      |bin_msg<119>|IOB      |IO_L7P_A05_D21_34         |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AH14      |bin_msg<120>|IOB      |IO_L7N_A04_D20_34         |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AH15      |bin_msg<123>|IOB      |IO_L9P_MRCC_34            |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AH16      |bin_msg<124>|IOB      |IO_L9N_MRCC_34            |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AH17      |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AH18      |bin_msg<23> |IOB      |IO_L18N_23                |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AH19      |bin_msg<24> |IOB      |IO_L19P_23                |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AH20      |bin_msg<20> |IOB      |IO_L17P_23                |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AH21      |bin_msg<21> |IOB      |IO_L17N_23                |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AH22      |            |         |VCCO_23                   |         |           |23            |          |         |           |         |2.50     |          |           |                |
+|AH23      |bin_msg<299>|IOB      |IO_L17P_VRN_24            |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AH24      |bin_msg<296>|IOB      |IO_L15N_RS1_24            |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AH25      |bin_msg<292>|IOB      |IO_L13N_D0_FS0_24         |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AH26      |bin_msg<291>|IOB      |IO_L13P_D1_FS1_24         |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|AH27      |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|AH28      |bin_msg<274>|IOB      |IO_L4N_VREF_D10_24        |INPUT    |LVCMOS25*  |24            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|B1        |            |IPAD     |MGTRXP2_116               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|B2        |            |IPAD     |MGTRXN2_116               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|B3        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|B4        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|B5        |            |         |MGTRREF_115               |         |           |              |          |         |           |         |         |          |           |                |
+|B6        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|B7        |bin_msg<232>|IOB      |IO_L3N_36                 |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|B8        |bin_msg<227>|IOB      |IO_L1P_36                 |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|B9        |bin_msg<249>|IOB      |IO_L12P_VRN_36            |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|B10       |            |         |VCCO_36                   |         |           |36            |          |         |           |         |2.50     |          |           |                |
+|B11       |bin_msg<195>|IOB      |IO_L5P_26                 |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|B12       |bin_msg<221>|IOB      |IO_L18P_26                |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|B13       |bin_msg<200>|IOB      |IO_L7N_26                 |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|B14       |bin_msg<203>|IOB      |IO_L9P_MRCC_26            |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|B15       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|B16       |bin_msg<216>|IOB      |IO_L15N_26                |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|B17       |bin_msg<220>|IOB      |IO_L17N_26                |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|B18       |bin_msg<39> |IOB      |IO_L5P_25                 |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|B19       |bin_msg<38> |IOB      |IO_L5N_25                 |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|B20       |            |         |VCCO_25                   |         |           |25            |          |         |           |         |2.50     |          |           |                |
+|B21       |bin_msg<171>|IOB      |IO_L13P_25                |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|B22       |bin_msg<179>|IOB      |IO_L17P_25                |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|B23       |bin_msg<180>|IOB      |IO_L17N_25                |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|B24       |bin_msg<67> |IOB      |IO_L1P_16                 |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|B25       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|B26       |bin_msg<71> |IOB      |IO_L3P_16                 |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|B27       |bin_msg<83> |IOB      |IO_L9P_MRCC_16            |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|B28       |bin_msg<84> |IOB      |IO_L9N_MRCC_16            |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|C1        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|C2        |            |         |MGTAVTT                   |         |           |              |          |         |           |         |         |          |           |                |
+|C3        |            |IPAD     |MGTRXP1_116               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|C4        |            |IPAD     |MGTRXN1_116               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|C5        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|C6        |            |         |M2_0                      |         |           |              |          |         |           |         |         |          |           |                |
+|C7        |            |         |VCCO_36                   |         |           |36            |          |         |           |         |2.50     |          |           |                |
+|C8        |bin_msg<228>|IOB      |IO_L1N_36                 |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|C9        |bin_msg<250>|IOB      |IO_L12N_VRP_36            |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|C10       |bin_msg<242>|IOB      |IO_L8N_SRCC_36            |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|C11       |bin_msg<196>|IOB      |IO_L5N_26                 |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|C12       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|C13       |bin_msg<222>|IOB      |IO_L18N_26                |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|C14       |bin_msg<199>|IOB      |IO_L7P_26                 |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|C15       |bin_msg<215>|IOB      |IO_L15P_26                |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|C16       |bin_msg<218>|IOB      |IO_L16N_26                |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|C17       |            |         |VCCO_26                   |         |           |26            |          |         |           |         |2.50     |          |           |                |
+|C18       |bin_msg<151>|IOB      |IO_L3P_25                 |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|C19       |bin_msg<169>|IOB      |IO_L12P_25                |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|C20       |bin_msg<170>|IOB      |IO_L12N_25                |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|C21       |bin_msg<172>|IOB      |IO_L13N_25                |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|C22       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|C23       |bin_msg<74> |IOB      |IO_L4N_VREF_16            |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|C24       |bin_msg<68> |IOB      |IO_L1N_16                 |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|C25       |bin_msg<72> |IOB      |IO_L3N_16                 |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|C26       |bin_msg<102>|IOB      |IO_L18N_16                |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|C27       |            |         |VCCO_16                   |         |           |16            |          |         |           |         |2.50     |          |           |                |
+|C28       |bin_msg<88> |IOB      |IO_L11N_SRCC_16           |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|D1        |            |OPAD     |MGTTXP3_116               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|D2        |            |OPAD     |MGTTXN3_116               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|D3        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|D4        |            |         |MGTAVCC                   |         |           |              |          |         |           |         |         |          |           |                |
+|D5        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|D6        |            |         |M1_0                      |         |           |              |          |         |           |         |         |          |           |                |
+|D7        |bin_msg<253>|IOB      |IO_L14P_36                |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|D8        |bin_msg<235>|IOB      |IO_L5P_36                 |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|D9        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|D10       |bin_msg<241>|IOB      |IO_L8P_SRCC_36            |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|D11       |bin_msg<186>|IOB      |IO_L0N_26                 |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|D12       |bin_msg<198>|IOB      |IO_L6N_26                 |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|D13       |bin_msg<197>|IOB      |IO_L6P_26                 |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|D14       |            |         |VCCO_26                   |         |           |26            |          |         |           |         |2.50     |          |           |                |
+|D15       |bin_msg<210>|IOB      |IO_L12N_VRP_26            |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|D16       |bin_msg<217>|IOB      |IO_L16P_26                |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|D17       |bin_msg<156>|IOB      |IO_L6P_25                 |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|D18       |bin_msg<152>|IOB      |IO_L3N_25                 |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|D19       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|D20       |bin_msg<165>|IOB      |IO_L10P_MRCC_25           |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|D21       |bin_msg<178>|IOB      |IO_L16N_VRP_25            |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|D22       |bin_msg<73> |IOB      |IO_L4P_16                 |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|D23       |bin_msg<94> |IOB      |IO_L14N_VREF_16           |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|D24       |            |         |VCCO_16                   |         |           |16            |          |         |           |         |2.50     |          |           |                |
+|D25       |bin_msg<78> |IOB      |IO_L6N_16                 |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|D26       |bin_msg<101>|IOB      |IO_L18P_16                |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|D27       |bin_msg<87> |IOB      |IO_L11P_SRCC_16           |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|D28       |bin_msg<91> |IOB      |IO_L13P_16                |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|E1        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|E2        |            |         |MGTAVTT                   |         |           |              |          |         |           |         |         |          |           |                |
+|E3        |            |IPAD     |MGTRXP0_116               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|E4        |            |IPAD     |MGTRXN0_116               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|E5        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|E6        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|E7        |bin_msg<254>|IOB      |IO_L14N_VREF_36           |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|E8        |bin_msg<239>|IOB      |IO_L7P_36                 |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|E9        |bin_msg<236>|IOB      |IO_L5N_36                 |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|E10       |bin_msg<226>|IOB      |IO_L0N_36                 |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|E11       |            |         |VCCO_26                   |         |           |26            |          |         |           |         |2.50     |          |           |                |
+|E12       |bin_msg<185>|IOB      |IO_L0P_26                 |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|E13       |bin_msg<187>|IOB      |IO_L1P_26                 |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|E14       |bin_msg<188>|IOB      |IO_L1N_26                 |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|E15       |bin_msg<209>|IOB      |IO_L12P_VRN_26            |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|E16       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|E17       |bin_msg<155>|IOB      |IO_L6N_25                 |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|E18       |bin_msg<159>|IOB      |IO_L7P_25                 |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|E19       |bin_msg<166>|IOB      |IO_L10N_MRCC_25           |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|E20       |bin_msg<177>|IOB      |IO_L16P_VRN_25            |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|E21       |            |         |VCCO_25                   |         |           |25            |          |         |           |         |2.50     |          |           |                |
+|E22       |bin_msg<75> |IOB      |IO_L5P_16                 |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|E23       |bin_msg<93> |IOB      |IO_L14P_16                |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|E24       |bin_msg<77> |IOB      |IO_L6P_16                 |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|E25       |bin_msg<85> |IOB      |IO_L10P_MRCC_16           |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|E26       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|E27       |bin_msg<98> |IOB      |IO_L16N_16                |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|E28       |bin_msg<92> |IOB      |IO_L13N_16                |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|F1        |            |OPAD     |MGTTXP2_116               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|F2        |            |OPAD     |MGTTXN2_116               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|F3        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|F4        |            |         |MGTAVCC                   |         |           |              |          |         |           |         |         |          |           |                |
+|F5        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|F6        |            |         |M0_0                      |         |           |              |          |         |           |         |         |          |           |                |
+|F7        |bin_msg<243>|IOB      |IO_L9P_MRCC_36            |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|F8        |            |         |VCCO_36                   |         |           |36            |          |         |           |         |2.50     |          |           |                |
+|F9        |bin_msg<240>|IOB      |IO_L7N_36                 |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|F10       |bin_msg<238>|IOB      |IO_L6N_36                 |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|F11       |bin_msg<225>|IOB      |IO_L0P_36                 |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|F12       |bin_msg<208>|IOB      |IO_L11N_SRCC_26           |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|F13       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|F14       |bin_msg<192>|IOB      |IO_L3N_26                 |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|F15       |bin_msg<206>|IOB      |IO_L10N_MRCC_26           |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|F16       |bin_msg<205>|IOB      |IO_L10P_MRCC_26           |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|F17       |bin_msg<29> |IOB      |IO_L1N_25                 |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|F18       |            |         |VCCO_25                   |         |           |25            |          |         |           |         |2.50     |          |           |                |
+|F19       |bin_msg<160>|IOB      |IO_L7N_25                 |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|F20       |bin_msg<183>|IOB      |IO_L19P_GC_25             |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|F21       |bin_msg<184>|IOB      |IO_L19N_GC_25             |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|F22       |bin_msg<76> |IOB      |IO_L5N_16                 |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|F23       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|F24       |bin_msg<86> |IOB      |IO_L10N_MRCC_16           |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|F25       |bin_msg<96> |IOB      |IO_L15N_16                |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|F26       |bin_msg<95> |IOB      |IO_L15P_16                |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|F27       |bin_msg<97> |IOB      |IO_L16P_16                |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|F28       |            |         |VCCO_16                   |         |           |16            |          |         |           |         |2.50     |          |           |                |
+|G1        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|G2        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|G3        |            |IPAD     |MGTREFCLK1N_116           |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|G4        |            |IPAD     |MGTREFCLK1P_116           |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|G5        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|G6        |            |         |RDWR_B_0                  |         |           |              |          |         |           |         |         |          |           |                |
+|G7        |bin_msg<244>|IOB      |IO_L9N_MRCC_36            |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|G8        |bin_msg<251>|IOB      |IO_L13P_36                |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|G9        |bin_msg<252>|IOB      |IO_L13N_36                |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|G10       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|G11       |bin_msg<237>|IOB      |IO_L6P_36                 |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|G12       |bin_msg<207>|IOB      |IO_L11P_SRCC_26           |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|G13       |bin_msg<224>|IOB      |IO_L19N_26                |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|G14       |bin_msg<191>|IOB      |IO_L3P_26                 |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|G15       |            |         |VCCO_26                   |         |           |26            |          |         |           |         |2.50     |          |           |                |
+|G16       |bin_msg<190>|IOB      |IO_L2N_26                 |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|G17       |bin_msg<28> |IOB      |IO_L1P_25                 |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|G18       |bin_msg<34> |IOB      |IO_L4P_25                 |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|G19       |bin_msg<164>|IOB      |IO_L9N_MRCC_25            |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|G20       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|G21       |bin_msg<182>|IOB      |IO_L18N_GC_25             |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|G22       |bin_msg<65> |IOB      |IO_L0P_16                 |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|G23       |bin_msg<70> |IOB      |IO_L2N_16                 |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|G24       |bin_msg<90> |IOB      |IO_L12N_VRP_16            |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|G25       |            |         |VCCO_16                   |         |           |16            |          |         |           |         |2.50     |          |           |                |
+|G26       |bin_msg<100>|IOB      |IO_L17N_16                |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|G27       |bin_msg<99> |IOB      |IO_L17P_16                |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|G28       |bin_msg<103>|IOB      |IO_L19P_16                |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|H1        |            |OPAD     |MGTTXP1_116               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|H2        |            |OPAD     |MGTTXN1_116               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|H3        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|H4        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|H5        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|H6        |            |         |DIN_0                     |         |           |              |          |         |           |         |         |          |           |                |
+|H7        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|H8        |bin_msg<255>|IOB      |IO_L15P_36                |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|H9        |bin_msg<256>|IOB      |IO_L15N_36                |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|H10       |bin_msg<246>|IOB      |IO_L10N_MRCC_36           |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|H11       |bin_msg<245>|IOB      |IO_L10P_MRCC_36           |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|H12       |            |         |VCCO_36                   |         |           |36            |          |         |           |         |2.50     |          |           |                |
+|H13       |bin_msg<233>|IOB      |IO_L4P_36                 |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|H14       |bin_msg<223>|IOB      |IO_L19P_26                |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|H15       |bin_msg<194>|IOB      |IO_L4N_VREF_26            |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|H16       |bin_msg<189>|IOB      |IO_L2P_26                 |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|H17       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|H18       |bin_msg<35> |IOB      |IO_L4N_VREF_25            |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|H19       |bin_msg<163>|IOB      |IO_L9P_MRCC_25            |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|H20       |bin_msg<181>|IOB      |IO_L18P_GC_25             |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|H21       |bin_msg<66> |IOB      |IO_L0N_16                 |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|H22       |            |         |VCCO_16                   |         |           |16            |          |         |           |         |2.50     |          |           |                |
+|H23       |bin_msg<69> |IOB      |IO_L2P_16                 |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|H24       |bin_msg<89> |IOB      |IO_L12P_VRN_16            |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|H25       |bin_msg<307>|IOB      |IO_L1P_15                 |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|H26       |bin_msg<308>|IOB      |IO_L1N_15                 |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|H27       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|H28       |bin_msg<104>|IOB      |IO_L19N_16                |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|J1        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|J2        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|J3        |            |IPAD     |MGTREFCLK0N_116           |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|J4        |            |IPAD     |MGTREFCLK0P_116           |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|J5        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|J6        |            |         |VBATT_0                   |         |           |              |          |         |           |         |         |          |           |                |
+|J7        |bin_msg<259>|IOB      |IO_L17P_36                |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|J8        |bin_msg<260>|IOB      |IO_L17N_36                |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|J9        |            |         |VCCO_36                   |         |           |36            |          |         |           |         |2.50     |          |           |                |
+|J10       |bin_msg<258>|IOB      |IO_L16N_36                |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|J11       |bin_msg<257>|IOB      |IO_L16P_36                |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|J12       |bin_msg<247>|IOB      |IO_L11P_SRCC_36           |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|J13       |bin_msg<234>|IOB      |IO_L4N_VREF_36            |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|J14       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|J15       |bin_msg<201>|IOB      |IO_L8P_SRCC_26            |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|J16       |bin_msg<193>|IOB      |IO_L4P_26                 |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|J17       |bin_msg<30> |IOB      |IO_L2P_25                 |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|J18       |bin_msg<31> |IOB      |IO_L2N_25                 |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|J19       |            |         |VCCO_25                   |         |           |25            |          |         |           |         |2.50     |          |           |                |
+|J20       |bin_msg<174>|IOB      |IO_L14N_VREF_25           |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|J21       |bin_msg<81> |IOB      |IO_L8P_SRCC_16            |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|J22       |bin_msg<82> |IOB      |IO_L8N_SRCC_16            |INPUT    |LVCMOS25*  |16            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|J23       |bin_msg<310>|IOB      |IO_L2N_SM8N_15            |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|J24       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|J25       |bin_msg<321>|IOB      |IO_L5N_SM10N_15           |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|J26       |bin_msg<311>|IOB      |IO_L3P_SM9P_15            |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|J27       |bin_msg<312>|IOB      |IO_L3N_SM9N_15            |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|J28       |bin_msg<314>|IOB      |IO_L7P_SM12P_15           |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|K1        |            |OPAD     |MGTTXP0_116               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|K2        |            |OPAD     |MGTTXN0_116               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|K3        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|K4        |            |         |MGTAVCC                   |         |           |              |          |         |           |         |         |          |           |                |
+|K5        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|K6        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|K7        |bin_msg<263>|IOB      |IO_L19P_36                |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|K8        |            |         |VCCAUX                    |         |           |              |          |         |           |         |2.5      |          |           |                |
+|K9        |bin_msg<261>|IOB      |IO_L18P_36                |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|K10       |bin_msg<262>|IOB      |IO_L18N_36                |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|K11       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|K12       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|K13       |bin_msg<248>|IOB      |IO_L11N_SRCC_36           |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|K14       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|K15       |bin_msg<202>|IOB      |IO_L8N_SRCC_26            |INPUT    |LVCMOS25*  |26            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|K16       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|K17       |bin_msg<26> |IOB      |IO_L0P_25                 |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|K18       |bin_msg<27> |IOB      |IO_L0N_25                 |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|K19       |bin_msg<173>|IOB      |IO_L14P_25                |INPUT    |LVCMOS25*  |25            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|K20       |            |         |VCCAUX                    |         |           |              |          |         |           |         |2.5      |          |           |                |
+|K21       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|K22       |bin_msg<305>|IOB      |IO_L0P_15                 |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|K23       |bin_msg<306>|IOB      |IO_L0N_15                 |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|K24       |bin_msg<309>|IOB      |IO_L2P_SM8P_15            |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|K25       |bin_msg<320>|IOB      |IO_L5P_SM10P_15           |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|K26       |            |         |VCCO_15                   |         |           |15            |          |         |           |         |2.50     |          |           |                |
+|K27       |bin_msg<323>|IOB      |IO_L9P_MRCC_15            |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|K28       |bin_msg<315>|IOB      |IO_L7N_SM12N_15           |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|L1        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|L2        |            |         |MGTAVTT                   |         |           |              |          |         |           |         |         |          |           |                |
+|L3        |            |IPAD     |MGTRXP3_115               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|L4        |            |IPAD     |MGTRXN3_115               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|L5        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|L6        |            |         |DONE_0                    |         |           |              |          |         |           |         |         |          |           |                |
+|L7        |bin_msg<264>|IOB      |IO_L19N_36                |INPUT    |LVCMOS25*  |36            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|L8        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|L9        |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|L10       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|L11       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|L12       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|L13       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|L14       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|L15       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|L16       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|L17       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|L18       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|L19       |            |         |VCCAUX                    |         |           |              |          |         |           |         |2.5      |          |           |                |
+|L20       |bin_msg<313>|IOB      |IO_L4P_15                 |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|L21       |bin_msg<316>|IOB      |IO_L8P_SRCC_15            |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|L22       |bin_msg<322>|IOB      |IO_L8N_SRCC_15            |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|L23       |            |         |VCCO_15                   |         |           |15            |          |         |           |         |2.50     |          |           |                |
+|L24       |bin_msg<333>|IOB      |IO_L14P_15                |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|L25       |bin_msg<334>|IOB      |IO_L14N_VREF_15           |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|L26       |bin_msg<324>|IOB      |IO_L9N_MRCC_15            |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|L27       |bin_msg<330>|IOB      |IO_L12N_SM13N_15          |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|L28       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|M1        |            |OPAD     |MGTTXP3_115               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|M2        |            |OPAD     |MGTTXN3_115               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|M3        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|M4        |            |         |MGTAVCC                   |         |           |              |          |         |           |         |         |          |           |                |
+|M5        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|M6        |            |         |INIT_B_0                  |         |           |              |          |         |           |         |         |          |           |                |
+|M7        |            |         |PROGRAM_B_0               |         |           |              |          |         |           |         |         |          |           |                |
+|M8        |            |         |VCCAUX                    |         |           |              |          |         |           |         |2.5      |          |           |                |
+|M9        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|M10       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|M11       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|M12       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|M13       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|M14       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|M15       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|M16       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|M17       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|M18       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|M19       |bin_msg<319>|IOB      |IO_L4N_VREF_15            |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|M20       |            |         |VCCO_15                   |         |           |15            |          |         |           |         |2.50     |          |           |                |
+|M21       |bin_msg<326>|IOB      |IO_L10N_MRCC_15           |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|M22       |bin_msg<325>|IOB      |IO_L10P_MRCC_15           |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|M23       |bin_msg<317>|IOB      |IO_L6P_SM11P_15           |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|M24       |bin_msg<318>|IOB      |IO_L6N_SM11N_15           |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|M25       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|M26       |bin_msg<327>|IOB      |IO_L11P_SRCC_15           |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|M27       |bin_msg<329>|IOB      |IO_L12P_SM13P_15          |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|M28       |bin_msg<336>|IOB      |IO_L15N_SM15N_15          |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|N1        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|N2        |            |         |MGTAVTT                   |         |           |              |          |         |           |         |         |          |           |                |
+|N3        |            |IPAD     |MGTRXP2_115               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|N4        |            |IPAD     |MGTRXN2_115               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|N5        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|N6        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|N7        |            |         |HSWAPEN_0                 |         |           |              |          |         |           |         |         |          |           |                |
+|N8        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|N9        |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|N10       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|N11       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|N12       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|N13       |            |         |AVSS_0                    |         |           |              |          |         |           |         |         |          |           |                |
+|N14       |            |         |AVDD_0                    |         |           |              |          |         |           |         |         |          |           |                |
+|N15       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|N16       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|N17       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|N18       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|N19       |            |         |VCCAUX                    |         |           |              |          |         |           |         |2.5      |          |           |                |
+|N20       |bin_msg<341>|IOB      |IO_L18P_15                |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|N21       |bin_msg<342>|IOB      |IO_L18N_15                |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|N22       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|N23       |bin_msg<343>|IOB      |IO_L19P_15                |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|N24       |bin_msg<337>|IOB      |IO_L16P_VRN_15            |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|N25       |bin_msg<338>|IOB      |IO_L16N_VRP_15            |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|N26       |bin_msg<328>|IOB      |IO_L11N_SRCC_15           |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|N27       |            |         |VCCO_15                   |         |           |15            |          |         |           |         |2.50     |          |           |                |
+|N28       |bin_msg<335>|IOB      |IO_L15P_SM15P_15          |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|P1        |            |OPAD     |MGTTXP2_115               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|P2        |            |OPAD     |MGTTXN2_115               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|P3        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|P4        |            |         |MGTAVCC                   |         |           |              |          |         |           |         |         |          |           |                |
+|P5        |            |IPAD     |MGTREFCLK1N_115           |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|P6        |            |IPAD     |MGTREFCLK1P_115           |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|P7        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|P8        |            |         |VCCAUX                    |         |           |              |          |         |           |         |2.5      |          |           |                |
+|P9        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|P10       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|P11       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|P12       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|P13       |            |         |VREFN_0                   |         |           |              |          |         |           |         |         |          |           |                |
+|P14       |            |IPAD     |VP_0                      |UNUSED   |           |0             |          |         |           |         |         |          |           |                |
+|P15       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|P16       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|P17       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|P18       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|P19       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|P20       |bin_msg<374>|IOB      |IO_L14N_VREF_14           |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|P21       |bin_msg<361>|IOB      |IO_L8P_SRCC_14            |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|P22       |bin_msg<362>|IOB      |IO_L8N_SRCC_14            |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|P23       |bin_msg<344>|IOB      |IO_L19N_15                |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|P24       |            |         |VCCO_15                   |         |           |15            |          |         |           |         |2.50     |          |           |                |
+|P25       |bin_msg<340>|IOB      |IO_L17N_15                |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|P26       |bin_msg<339>|IOB      |IO_L17P_15                |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|P27       |bin_msg<332>|IOB      |IO_L13N_SM14N_15          |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|P28       |bin_msg<331>|IOB      |IO_L13P_SM14P_15          |INPUT    |LVCMOS25*  |15            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|R1        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|R2        |            |         |MGTAVTT                   |         |           |              |          |         |           |         |         |          |           |                |
+|R3        |            |IPAD     |MGTRXP1_115               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|R4        |            |IPAD     |MGTRXN1_115               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|R5        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|R6        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|R7        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|R8        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|R9        |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|R10       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|R11       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|R12       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|R13       |            |IPAD     |VN_0                      |UNUSED   |           |0             |          |         |           |         |         |          |           |                |
+|R14       |            |         |VREFP_0                   |         |           |              |          |         |           |         |         |          |           |                |
+|R15       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|R16       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|R17       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|R18       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|R19       |            |         |VCCAUX                    |         |           |              |          |         |           |         |2.5      |          |           |                |
+|R20       |bin_msg<373>|IOB      |IO_L14P_14                |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|R21       |            |         |VCCO_14                   |         |           |14            |          |         |           |         |2.50     |          |           |                |
+|R22       |            |IOBM     |IO_L18P_14                |UNUSED   |           |14            |          |         |           |         |         |          |           |                |
+|R23       |            |IOBS     |IO_L18N_14                |UNUSED   |           |14            |          |         |           |         |         |          |           |                |
+|R24       |bin_msg<369>|IOB      |IO_L12P_VRN_14            |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|R25       |bin_msg<370>|IOB      |IO_L12N_VRP_14            |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|R26       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|R27       |bin_msg<345>|IOB      |IO_L0P_14                 |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|R28       |bin_msg<346>|IOB      |IO_L0N_14                 |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|T1        |            |OPAD     |MGTTXP1_115               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|T2        |            |OPAD     |MGTTXN1_115               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|T3        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|T4        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|T5        |            |IPAD     |MGTREFCLK0N_115           |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|T6        |            |IPAD     |MGTREFCLK0P_115           |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|T7        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|T8        |            |         |VCCAUX                    |         |           |              |          |         |           |         |2.5      |          |           |                |
+|T9        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|T10       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|T11       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|T12       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|T13       |            |         |DXN_0                     |         |           |              |          |         |           |         |         |          |           |                |
+|T14       |            |         |DXP_0                     |         |           |              |          |         |           |         |         |          |           |                |
+|T15       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|T16       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|T17       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|T18       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|T19       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|T20       |            |         |VCCAUX                    |         |           |              |          |         |           |         |2.5      |          |           |                |
+|T21       |            |IOBM     |IO_L19P_14                |UNUSED   |           |14            |          |         |           |         |         |          |           |                |
+|T22       |            |IOBS     |IO_L19N_14                |UNUSED   |           |14            |          |         |           |         |         |          |           |                |
+|T23       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|T24       |bin_msg<375>|IOB      |IO_L15P_14                |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|T25       |bin_msg<376>|IOB      |IO_L15N_14                |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|T26       |bin_msg<366>|IOB      |IO_L10N_MRCC_14           |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|T27       |bin_msg<347>|IOB      |IO_L1P_14                 |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|T28       |            |         |VCCO_14                   |         |           |14            |          |         |           |         |2.50     |          |           |                |
+|U1        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|U2        |            |         |MGTAVTT                   |         |           |              |          |         |           |         |         |          |           |                |
+|U3        |            |IPAD     |MGTRXP0_115               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|U4        |            |IPAD     |MGTRXN0_115               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|U5        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|U6        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|U7        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|U8        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|U9        |            |         |VCCAUX                    |         |           |              |          |         |           |         |2.5      |          |           |                |
+|U10       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|U11       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|U12       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|U13       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|U14       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|U15       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|U16       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|U17       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|U18       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|U19       |            |         |VCCAUX                    |         |           |              |          |         |           |         |2.5      |          |           |                |
+|U20       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|U21       |            |IOBS     |IO_L17N_14                |UNUSED   |           |14            |          |         |           |         |         |          |           |                |
+|U22       |bin_msg<379>|IOB      |IO_L17P_14                |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|U23       |bin_msg<368>|IOB      |IO_L11N_SRCC_14           |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|U24       |bin_msg<378>|IOB      |IO_L16N_14                |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|U25       |            |         |VCCO_14                   |         |           |14            |          |         |           |         |2.50     |          |           |                |
+|U26       |bin_msg<365>|IOB      |IO_L10P_MRCC_14           |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|U27       |bin_msg<348>|IOB      |IO_L1N_14                 |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|U28       |bin_msg<350>|IOB      |IO_L2N_14                 |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|V1        |            |OPAD     |MGTTXP0_115               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|V2        |            |OPAD     |MGTTXN0_115               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|V3        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|V4        |            |         |MGTAVCC                   |         |           |              |          |         |           |         |         |          |           |                |
+|V5        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|V6        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|V7        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|V8        |            |         |VCCAUX                    |         |           |              |          |         |           |         |2.5      |          |           |                |
+|V9        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|V10       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|V11       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|V12       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|V13       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|V14       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|V15       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|V16       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|V17       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|V18       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|V19       |cw_word<2>  |IOB      |IO_L2N_23                 |OUTPUT   |LVCMOS25*  |23            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
+|V20       |cw_word<1>  |IOB      |IO_L2P_23                 |OUTPUT   |LVCMOS25*  |23            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
+|V21       |start       |IOB      |IO_L0N_23                 |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|V22       |            |         |VCCO_14                   |         |           |14            |          |         |           |         |2.50     |          |           |                |
+|V23       |bin_msg<367>|IOB      |IO_L11P_SRCC_14           |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|V24       |bin_msg<377>|IOB      |IO_L16P_14                |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|V25       |bin_msg<352>|IOB      |IO_L3N_14                 |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|V26       |bin_msg<354>|IOB      |IO_L4N_VREF_14            |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|V27       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|V28       |bin_msg<349>|IOB      |IO_L2P_14                 |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|W1        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|W2        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|W3        |            |IPAD     |MGTREFCLK1N_114           |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|W4        |            |IPAD     |MGTREFCLK1P_114           |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|W5        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|W6        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|W7        |            |         |VCCO_0                    |         |           |0             |          |         |           |         |any******|          |           |                |
+|W8        |bin_msg<145>|IOB      |IO_L0P_35                 |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|W9        |            |         |VCCO_35                   |         |           |35            |          |         |           |         |2.50     |          |           |                |
+|W10       |bin_msg<43> |IOB      |IO_L8N_SRCC_35            |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|W11       |bin_msg<42> |IOB      |IO_L8P_SRCC_35            |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|W12       |bin_msg<109>|IOB      |IO_L2P_A15_D31_34         |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|W13       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|W14       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|W15       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|W16       |bin_msg<141>|IOB      |IO_L18P_A17_34            |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|W17       |            |         |VCCINT                    |         |           |              |          |         |           |         |1.0      |          |           |                |
+|W18       |rst_b       |IOB      |IO_L6N_23                 |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|W19       |            |         |VCCO_23                   |         |           |23            |          |         |           |         |2.50     |          |           |                |
+|W20       |            |         |VCCAUX                    |         |           |              |          |         |           |         |2.5      |          |           |                |
+|W21       |done        |IOB      |IO_L0P_23                 |OUTPUT   |LVCMOS25*  |23            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
+|W22       |bin_msg<372>|IOB      |IO_L13N_14                |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|W23       |bin_msg<364>|IOB      |IO_L9N_MRCC_14            |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|W24       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|W25       |bin_msg<351>|IOB      |IO_L3P_14                 |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|W26       |bin_msg<353>|IOB      |IO_L4P_14                 |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|W27       |bin_msg<357>|IOB      |IO_L6P_14                 |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|W28       |bin_msg<356>|IOB      |IO_L5N_14                 |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|Y1        |            |OPAD     |MGTTXP3_114               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|Y2        |            |OPAD     |MGTTXN3_114               |UNUSED   |           |              |          |         |           |         |         |          |           |                |
+|Y3        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|Y4        |            |         |MGTAVCC                   |         |           |              |          |         |           |         |         |          |           |                |
+|Y5        |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|Y6        |            |         |TMS_0                     |         |           |              |          |         |           |         |         |          |           |                |
+|Y7        |            |         |TDO_0                     |         |           |              |          |         |           |         |         |          |           |                |
+|Y8        |            |         |VCCO_0                    |         |           |0             |          |         |           |         |any******|          |           |                |
+|Y9        |bin_msg<146>|IOB      |IO_L0N_35                 |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|Y10       |bin_msg<147>|IOB      |IO_L1P_35                 |INPUT    |LVCMOS25*  |35            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|Y11       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|Y12       |bin_msg<110>|IOB      |IO_L2N_A14_D30_34         |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|Y13       |bin_msg<121>|IOB      |IO_L8P_SRCC_34            |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|Y14       |bin_msg<138>|IOB      |IO_L16N_A20_34            |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|Y15       |bin_msg<142>|IOB      |IO_L18N_A16_34            |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|Y16       |            |         |VCCO_34                   |         |           |34            |          |         |           |         |2.50     |          |           |                |
+|Y17       |bin_msg<143>|IOB      |IO_L19P_VRN_34            |INPUT    |LVCMOS25*  |34            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|Y18       |cw_word<9>  |IOB      |IO_L6P_23                 |OUTPUT   |LVCMOS25*  |23            |12        |SLOW     |           |         |         |UNLOCATED |NO         |NONE            |
+|Y19       |bin_msg<11> |IOB      |IO_L12N_VRP_23            |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|Y20       |bin_msg<8>  |IOB      |IO_L11P_SRCC_23           |INPUT    |LVCMOS25*  |23            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|Y21       |            |         |GND                       |         |           |              |          |         |           |         |         |          |           |                |
+|Y22       |bin_msg<371>|IOB      |IO_L13P_14                |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|Y23       |bin_msg<363>|IOB      |IO_L9P_MRCC_14            |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|Y24       |bin_msg<360>|IOB      |IO_L7N_14                 |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|Y25       |bin_msg<359>|IOB      |IO_L7P_14                 |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|Y26       |            |         |VCCO_14                   |         |           |14            |          |         |           |         |2.50     |          |           |                |
+|Y27       |bin_msg<358>|IOB      |IO_L6N_14                 |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
+|Y28       |bin_msg<355>|IOB      |IO_L5P_14                 |INPUT    |LVCMOS25*  |14            |          |         |           |NONE     |         |UNLOCATED |NO         |NONE            |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Default value.
+** This default Pullup/Pulldown value can be overridden in Bitgen. 
+All RSVD_0 pins must be tied to GROUND.
+****** Special VCCO requirements may apply. Please consult the device 
+       family datasheet for specific guideline on VCCO requirements. 
+
+

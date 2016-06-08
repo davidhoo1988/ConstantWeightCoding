@@ -1,0 +1,1 @@
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6vlx240t-ff784-3 mul_19bits.ngc mul_19bits.ngd  

@@ -1,0 +1,139 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\RSPC\Dropbox\ConstantWeightCoding\hardware\16-9\decoder
+T_opt
+V24CjP_ogN;;^328<7OiQd3
+04 14 4 work decoder_top_tb fast 0
+04 4 4 work glbl fast 0
+=1-f8b156b053e7-56961cd1-aa-468c
+o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L secureip +acc
+n@_opt
+OL;O;10.1c;51
+vbest_d
+IhHVZH99LQzA`?X3_cXj>d0
+VC[9jojhDT5gcXfdg4[z411
+Z1 dC:\Users\RSPC\Dropbox\ConstantWeightCoding\hardware\16-9\decoder
+w1452089080
+8best_d.v
+Fbest_d.v
+L0 21
+Z2 OL;L;10.1c;51
+r1
+31
+Z3 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 6MGibWhW;`5F_n?z=LYNd3
+!s108 1452678351.098000
+!s107 best_d.v|
+!s90 -reportprogress|300|best_d.v|
+!i10b 1
+!s85 0
+vdecoder_main
+I][0b1X>NW?@K_@zKf8KmC0
+V;4BHF2WjW1Yn@g362W6B_1
+R1
+w1452428773
+8decoder_main.v
+Fdecoder_main.v
+L0 23
+R2
+r1
+31
+R3
+!s100 1:inQ8e5Nn8mC?]Gbb3j83
+!s108 1452678351.387000
+!s107 decoder_main.v|
+!s90 -reportprogress|300|decoder_main.v|
+!i10b 1
+!s85 0
+vdecoder_top
+IMJJfXeL5kOo8Ga9`okU9X1
+VJj5RmHkb559V`LHIjZJQz2
+R1
+w1452413328
+8decoder_top.v
+Fdecoder_top.v
+L0 24
+R2
+r1
+31
+R3
+!s100 fJAIRi@9`3]QoVEnQeQ[m2
+!s108 1452678351.761000
+!s107 decoder_top.v|
+!s90 -reportprogress|300|decoder_top.v|
+!i10b 1
+!s85 0
+vdecoder_top_tb
+IlcgOZ^6odRE^13TW`H>3;3
+V6a5:>fQVJ?b`JAgnkbl>A3
+R1
+w1452415027
+8decoder_top_tb.v
+Fdecoder_top_tb.v
+L0 25
+R2
+r1
+31
+R3
+!s100 KOb9NePogBH53_d]<U;m83
+!s108 1452678352.048000
+!s107 decoder_top_tb.v|
+!s90 -reportprogress|300|decoder_top_tb.v|
+!i10b 1
+!s85 0
+vfifo_16_to_16
+I8?:APa_7;gKbTN@PIJoG22
+VW>E0@2HBbFdAzeNNecITk1
+R1
+w1452413447
+8ipcore_dir/fifo_16_to_16.v
+Fipcore_dir/fifo_16_to_16.v
+L0 39
+R2
+r1
+31
+R3
+!s100 @;2i>i^b>4T2M51SELkg]1
+!s108 1452678351.192000
+!s107 ipcore_dir/fifo_16_to_16.v|
+!s90 -reportprogress|300|ipcore_dir/fifo_16_to_16.v|
+!i10b 1
+!s85 0
+vglbl
+I_HnChG<D0B6oX2@hOo5Bb0
+VM[9mS]S:KA1i4VeCMX35[3
+R1
+w1308634177
+8C:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v
+FC:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v
+L0 5
+R2
+r1
+31
+R3
+!i10b 1
+!s100 iU?KY@Vm^ibNkUiOGIChA3
+!s85 0
+!s108 1452678352.190000
+!s107 C:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v|
+!s90 -reportprogress|300|C:/Xilinx/13.2/ISE_DS/ISE//verilog/src/glbl.v|
+vmul_17bits
+IZz::SEHLZ>nmMUF?OEn0l2
+VVd`<GJ?HJ0DYiWZ@bdYOi3
+R1
+w1452666033
+8ipcore_dir/mul_17bits.v
+Fipcore_dir/mul_17bits.v
+L0 36
+R2
+r1
+31
+!s108 1452678350.580000
+!s107 ipcore_dir/mul_17bits.v|
+!s90 -reportprogress|300|ipcore_dir/mul_17bits.v|
+R3
+!s100 10a^^2OJkd;k=OI[FWh0z2
+!i10b 1
+!s85 0

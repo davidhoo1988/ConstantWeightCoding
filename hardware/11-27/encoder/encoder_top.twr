@@ -1,0 +1,624 @@
+--------------------------------------------------------------------------------
+Release 13.2 Trace  (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\13.2\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml encoder_top.twx encoder_top.ncd -o encoder_top.twr
+encoder_top.pcf -ucf best_d.ucf
+
+Design file:              encoder_top.ncd
+Physical constraint file: encoder_top.pcf
+Device,package,speed:     xc6vlx240t,ff784,C,-3 (PRODUCTION 1.15 2011-06-20, STEPPING level 0)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_clk = PERIOD TIMEGRP "clk" 350 MHz HIGH 50%;
+
+ 65965 paths analyzed, 694 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   2.834ns.
+--------------------------------------------------------------------------------
+
+Paths for end point bin2cw/uut/multiplier/blk00000096 (SLICE_X63Y88.CIN), 10948 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.023ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               bin2cw/uut/theta_1 (FF)
+  Destination:          bin2cw/uut/multiplier/blk00000096 (FF)
+  Requirement:          2.857ns
+  Data Path Delay:      2.745ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.054ns (0.887 - 0.941)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 2.857ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: bin2cw/uut/theta_1 to bin2cw/uut/multiplier/blk00000096
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X60Y84.BMUX    Tshcko                0.351   bin2cw/uut/theta<4>
+                                                       bin2cw/uut/theta_1
+    SLICE_X60Y85.B5      net (fanout=12)       0.436   bin2cw/uut/theta<1>
+    SLICE_X60Y85.COUT    Topcyb                0.312   bin2cw/uut/multiplier/sig0000008c
+                                                       bin2cw/uut/multiplier/blk000000ba
+                                                       bin2cw/uut/multiplier/blk00000025
+    SLICE_X60Y86.CIN     net (fanout=1)        0.000   bin2cw/uut/multiplier/sig0000008c
+    SLICE_X60Y86.AMUX    Tcina                 0.166   bin2cw/uut/multiplier/sig00000094
+                                                       bin2cw/uut/multiplier/blk0000002d
+    SLICE_X62Y85.A6      net (fanout=2)        0.267   bin2cw/uut/multiplier/sig0000005b
+    SLICE_X62Y85.COUT    Topcya                0.316   bin2cw/uut/multiplier/sig00000025
+                                                       bin2cw/uut/multiplier/blk000000cb
+                                                       bin2cw/uut/multiplier/blk00000087
+    SLICE_X62Y86.CIN     net (fanout=1)        0.000   bin2cw/uut/multiplier/sig00000025
+    SLICE_X62Y86.DMUX    Tcind                 0.238   bin2cw/uut/multiplier/sig0000001e
+                                                       bin2cw/uut/multiplier/blk0000007f
+    SLICE_X63Y87.B6      net (fanout=2)        0.255   bin2cw/uut/multiplier/sig0000004e
+    SLICE_X63Y87.COUT    Topcyb                0.312   bin2cw/uut/p<14>
+                                                       bin2cw/uut/multiplier/blk0000005e
+                                                       bin2cw/uut/multiplier/blk00000057
+    SLICE_X63Y88.CIN     net (fanout=1)        0.000   bin2cw/uut/multiplier/sig00000004
+    SLICE_X63Y88.CLK     Tcinck                0.092   bin2cw/uut/p<16>
+                                                       bin2cw/uut/multiplier/blk00000052
+                                                       bin2cw/uut/multiplier/blk00000096
+    -------------------------------------------------  ---------------------------
+    Total                                      2.745ns (1.787ns logic, 0.958ns route)
+                                                       (65.1% logic, 34.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.050ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               bin2cw/uut/theta_1 (FF)
+  Destination:          bin2cw/uut/multiplier/blk00000096 (FF)
+  Requirement:          2.857ns
+  Data Path Delay:      2.718ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.054ns (0.887 - 0.941)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 2.857ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: bin2cw/uut/theta_1 to bin2cw/uut/multiplier/blk00000096
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X60Y84.BMUX    Tshcko                0.351   bin2cw/uut/theta<4>
+                                                       bin2cw/uut/theta_1
+    SLICE_X60Y85.B5      net (fanout=12)       0.436   bin2cw/uut/theta<1>
+    SLICE_X60Y85.COUT    Topcyb                0.312   bin2cw/uut/multiplier/sig0000008c
+                                                       bin2cw/uut/multiplier/blk000000ba
+                                                       bin2cw/uut/multiplier/blk00000025
+    SLICE_X60Y86.CIN     net (fanout=1)        0.000   bin2cw/uut/multiplier/sig0000008c
+    SLICE_X60Y86.AMUX    Tcina                 0.166   bin2cw/uut/multiplier/sig00000094
+                                                       bin2cw/uut/multiplier/blk0000002d
+    SLICE_X62Y85.A6      net (fanout=2)        0.267   bin2cw/uut/multiplier/sig0000005b
+    SLICE_X62Y85.DMUX    Topad                 0.467   bin2cw/uut/multiplier/sig00000025
+                                                       bin2cw/uut/multiplier/blk000000cb
+                                                       bin2cw/uut/multiplier/blk00000087
+    SLICE_X63Y86.B6      net (fanout=2)        0.255   bin2cw/uut/multiplier/sig0000004a
+    SLICE_X63Y86.COUT    Topcyb                0.312   bin2cw/uut/p<10>
+                                                       bin2cw/uut/multiplier/blk0000006a
+                                                       bin2cw/uut/multiplier/blk00000063
+    SLICE_X63Y87.CIN     net (fanout=1)        0.000   bin2cw/uut/multiplier/sig0000000c
+    SLICE_X63Y87.COUT    Tbyp                  0.060   bin2cw/uut/p<14>
+                                                       bin2cw/uut/multiplier/blk00000057
+    SLICE_X63Y88.CIN     net (fanout=1)        0.000   bin2cw/uut/multiplier/sig00000004
+    SLICE_X63Y88.CLK     Tcinck                0.092   bin2cw/uut/p<16>
+                                                       bin2cw/uut/multiplier/blk00000052
+                                                       bin2cw/uut/multiplier/blk00000096
+    -------------------------------------------------  ---------------------------
+    Total                                      2.718ns (1.760ns logic, 0.958ns route)
+                                                       (64.8% logic, 35.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.050ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               bin2cw/uut/theta_1 (FF)
+  Destination:          bin2cw/uut/multiplier/blk00000096 (FF)
+  Requirement:          2.857ns
+  Data Path Delay:      2.718ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.054ns (0.887 - 0.941)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 2.857ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: bin2cw/uut/theta_1 to bin2cw/uut/multiplier/blk00000096
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X60Y84.BMUX    Tshcko                0.351   bin2cw/uut/theta<4>
+                                                       bin2cw/uut/theta_1
+    SLICE_X60Y85.B5      net (fanout=12)       0.436   bin2cw/uut/theta<1>
+    SLICE_X60Y85.COUT    Topcyb                0.312   bin2cw/uut/multiplier/sig0000008c
+                                                       bin2cw/uut/multiplier/blk000000ba
+                                                       bin2cw/uut/multiplier/blk00000025
+    SLICE_X60Y86.CIN     net (fanout=1)        0.000   bin2cw/uut/multiplier/sig0000008c
+    SLICE_X60Y86.COUT    Tbyp                  0.060   bin2cw/uut/multiplier/sig00000094
+                                                       bin2cw/uut/multiplier/blk0000002d
+    SLICE_X60Y87.CIN     net (fanout=1)        0.000   bin2cw/uut/multiplier/sig00000094
+    SLICE_X60Y87.AMUX    Tcina                 0.166   bin2cw/uut/multiplier/sig0000009c
+                                                       bin2cw/uut/multiplier/blk00000035
+    SLICE_X62Y86.A6      net (fanout=2)        0.267   bin2cw/uut/multiplier/sig0000006b
+    SLICE_X62Y86.DMUX    Topad                 0.467   bin2cw/uut/multiplier/sig0000001e
+                                                       bin2cw/uut/multiplier/blk000000c7
+                                                       bin2cw/uut/multiplier/blk0000007f
+    SLICE_X63Y87.B6      net (fanout=2)        0.255   bin2cw/uut/multiplier/sig0000004e
+    SLICE_X63Y87.COUT    Topcyb                0.312   bin2cw/uut/p<14>
+                                                       bin2cw/uut/multiplier/blk0000005e
+                                                       bin2cw/uut/multiplier/blk00000057
+    SLICE_X63Y88.CIN     net (fanout=1)        0.000   bin2cw/uut/multiplier/sig00000004
+    SLICE_X63Y88.CLK     Tcinck                0.092   bin2cw/uut/p<16>
+                                                       bin2cw/uut/multiplier/blk00000052
+                                                       bin2cw/uut/multiplier/blk00000096
+    -------------------------------------------------  ---------------------------
+    Total                                      2.718ns (1.760ns logic, 0.958ns route)
+                                                       (64.8% logic, 35.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point bin2cw/uut/multiplier/blk00000097 (SLICE_X63Y88.CIN), 10948 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.063ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               bin2cw/uut/theta_1 (FF)
+  Destination:          bin2cw/uut/multiplier/blk00000097 (FF)
+  Requirement:          2.857ns
+  Data Path Delay:      2.705ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.054ns (0.887 - 0.941)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 2.857ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: bin2cw/uut/theta_1 to bin2cw/uut/multiplier/blk00000097
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X60Y84.BMUX    Tshcko                0.351   bin2cw/uut/theta<4>
+                                                       bin2cw/uut/theta_1
+    SLICE_X60Y85.B5      net (fanout=12)       0.436   bin2cw/uut/theta<1>
+    SLICE_X60Y85.COUT    Topcyb                0.312   bin2cw/uut/multiplier/sig0000008c
+                                                       bin2cw/uut/multiplier/blk000000ba
+                                                       bin2cw/uut/multiplier/blk00000025
+    SLICE_X60Y86.CIN     net (fanout=1)        0.000   bin2cw/uut/multiplier/sig0000008c
+    SLICE_X60Y86.AMUX    Tcina                 0.166   bin2cw/uut/multiplier/sig00000094
+                                                       bin2cw/uut/multiplier/blk0000002d
+    SLICE_X62Y85.A6      net (fanout=2)        0.267   bin2cw/uut/multiplier/sig0000005b
+    SLICE_X62Y85.COUT    Topcya                0.316   bin2cw/uut/multiplier/sig00000025
+                                                       bin2cw/uut/multiplier/blk000000cb
+                                                       bin2cw/uut/multiplier/blk00000087
+    SLICE_X62Y86.CIN     net (fanout=1)        0.000   bin2cw/uut/multiplier/sig00000025
+    SLICE_X62Y86.DMUX    Tcind                 0.238   bin2cw/uut/multiplier/sig0000001e
+                                                       bin2cw/uut/multiplier/blk0000007f
+    SLICE_X63Y87.B6      net (fanout=2)        0.255   bin2cw/uut/multiplier/sig0000004e
+    SLICE_X63Y87.COUT    Topcyb                0.312   bin2cw/uut/p<14>
+                                                       bin2cw/uut/multiplier/blk0000005e
+                                                       bin2cw/uut/multiplier/blk00000057
+    SLICE_X63Y88.CIN     net (fanout=1)        0.000   bin2cw/uut/multiplier/sig00000004
+    SLICE_X63Y88.CLK     Tcinck                0.052   bin2cw/uut/p<16>
+                                                       bin2cw/uut/multiplier/blk00000052
+                                                       bin2cw/uut/multiplier/blk00000097
+    -------------------------------------------------  ---------------------------
+    Total                                      2.705ns (1.747ns logic, 0.958ns route)
+                                                       (64.6% logic, 35.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.090ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               bin2cw/uut/theta_1 (FF)
+  Destination:          bin2cw/uut/multiplier/blk00000097 (FF)
+  Requirement:          2.857ns
+  Data Path Delay:      2.678ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.054ns (0.887 - 0.941)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 2.857ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: bin2cw/uut/theta_1 to bin2cw/uut/multiplier/blk00000097
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X60Y84.BMUX    Tshcko                0.351   bin2cw/uut/theta<4>
+                                                       bin2cw/uut/theta_1
+    SLICE_X60Y85.B5      net (fanout=12)       0.436   bin2cw/uut/theta<1>
+    SLICE_X60Y85.COUT    Topcyb                0.312   bin2cw/uut/multiplier/sig0000008c
+                                                       bin2cw/uut/multiplier/blk000000ba
+                                                       bin2cw/uut/multiplier/blk00000025
+    SLICE_X60Y86.CIN     net (fanout=1)        0.000   bin2cw/uut/multiplier/sig0000008c
+    SLICE_X60Y86.AMUX    Tcina                 0.166   bin2cw/uut/multiplier/sig00000094
+                                                       bin2cw/uut/multiplier/blk0000002d
+    SLICE_X62Y85.A6      net (fanout=2)        0.267   bin2cw/uut/multiplier/sig0000005b
+    SLICE_X62Y85.DMUX    Topad                 0.467   bin2cw/uut/multiplier/sig00000025
+                                                       bin2cw/uut/multiplier/blk000000cb
+                                                       bin2cw/uut/multiplier/blk00000087
+    SLICE_X63Y86.B6      net (fanout=2)        0.255   bin2cw/uut/multiplier/sig0000004a
+    SLICE_X63Y86.COUT    Topcyb                0.312   bin2cw/uut/p<10>
+                                                       bin2cw/uut/multiplier/blk0000006a
+                                                       bin2cw/uut/multiplier/blk00000063
+    SLICE_X63Y87.CIN     net (fanout=1)        0.000   bin2cw/uut/multiplier/sig0000000c
+    SLICE_X63Y87.COUT    Tbyp                  0.060   bin2cw/uut/p<14>
+                                                       bin2cw/uut/multiplier/blk00000057
+    SLICE_X63Y88.CIN     net (fanout=1)        0.000   bin2cw/uut/multiplier/sig00000004
+    SLICE_X63Y88.CLK     Tcinck                0.052   bin2cw/uut/p<16>
+                                                       bin2cw/uut/multiplier/blk00000052
+                                                       bin2cw/uut/multiplier/blk00000097
+    -------------------------------------------------  ---------------------------
+    Total                                      2.678ns (1.720ns logic, 0.958ns route)
+                                                       (64.2% logic, 35.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.090ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               bin2cw/uut/theta_1 (FF)
+  Destination:          bin2cw/uut/multiplier/blk00000097 (FF)
+  Requirement:          2.857ns
+  Data Path Delay:      2.678ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.054ns (0.887 - 0.941)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 2.857ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: bin2cw/uut/theta_1 to bin2cw/uut/multiplier/blk00000097
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X60Y84.BMUX    Tshcko                0.351   bin2cw/uut/theta<4>
+                                                       bin2cw/uut/theta_1
+    SLICE_X60Y85.B5      net (fanout=12)       0.436   bin2cw/uut/theta<1>
+    SLICE_X60Y85.COUT    Topcyb                0.312   bin2cw/uut/multiplier/sig0000008c
+                                                       bin2cw/uut/multiplier/blk000000ba
+                                                       bin2cw/uut/multiplier/blk00000025
+    SLICE_X60Y86.CIN     net (fanout=1)        0.000   bin2cw/uut/multiplier/sig0000008c
+    SLICE_X60Y86.COUT    Tbyp                  0.060   bin2cw/uut/multiplier/sig00000094
+                                                       bin2cw/uut/multiplier/blk0000002d
+    SLICE_X60Y87.CIN     net (fanout=1)        0.000   bin2cw/uut/multiplier/sig00000094
+    SLICE_X60Y87.AMUX    Tcina                 0.166   bin2cw/uut/multiplier/sig0000009c
+                                                       bin2cw/uut/multiplier/blk00000035
+    SLICE_X62Y86.A6      net (fanout=2)        0.267   bin2cw/uut/multiplier/sig0000006b
+    SLICE_X62Y86.DMUX    Topad                 0.467   bin2cw/uut/multiplier/sig0000001e
+                                                       bin2cw/uut/multiplier/blk000000c7
+                                                       bin2cw/uut/multiplier/blk0000007f
+    SLICE_X63Y87.B6      net (fanout=2)        0.255   bin2cw/uut/multiplier/sig0000004e
+    SLICE_X63Y87.COUT    Topcyb                0.312   bin2cw/uut/p<14>
+                                                       bin2cw/uut/multiplier/blk0000005e
+                                                       bin2cw/uut/multiplier/blk00000057
+    SLICE_X63Y88.CIN     net (fanout=1)        0.000   bin2cw/uut/multiplier/sig00000004
+    SLICE_X63Y88.CLK     Tcinck                0.052   bin2cw/uut/p<16>
+                                                       bin2cw/uut/multiplier/blk00000052
+                                                       bin2cw/uut/multiplier/blk00000097
+    -------------------------------------------------  ---------------------------
+    Total                                      2.678ns (1.720ns logic, 0.958ns route)
+                                                       (64.2% logic, 35.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point bin2cw/uut/multiplier/blk00000098 (SLICE_X63Y87.CIN), 4184 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.081ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               bin2cw/uut/theta_1 (FF)
+  Destination:          bin2cw/uut/multiplier/blk00000098 (FF)
+  Requirement:          2.857ns
+  Data Path Delay:      2.688ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.053ns (0.888 - 0.941)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 2.857ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: bin2cw/uut/theta_1 to bin2cw/uut/multiplier/blk00000098
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X60Y84.BMUX    Tshcko                0.351   bin2cw/uut/theta<4>
+                                                       bin2cw/uut/theta_1
+    SLICE_X60Y85.B5      net (fanout=12)       0.436   bin2cw/uut/theta<1>
+    SLICE_X60Y85.COUT    Topcyb                0.312   bin2cw/uut/multiplier/sig0000008c
+                                                       bin2cw/uut/multiplier/blk000000ba
+                                                       bin2cw/uut/multiplier/blk00000025
+    SLICE_X60Y86.CIN     net (fanout=1)        0.000   bin2cw/uut/multiplier/sig0000008c
+    SLICE_X60Y86.AMUX    Tcina                 0.166   bin2cw/uut/multiplier/sig00000094
+                                                       bin2cw/uut/multiplier/blk0000002d
+    SLICE_X62Y85.A6      net (fanout=2)        0.267   bin2cw/uut/multiplier/sig0000005b
+    SLICE_X62Y85.DMUX    Topad                 0.467   bin2cw/uut/multiplier/sig00000025
+                                                       bin2cw/uut/multiplier/blk000000cb
+                                                       bin2cw/uut/multiplier/blk00000087
+    SLICE_X63Y86.B6      net (fanout=2)        0.255   bin2cw/uut/multiplier/sig0000004a
+    SLICE_X63Y86.COUT    Topcyb                0.312   bin2cw/uut/p<10>
+                                                       bin2cw/uut/multiplier/blk0000006a
+                                                       bin2cw/uut/multiplier/blk00000063
+    SLICE_X63Y87.CIN     net (fanout=1)        0.000   bin2cw/uut/multiplier/sig0000000c
+    SLICE_X63Y87.CLK     Tcinck                0.122   bin2cw/uut/p<14>
+                                                       bin2cw/uut/multiplier/blk00000057
+                                                       bin2cw/uut/multiplier/blk00000098
+    -------------------------------------------------  ---------------------------
+    Total                                      2.688ns (1.730ns logic, 0.958ns route)
+                                                       (64.4% logic, 35.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.093ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               bin2cw/n_1 (FF)
+  Destination:          bin2cw/uut/multiplier/blk00000098 (FF)
+  Requirement:          2.857ns
+  Data Path Delay:      2.676ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.053ns (0.888 - 0.941)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 2.857ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: bin2cw/n_1 to bin2cw/uut/multiplier/blk00000098
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X61Y85.BQ      Tcko                  0.246   bin2cw/n<3>
+                                                       bin2cw/n_1
+    SLICE_X63Y81.B1      net (fanout=9)        0.670   bin2cw/n<1>
+    SLICE_X63Y81.COUT    Topcyb                0.312   bin2cw/uut/multiplier/sig0000008b
+                                                       bin2cw/uut/multiplier/blk000000af
+                                                       bin2cw/uut/multiplier/blk00000024
+    SLICE_X63Y82.CIN     net (fanout=1)        0.000   bin2cw/uut/multiplier/sig0000008b
+    SLICE_X63Y82.DMUX    Tcind                 0.238   bin2cw/uut/multiplier/sig00000093
+                                                       bin2cw/uut/multiplier/blk0000002c
+    SLICE_X63Y86.D4      net (fanout=1)        0.842   bin2cw/uut/multiplier/sig00000065
+    SLICE_X63Y86.COUT    Topcyd                0.246   bin2cw/uut/p<10>
+                                                       bin2cw/uut/multiplier/blk00000064
+                                                       bin2cw/uut/multiplier/blk00000063
+    SLICE_X63Y87.CIN     net (fanout=1)        0.000   bin2cw/uut/multiplier/sig0000000c
+    SLICE_X63Y87.CLK     Tcinck                0.122   bin2cw/uut/p<14>
+                                                       bin2cw/uut/multiplier/blk00000057
+                                                       bin2cw/uut/multiplier/blk00000098
+    -------------------------------------------------  ---------------------------
+    Total                                      2.676ns (1.164ns logic, 1.512ns route)
+                                                       (43.5% logic, 56.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.107ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               bin2cw/uut/theta_1 (FF)
+  Destination:          bin2cw/uut/multiplier/blk00000098 (FF)
+  Requirement:          2.857ns
+  Data Path Delay:      2.662ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.053ns (0.888 - 0.941)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 2.857ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: bin2cw/uut/theta_1 to bin2cw/uut/multiplier/blk00000098
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X60Y84.BMUX    Tshcko                0.351   bin2cw/uut/theta<4>
+                                                       bin2cw/uut/theta_1
+    SLICE_X60Y85.B5      net (fanout=12)       0.436   bin2cw/uut/theta<1>
+    SLICE_X60Y85.BMUX    Topbb                 0.260   bin2cw/uut/multiplier/sig0000008c
+                                                       bin2cw/uut/multiplier/blk000000ba
+                                                       bin2cw/uut/multiplier/blk00000025
+    SLICE_X62Y84.B6      net (fanout=2)        0.376   bin2cw/uut/multiplier/sig00000054
+    SLICE_X62Y84.COUT    Topcyb                0.312   bin2cw/uut/multiplier/sig0000002d
+                                                       bin2cw/uut/multiplier/blk000000ce
+                                                       bin2cw/uut/multiplier/blk0000008f
+    SLICE_X62Y85.CIN     net (fanout=1)        0.000   bin2cw/uut/multiplier/sig0000002d
+    SLICE_X62Y85.DMUX    Tcind                 0.238   bin2cw/uut/multiplier/sig00000025
+                                                       bin2cw/uut/multiplier/blk00000087
+    SLICE_X63Y86.B6      net (fanout=2)        0.255   bin2cw/uut/multiplier/sig0000004a
+    SLICE_X63Y86.COUT    Topcyb                0.312   bin2cw/uut/p<10>
+                                                       bin2cw/uut/multiplier/blk0000006a
+                                                       bin2cw/uut/multiplier/blk00000063
+    SLICE_X63Y87.CIN     net (fanout=1)        0.000   bin2cw/uut/multiplier/sig0000000c
+    SLICE_X63Y87.CLK     Tcinck                0.122   bin2cw/uut/p<14>
+                                                       bin2cw/uut/multiplier/blk00000057
+                                                       bin2cw/uut/multiplier/blk00000098
+    -------------------------------------------------  ---------------------------
+    Total                                      2.662ns (1.595ns logic, 1.067ns route)
+                                                       (59.9% logic, 40.1% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_clk = PERIOD TIMEGRP "clk" 350 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM18.ram (RAMB18_X2Y44.ADDRBWRADDR4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.042ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_3 (FF)
+  Destination:          fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM18.ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.165ns (Levels of Logic = 0)
+  Clock Path Skew:      0.123ns (0.555 - 0.432)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 2.857ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_3 to fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM18.ram
+    Location                  Delay type         Delay(ns)  Physical Resource
+                                                            Logical Resource(s)
+    ------------------------------------------------------  -------------------
+    SLICE_X38Y114.CQ          Tcko                  0.115   fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1<4>
+                                                            fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1_3
+    RAMB18_X2Y44.ADDRBWRADDR4 net (fanout=3)        0.147   fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/gc0.count_d1<3>
+    RAMB18_X2Y44.WRCLK        Trckc_ADDRB (-Th)     0.097   fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM18.ram
+                                                            fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM18.ram
+    ------------------------------------------------------  ---------------------------
+    Total                                           0.165ns (0.018ns logic, 0.147ns route)
+                                                            (10.9% logic, 89.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM18.ram (RAMB18_X2Y44.ADDRARDADDR7), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.068ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_3 (FF)
+  Destination:          fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM18.ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.194ns (Levels of Logic = 0)
+  Clock Path Skew:      0.126ns (0.556 - 0.430)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 2.857ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_3 to fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM18.ram
+    Location                  Delay type         Delay(ns)  Physical Resource
+                                                            Logical Resource(s)
+    ------------------------------------------------------  -------------------
+    SLICE_X37Y113.BQ          Tcko                  0.098   fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2<4>
+                                                            fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_3
+    RAMB18_X2Y44.ADDRARDADDR7 net (fanout=2)        0.193   fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2<3>
+    RAMB18_X2Y44.RDCLK        Trckc_ADDRA (-Th)     0.097   fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM18.ram
+                                                            fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM18.ram
+    ------------------------------------------------------  ---------------------------
+    Total                                           0.194ns (0.001ns logic, 0.193ns route)
+                                                            (0.5% logic, 99.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM18.ram (RAMB18_X2Y44.ADDRARDADDR8), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.068ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_4 (FF)
+  Destination:          fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM18.ram (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.194ns (Levels of Logic = 0)
+  Clock Path Skew:      0.126ns (0.556 - 0.430)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 2.857ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_4 to fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM18.ram
+    Location                  Delay type         Delay(ns)  Physical Resource
+                                                            Logical Resource(s)
+    ------------------------------------------------------  -------------------
+    SLICE_X37Y113.CQ          Tcko                  0.098   fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2<4>
+                                                            fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2_4
+    RAMB18_X2Y44.ADDRARDADDR8 net (fanout=3)        0.193   fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gic0.gc0.count_d2<4>
+    RAMB18_X2Y44.RDCLK        Trckc_ADDRA (-Th)     0.097   fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM18.ram
+                                                            fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM18.ram
+    ------------------------------------------------------  ---------------------------
+    Total                                           0.194ns (0.001ns logic, 0.193ns route)
+                                                            (0.5% logic, 99.5% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clk = PERIOD TIMEGRP "clk" 350 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 1.190ns (period - min period limit)
+  Period: 2.857ns
+  Min period limit: 1.667ns (599.880MHz) (Trper_CLKA)
+  Physical resource: fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM18.ram/CLKARDCLK
+  Logical resource: fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM18.ram/CLKARDCLK
+  Location pin: RAMB18_X2Y44.RDCLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 1.190ns (period - min period limit)
+  Period: 2.857ns
+  Min period limit: 1.667ns (599.880MHz) (Trper_CLKA)
+  Physical resource: fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM18.ram/CLKBWRCLK
+  Logical resource: fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM18.ram/CLKBWRCLK
+  Location pin: RAMB18_X2Y44.WRCLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 1.607ns (period - min period limit)
+  Period: 2.857ns
+  Min period limit: 1.250ns (800.000MHz) (Tockper)
+  Physical resource: bin2cw/done_1/CLK
+  Logical resource: bin2cw/done_1/CK
+  Location pin: OLOGIC_X1Y96.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.834|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 65965 paths, 0 nets, and 728 connections
+
+Design statistics:
+   Minimum period:   2.834ns{1}   (Maximum frequency: 352.858MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Wed Jan 13 15:31:21 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 614 MB
+
+
+

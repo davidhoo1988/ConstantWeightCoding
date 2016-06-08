@@ -1,0 +1,15 @@
+//! **************************************************************************
+// Written by: Map O.61xd on Tue Dec 22 17:35:00 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+PIN multiplier/blk00000003_pins<64> = BEL "multiplier/blk00000003" PINNAME
+        CLK;
+TIMEGRP clk = BEL "theta_0" BEL "theta_1" BEL "theta_2" BEL "theta_3" BEL
+        "theta_4" BEL "d_2" BEL "d_3" BEL "d_4" BEL "d_5" BEL "d_6" BEL "d_7"
+        BEL "d_8" BEL "u_minus_1_0" BEL "u_minus_1_1" BEL "u_minus_1_2" BEL
+        "d_9" BEL "d_10" BEL "u_minus_1_3" BEL "clk_BUFGP/BUFG" PIN
+        "multiplier/blk00000003_pins<64>";
+TS_clk = PERIOD TIMEGRP "clk" 3.333 ns HIGH 50%;
+SCHEMATIC END;
+

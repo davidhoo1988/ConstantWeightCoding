@@ -1,0 +1,21 @@
+# Output products list for <fifo_16_to_16>
+fifo_16_to_16.asy
+fifo_16_to_16.ngc
+fifo_16_to_16.sym
+fifo_16_to_16.v
+fifo_16_to_16.veo
+fifo_16_to_16.xco
+fifo_16_to_16_flist.txt
+fifo_16_to_16_ste\example_design\fifo_16_to_16_top.ucf
+fifo_16_to_16_ste\example_design\fifo_16_to_16_top.vhd
+fifo_16_to_16_ste\example_design\fifo_16_to_16_top.xdc
+fifo_16_to_16_ste\implement\implement.bat
+fifo_16_to_16_ste\implement\implement.sh
+fifo_16_to_16_ste\implement\planAhead_rdn.bat
+fifo_16_to_16_ste\implement\planAhead_rdn.sh
+fifo_16_to_16_ste\implement\planAhead_rdn.tcl
+fifo_16_to_16_ste\implement\xst.prj
+fifo_16_to_16_ste\implement\xst.scr
+fifo_16_to_16_xmdf.tcl
+fifo_generator_ug175.pdf
+fifo_generator_v8_2_readme.txt

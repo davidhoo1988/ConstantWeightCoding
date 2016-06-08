@@ -1,0 +1,798 @@
+Release 13.2 - xst O.61xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> Reading design: decoder_main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "decoder_main.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "decoder_main"
+Output Format                      : NGC
+Target Device                      : xc6vlx240t-3-ff784
+
+---- Source Options
+Top Module Name                    : decoder_main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file \"C:\Users\RSPC\Dropbox\ConstantWeightCoding\hardware\10-38\decoder\ipcore_dir\mul_11bits.v\" into library work
+Parsing module <mul_11bits>.
+Analyzing Verilog file \"C:\Users\RSPC\Dropbox\ConstantWeightCoding\hardware\10-38\decoder\best_d.v\" into library work
+Parsing module <best_d>.
+Analyzing Verilog file \"C:\Users\RSPC\Dropbox\ConstantWeightCoding\hardware\10-38\decoder\decoder_main.v\" into library work
+Parsing module <decoder_main>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <decoder_main>.
+
+Elaborating module <best_d>.
+
+Elaborating module <mul_11bits>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <decoder_main>.
+    Related source file is "c:/users/rspc/dropbox/constantweightcoding/hardware/10-38/decoder/decoder_main.v".
+        init = 3'b000
+        best_d = 3'b001
+        delta_geq_d = 3'b010
+        delta_lt_d = 3'b011
+    Found 3-bit register for signal <state>.
+    Found 11-bit register for signal <n>.
+    Found 6-bit register for signal <t>.
+    Found 1-bit register for signal <ready>.
+    Found 1-bit register for signal <done>.
+    Found 1-bit register for signal <bin_msg>.
+    Found 9-bit register for signal <i>.
+    Found 4-bit register for signal <cnt>.
+    Found 5-bit subtractor for signal <GND_1_o_GND_1_o_sub_46_OUT> created at line 235.
+    Found 11-bit subtractor for signal <geq_update_n> created at line 329.
+    Found 11-bit subtractor for signal <lt_update_n_part1> created at line 332.
+    Found 11-bit subtractor for signal <lt_update_n_part2> created at line 333.
+    Found 6-bit subtractor for signal <lt_update_t> created at line 334.
+    Found 4-bit adder for signal <cnt[3]_GND_1_o_add_1_OUT> created at line 40.
+    Found 1-bit 3-to-1 multiplexer for signal <_n0276> created at line 120.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0294> created at line 90.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0303> created at line 90.
+    Found 1-bit 3-to-1 multiplexer for signal <_n0319> created at line 120.
+    Found 1-bit 3-to-1 multiplexer for signal <_n0344> created at line 120.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0353> created at line 90.
+WARNING:Xst:737 - Found 1-bit latch for signal <next_state<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <next_state<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <next_state<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <n_rst>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <n_sel<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <n_sel<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <t_sel>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <read_geq>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <read_lt>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readfifo>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rdy_sel>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <done_sel>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <clr>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shift_sel<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shift_sel<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <i_rst>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <geq_done>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lt_done>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <msg_sel<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <msg_sel<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 11-bit comparator greater for signal <n[10]_GND_1_o_LessThan_25_o> created at line 154
+    Found 11-bit comparator equal for signal <n[10]_GND_1_o_equal_26_o> created at line 154
+    Found 10-bit comparator greater for signal <d[9]_cw_word[9]_LessThan_30_o> created at line 162
+    Found 10-bit comparator equal for signal <cw_word[9]_d[9]_equal_31_o> created at line 162
+    Found 10-bit comparator greater for signal <cw_word[9]_d[9]_LessThan_33_o> created at line 172
+    Found 32-bit comparator equal for signal <GND_1_o_GND_1_o_equal_47_o> created at line 235
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  36 D-type flip-flop(s).
+	inferred  20 Latch(s).
+	inferred   6 Comparator(s).
+	inferred  33 Multiplexer(s).
+Unit <decoder_main> synthesized.
+
+Synthesizing Unit <best_d>.
+    Related source file is "c:/users/rspc/dropbox/constantweightcoding/hardware/10-38/decoder/best_d.v".
+    Found 10-bit register for signal <d>.
+    Found 4-bit register for signal <u>.
+    Found 5-bit register for signal <theta>.
+    Found 6-bit comparator greater for signal <n0000> created at line 33
+    Found 6-bit comparator greater for signal <n0002> created at line 35
+    Found 6-bit comparator lessequal for signal <n0004> created at line 37
+    Found 6-bit comparator lessequal for signal <n0006> created at line 39
+    Found 11-bit comparator greater for signal <GND_26_o_p[15]_LessThan_20_o> created at line 54
+    Found 11-bit comparator greater for signal <GND_26_o_p[15]_LessThan_21_o> created at line 58
+    Found 11-bit comparator greater for signal <GND_26_o_p[15]_LessThan_22_o> created at line 62
+    Found 11-bit comparator greater for signal <GND_26_o_p[15]_LessThan_23_o> created at line 66
+    Found 11-bit comparator greater for signal <GND_26_o_p[15]_LessThan_24_o> created at line 70
+    Found 11-bit comparator greater for signal <GND_26_o_p[15]_LessThan_25_o> created at line 74
+    Found 11-bit comparator greater for signal <GND_26_o_p[15]_LessThan_26_o> created at line 78
+    Summary:
+	inferred  19 D-type flip-flop(s).
+	inferred  11 Comparator(s).
+	inferred  13 Multiplexer(s).
+Unit <best_d> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 11-bit subtractor                                     : 1
+ 4-bit adder                                           : 1
+ 5-bit subtractor                                      : 1
+ 6-bit subtractor                                      : 1
+# Registers                                            : 11
+ 1-bit register                                        : 3
+ 10-bit register                                       : 1
+ 11-bit register                                       : 1
+ 3-bit register                                        : 1
+ 4-bit register                                        : 2
+ 5-bit register                                        : 1
+ 6-bit register                                        : 1
+ 9-bit register                                        : 1
+# Latches                                              : 20
+ 1-bit latch                                           : 20
+# Comparators                                          : 17
+ 10-bit comparator equal                               : 1
+ 10-bit comparator greater                             : 2
+ 11-bit comparator equal                               : 1
+ 11-bit comparator greater                             : 8
+ 32-bit comparator equal                               : 1
+ 6-bit comparator greater                              : 2
+ 6-bit comparator lessequal                            : 2
+# Multiplexers                                         : 46
+ 1-bit 2-to-1 multiplexer                              : 13
+ 1-bit 3-to-1 multiplexer                              : 3
+ 1-bit 4-to-1 multiplexer                              : 3
+ 10-bit 2-to-1 multiplexer                             : 5
+ 11-bit 2-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 9
+ 3-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 5
+ 5-bit 2-to-1 multiplexer                              : 3
+ 9-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/mul_11bits.ngc>.
+Loading core <mul_11bits> for timing and area information for instance <multiplier>.
+
+Synthesizing (advanced) Unit <decoder_main>.
+The following registers are absorbed into accumulator <n>: 1 register on signal <n>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+The following registers are absorbed into counter <t>: 1 register on signal <t>.
+Unit <decoder_main> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 5-bit subtractor                                      : 1
+# Counters                                             : 2
+ 4-bit up counter                                      : 1
+ 6-bit down counter                                    : 1
+# Accumulators                                         : 1
+ 11-bit down accumulator                               : 1
+# Registers                                            : 34
+ Flip-Flops                                            : 34
+# Comparators                                          : 17
+ 10-bit comparator equal                               : 1
+ 10-bit comparator greater                             : 2
+ 11-bit comparator equal                               : 1
+ 11-bit comparator greater                             : 8
+ 32-bit comparator equal                               : 1
+ 6-bit comparator greater                              : 2
+ 6-bit comparator lessequal                            : 2
+# Multiplexers                                         : 46
+ 1-bit 2-to-1 multiplexer                              : 13
+ 1-bit 3-to-1 multiplexer                              : 3
+ 1-bit 4-to-1 multiplexer                              : 3
+ 10-bit 2-to-1 multiplexer                             : 5
+ 11-bit 2-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 9
+ 3-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 5
+ 5-bit 2-to-1 multiplexer                              : 3
+ 9-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <d_0> (without init value) has a constant value of 0 in block <best_d>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_1> (without init value) has a constant value of 0 in block <best_d>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <next_state_2> (without init value) has a constant value of 0 in block <decoder_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <state_2> (without init value) has a constant value of 0 in block <decoder_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2016 - Found a loop when searching source clock on port '_n0278:_n0278'
+Last warning will be issued only once.
+
+Optimizing unit <decoder_main> ...
+WARNING:Xst:1294 - Latch <t_sel> is equivalent to a wire in block <decoder_main>.
+WARNING:Xst:1294 - Latch <rdy_sel> is equivalent to a wire in block <decoder_main>.
+WARNING:Xst:1294 - Latch <n_sel_0> is equivalent to a wire in block <decoder_main>.
+WARNING:Xst:1294 - Latch <n_sel_1> is equivalent to a wire in block <decoder_main>.
+WARNING:Xst:1294 - Latch <next_state_1> is equivalent to a wire in block <decoder_main>.
+WARNING:Xst:1294 - Latch <next_state_0> is equivalent to a wire in block <decoder_main>.
+
+Optimizing unit <best_d> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block decoder_main, actual ratio is 0.
+FlipFlop done has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 53
+ Flip-Flops                                            : 53
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : decoder_main.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 172
+#      GND                         : 2
+#      INV                         : 5
+#      LUT2                        : 20
+#      LUT3                        : 19
+#      LUT4                        : 28
+#      LUT5                        : 28
+#      LUT6                        : 37
+#      MUXCY                       : 20
+#      VCC                         : 2
+#      XORCY                       : 11
+# FlipFlops/Latches                : 66
+#      FD                          : 3
+#      FDC                         : 2
+#      FDR                         : 19
+#      FDRE                        : 22
+#      FDS                         : 3
+#      FDSE                        : 4
+#      LD                          : 13
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 17
+#      IBUF                        : 13
+#      OBUF                        : 4
+# DSPs                             : 1
+#      DSP48E1                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vlx240tff784-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              64  out of  301440     0%  
+ Number of Slice LUTs:                  137  out of  150720     0%  
+    Number used as Logic:               137  out of  150720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    139
+   Number with an unused Flip Flop:      75  out of    139    53%  
+   Number with an unused LUT:             2  out of    139     1%  
+   Number of fully used LUT-FF pairs:    62  out of    139    44%  
+   Number of unique control sets:        18
+
+IO Utilization: 
+ Number of IOs:                          18
+ Number of bonded IOBs:                  18  out of    400     4%  
+    IOB Flip Flops/Latches:               2
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+ Number of DSP48E1s:                      1  out of    768     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------------------+------------------------+-------+
+Clock Signal                                                     | Clock buffer(FF name)  | Load  |
+-----------------------------------------------------------------+------------------------+-------+
+_n0278(_n02781:O)                                                | NONE(*)(geq_done)      | 1     |
+state[2]_PWR_16_o_Select_107_o(state[2]_PWR_16_o_Select_107_o1:O)| NONE(*)(readfifo)      | 1     |
+state[2]_PWR_14_o_Select_103_o(state[2]_PWR_14_o_Select_103_o1:O)| NONE(*)(read_geq)      | 2     |
+state_1                                                          | NONE(n_rst)            | 3     |
+_n0284(_n028411:O)                                               | NONE(*)(msg_sel_1)     | 2     |
+state_0                                                          | NONE(lt_done)          | 1     |
+clk                                                              | BUFGP                  | 54    |
+_n0326(_n03261:O)                                                | NONE(*)(clr)           | 1     |
+_n0282(_n02821:O)                                                | NONE(*)(shift_sel_0)   | 2     |
+-----------------------------------------------------------------+------------------------+-------+
+(*) These 6 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.060ns (Maximum Frequency: 326.755MHz)
+   Minimum input arrival time before clock: 2.596ns
+   Maximum output required time after clock: 0.564ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.060ns (frequency: 326.755MHz)
+  Total number of paths / destination ports: 2004 / 94
+-------------------------------------------------------------------------
+Delay:               3.060ns (Levels of Logic = 1)
+  Source:            n_5 (FF)
+  Destination:       uut/multiplier/blk00000003 (DSP)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: n_5 to uut/multiplier/blk00000003
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             6   0.280   0.302  n_5 (n_5)
+     begin scope: 'uut/multiplier:a<5>'
+     DSP48E1:B5                2.478          blk00000003
+    ----------------------------------------
+    Total                      3.060ns (2.758ns logic, 0.302ns route)
+                                       (90.1% logic, 9.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state[2]_PWR_16_o_Select_107_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.671ns (Levels of Logic = 2)
+  Source:            fifoempty (PAD)
+  Destination:       readfifo (LATCH)
+  Destination Clock: state[2]_PWR_16_o_Select_107_o falling
+
+  Data Path: fifoempty to readfifo
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.003   0.615  fifoempty_IBUF (fifoempty_IBUF)
+     LUT5:I0->O            1   0.053   0.000  state[2]_GND_1_o_Select_106_o1 (state[2]_GND_1_o_Select_106_o)
+     LD:D                     -0.043          readfifo
+    ----------------------------------------
+    Total                      0.671ns (0.056ns logic, 0.615ns route)
+                                       (8.3% logic, 91.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state[2]_PWR_14_o_Select_103_o'
+  Total number of paths / destination ports: 76 / 2
+-------------------------------------------------------------------------
+Offset:              2.182ns (Levels of Logic = 8)
+  Source:            cw_word<2> (PAD)
+  Destination:       read_lt (LATCH)
+  Destination Clock: state[2]_PWR_14_o_Select_103_o falling
+
+  Data Path: cw_word<2> to read_lt
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.003   0.509  cw_word_2_IBUF (cw_word_2_IBUF)
+     LUT4:I0->O            1   0.053   0.000  Mcompar_d[9]_cw_word[9]_LessThan_30_o_lut<1> (Mcompar_d[9]_cw_word[9]_LessThan_30_o_lut<1>)
+     MUXCY:S->O            1   0.219   0.000  Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<1> (Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<1>)
+     MUXCY:CI->O           1   0.015   0.000  Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<2> (Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<2>)
+     MUXCY:CI->O           1   0.015   0.000  Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<3> (Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<3>)
+     MUXCY:CI->O           1   0.169   0.481  Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<4> (Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<4>)
+     LUT6:I2->O            5   0.053   0.611  GND_1_o_d[9]_AND_7_o4 (GND_1_o_d[9]_AND_7_o)
+     LUT6:I1->O            2   0.053   0.000  Mmux__n0276121 (Mmux__n027612)
+     LD:D                     -0.043          read_lt
+    ----------------------------------------
+    Total                      2.182ns (0.580ns logic, 1.602ns route)
+                                       (26.6% logic, 73.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state_1'
+  Total number of paths / destination ports: 49 / 1
+-------------------------------------------------------------------------
+Offset:              2.481ns (Levels of Logic = 9)
+  Source:            cw_word<2> (PAD)
+  Destination:       i_rst (LATCH)
+  Destination Clock: state_1 rising
+
+  Data Path: cw_word<2> to i_rst
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.003   0.509  cw_word_2_IBUF (cw_word_2_IBUF)
+     LUT4:I0->O            1   0.053   0.000  Mcompar_d[9]_cw_word[9]_LessThan_30_o_lut<1> (Mcompar_d[9]_cw_word[9]_LessThan_30_o_lut<1>)
+     MUXCY:S->O            1   0.219   0.000  Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<1> (Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<1>)
+     MUXCY:CI->O           1   0.015   0.000  Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<2> (Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<2>)
+     MUXCY:CI->O           1   0.015   0.000  Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<3> (Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<3>)
+     MUXCY:CI->O           1   0.169   0.481  Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<4> (Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<4>)
+     LUT6:I2->O            5   0.053   0.376  GND_1_o_d[9]_AND_7_o4 (GND_1_o_d[9]_AND_7_o)
+     LUT5:I3->O            1   0.053   0.481  state[2]_PWR_1_o_Select_118_o_SW0 (N2)
+     LUT6:I2->O            1   0.053   0.000  state[2]_PWR_1_o_Select_118_o (state[2]_PWR_1_o_Select_118_o)
+     LD:D                     -0.043          i_rst
+    ----------------------------------------
+    Total                      2.481ns (0.633ns logic, 1.848ns route)
+                                       (25.5% logic, 74.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 126 / 24
+-------------------------------------------------------------------------
+Offset:              1.947ns (Levels of Logic = 8)
+  Source:            cw_word<2> (PAD)
+  Destination:       ready (FF)
+  Destination Clock: clk rising
+
+  Data Path: cw_word<2> to ready
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.003   0.509  cw_word_2_IBUF (cw_word_2_IBUF)
+     LUT4:I0->O            1   0.053   0.000  Mcompar_d[9]_cw_word[9]_LessThan_30_o_lut<1> (Mcompar_d[9]_cw_word[9]_LessThan_30_o_lut<1>)
+     MUXCY:S->O            1   0.219   0.000  Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<1> (Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<1>)
+     MUXCY:CI->O           1   0.015   0.000  Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<2> (Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<2>)
+     MUXCY:CI->O           1   0.015   0.000  Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<3> (Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<3>)
+     MUXCY:CI->O           1   0.169   0.481  Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<4> (Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<4>)
+     LUT6:I2->O            5   0.053   0.376  GND_1_o_d[9]_AND_7_o4 (GND_1_o_d[9]_AND_7_o)
+     LUT6:I4->O            1   0.053   0.000  state[2]_GND_1_o_Select_108_o3 (rdy_sel)
+     FD:D                     -0.012          ready
+    ----------------------------------------
+    Total                      1.947ns (0.580ns logic, 1.367ns route)
+                                       (29.8% logic, 70.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock '_n0326'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.910ns (Levels of Logic = 3)
+  Source:            fifoempty (PAD)
+  Destination:       clr (LATCH)
+  Destination Clock: _n0326 falling
+
+  Data Path: fifoempty to clr
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.003   0.319  fifoempty_IBUF (fifoempty_IBUF)
+     LUT5:I4->O            1   0.053   0.481  Mmux__n03191_SW0 (N4)
+     LUT6:I2->O            1   0.053   0.000  Mmux__n03191 (_n0319)
+     LD:D                     -0.043          clr
+    ----------------------------------------
+    Total                      0.910ns (0.109ns logic, 0.801ns route)
+                                       (12.0% logic, 88.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock '_n0282'
+  Total number of paths / destination ports: 48 / 1
+-------------------------------------------------------------------------
+Offset:              2.596ns (Levels of Logic = 9)
+  Source:            cw_word<2> (PAD)
+  Destination:       shift_sel_0 (LATCH)
+  Destination Clock: _n0282 falling
+
+  Data Path: cw_word<2> to shift_sel_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.003   0.509  cw_word_2_IBUF (cw_word_2_IBUF)
+     LUT4:I0->O            1   0.053   0.000  Mcompar_d[9]_cw_word[9]_LessThan_30_o_lut<1> (Mcompar_d[9]_cw_word[9]_LessThan_30_o_lut<1>)
+     MUXCY:S->O            1   0.219   0.000  Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<1> (Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<1>)
+     MUXCY:CI->O           1   0.015   0.000  Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<2> (Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<2>)
+     MUXCY:CI->O           1   0.015   0.000  Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<3> (Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<3>)
+     MUXCY:CI->O           1   0.169   0.481  Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<4> (Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<4>)
+     LUT6:I2->O            5   0.053   0.611  GND_1_o_d[9]_AND_7_o4 (GND_1_o_d[9]_AND_7_o)
+     LUT6:I1->O            2   0.053   0.361  Mmux__n0276121 (Mmux__n027612)
+     LUT2:I0->O            1   0.053   0.000  Mmux__n027613 (_n0276)
+     LD:D                     -0.043          shift_sel_0
+    ----------------------------------------
+    Total                      2.596ns (0.633ns logic, 1.963ns route)
+                                       (24.4% logic, 75.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock '_n0284'
+  Total number of paths / destination ports: 29 / 1
+-------------------------------------------------------------------------
+Offset:              2.184ns (Levels of Logic = 8)
+  Source:            cw_word<2> (PAD)
+  Destination:       msg_sel_0 (LATCH)
+  Destination Clock: _n0284 falling
+
+  Data Path: cw_word<2> to msg_sel_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.003   0.509  cw_word_2_IBUF (cw_word_2_IBUF)
+     LUT4:I0->O            1   0.053   0.000  Mcompar_d[9]_cw_word[9]_LessThan_30_o_lut<1> (Mcompar_d[9]_cw_word[9]_LessThan_30_o_lut<1>)
+     MUXCY:S->O            1   0.219   0.000  Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<1> (Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<1>)
+     MUXCY:CI->O           1   0.015   0.000  Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<2> (Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<2>)
+     MUXCY:CI->O           1   0.015   0.000  Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<3> (Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<3>)
+     MUXCY:CI->O           1   0.169   0.481  Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<4> (Mcompar_d[9]_cw_word[9]_LessThan_30_o_cy<4>)
+     LUT6:I2->O            5   0.053   0.613  GND_1_o_d[9]_AND_7_o4 (GND_1_o_d[9]_AND_7_o)
+     LUT6:I0->O            1   0.053   0.000  Mmux__n033511 (_n0335)
+     LD:D                     -0.043          msg_sel_0
+    ----------------------------------------
+    Total                      2.184ns (0.580ns logic, 1.604ns route)
+                                       (26.6% logic, 73.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'state[2]_PWR_16_o_Select_107_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.564ns (Levels of Logic = 1)
+  Source:            readfifo (LATCH)
+  Destination:       readfifo (PAD)
+  Source Clock:      state[2]_PWR_16_o_Select_107_o falling
+
+  Data Path: readfifo to readfifo
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.282   0.279  readfifo (readfifo_OBUF)
+     OBUF:I->O                 0.003          readfifo_OBUF (readfifo)
+    ----------------------------------------
+    Total                      0.564ns (0.285ns logic, 0.279ns route)
+                                       (50.5% logic, 49.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              0.562ns (Levels of Logic = 1)
+  Source:            bin_msg (FF)
+  Destination:       bin_msg (PAD)
+  Source Clock:      clk rising
+
+  Data Path: bin_msg to bin_msg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.280   0.279  bin_msg (bin_msg_OBUF)
+     OBUF:I->O                 0.003          bin_msg_OBUF (bin_msg)
+    ----------------------------------------
+    Total                      0.562ns (0.283ns logic, 0.279ns route)
+                                       (50.3% logic, 49.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock _n0278
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    0.796|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock _n0282
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.820|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock _n0284
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.457|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock _n0326
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    1.753|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+------------------------------+---------+---------+---------+---------+
+                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------+---------+---------+---------+---------+
+_n0278                        |         |    0.820|         |         |
+_n0282                        |         |    1.199|         |         |
+_n0284                        |         |    1.296|         |         |
+_n0326                        |         |    0.895|         |         |
+clk                           |    3.060|         |         |         |
+state[2]_PWR_14_o_Select_103_o|         |    1.227|         |         |
+state_0                       |         |    0.692|         |         |
+state_1                       |    0.955|         |         |         |
+------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock state[2]_PWR_14_o_Select_103_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.406|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock state[2]_PWR_16_o_Select_107_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    1.203|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock state_0
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    1.753|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock state_1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.705|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.17 secs
+ 
+--> 
+
+Total memory usage is 271248 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   30 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

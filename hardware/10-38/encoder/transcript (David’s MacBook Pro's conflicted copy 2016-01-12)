@@ -1,0 +1,62 @@
+# Reading C:/Modelsim_10.1c/tcl/vsim/pref.tcl 
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {best_d_tb.fdo} 
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module mul_11bits
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	mul_11bits
+# 	glbl
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module best_d
+# 
+# Top level modules:
+# 	best_d
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module best_d_tb
+# 
+# Top level modules:
+# 	best_d_tb
+# Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# vsim -L xilinxcorelib_ver -L unisims_ver -L secureip -lib work -voptargs=\"+acc\" -t 1ps work.best_d_tb glbl 
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# Loading work.best_d_tb(fast)
+# Loading work.best_d(fast)
+# Loading work.mul_11bits(fast)
+# Loading unisims_ver.GND(fast)
+# Loading unisims_ver.XORCY(fast)
+# Loading unisims_ver.MUXCY(fast)
+# Loading unisims_ver.MULT_AND(fast)
+# Loading unisims_ver.LUT2(fast)
+# Loading unisims_ver.FD(fast)
+# Loading unisims_ver.LUT4(fast)
+# Loading unisims_ver.LUT2(fast__1)
+# Loading unisims_ver.LUT1(fast)
+# Loading unisims_ver.LUT3(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: RSPC  Hostname: RSPC_DR_RAYCHEN  ProcessID: 484852
+# 
+#           Attempting to use alternate WLF file "./wlfttfh68a".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlfttfh68a
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree

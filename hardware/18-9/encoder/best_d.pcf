@@ -1,0 +1,23 @@
+//! **************************************************************************
+// Written by: Map O.61xd on Wed Dec 23 11:26:55 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+TIMEGRP clk = BEL "theta_0" BEL "theta_1" BEL "theta_2" BEL "theta_3" BEL
+        "d_2" BEL "d_3" BEL "d_4" BEL "d_5" BEL "d_6" BEL "d_7" BEL "d_8" BEL
+        "d_9" BEL "d_10" BEL "d_11" BEL "d_12" BEL "d_13" BEL "u_minus_1_0"
+        BEL "u_minus_1_1" BEL "u_minus_1_2" BEL "u_minus_1_3" BEL "d_16" BEL
+        "d_17" BEL "d_15" BEL "d_14" BEL "clk_BUFGP/BUFG" BEL
+        "multiplier/blk000000b8" BEL "multiplier/blk000000b9" BEL
+        "multiplier/blk000000ba" BEL "multiplier/blk000000bb" BEL
+        "multiplier/blk000000bc" BEL "multiplier/blk000000bd" BEL
+        "multiplier/blk000000be" BEL "multiplier/blk000000bf" BEL
+        "multiplier/blk000000c0" BEL "multiplier/blk000000c1" BEL
+        "multiplier/blk000000c2" BEL "multiplier/blk000000c3" BEL
+        "multiplier/blk000000c4" BEL "multiplier/blk000000c5" BEL
+        "multiplier/blk000000c6" BEL "multiplier/blk000000c7" BEL
+        "multiplier/blk000000c8" BEL "multiplier/blk000000c9" BEL
+        "multiplier/blk000000ca";
+TS_clk = PERIOD TIMEGRP "clk" 3.333 ns HIGH 50%;
+SCHEMATIC END;
+

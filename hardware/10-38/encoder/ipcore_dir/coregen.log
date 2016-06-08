@@ -1,0 +1,67 @@
+CoreGen has not been configured with any user repositories.
+CoreGen has been configured with the following Xilinx repositories:
+ - 'C:\Xilinx\13.2\ISE_DS\ISE\coregen\' [reloaded]
+INFO:sim - Generating component instance 'mul_11bits' of
+   'xilinx.com:ip:mult_gen:11.2' from
+   'C:\Xilinx\13.2\ISE_DS\ISE\coregen\ip\xilinx\dsp\com\xilinx\ip\mult_gen_v11_2
+   \component.xml'.
+WARNING:sim - Verilog simulation file type 'Behavioral' is not valid for this
+   core. Overriding with simulation file type 'Structural'.
+Resolving generics for 'mul_11bits'...
+WARNING:sim - Verilog simulation file type 'Behavioral' is not valid for this
+   core. Overriding with simulation file type 'Structural'.
+Applying external generics to 'mul_11bits'...
+Delivering associated files for 'mul_11bits'...
+Generating implementation netlist for 'mul_11bits'...
+INFO:sim - Pre-processing HDL files for 'mul_11bits'...
+Running synthesis for 'mul_11bits'
+Writing VEO instantiation template for 'mul_11bits'...
+WARNING:sim - Verilog simulation file type 'Behavioral' is not valid for this
+   core. Overriding with simulation file type 'Structural'.
+Writing Verilog structural simulation model for 'mul_11bits'...
+WARNING:sim - Verilog simulation file type 'Behavioral' is not valid for this
+   core. Overriding with simulation file type 'Structural'.
+Delivered 2 files into directory
+C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/encoder/ipcore_dir/tmp
+/_cg/mul_11bits
+Generating ASY schematic symbol...
+Generating SYM schematic symbol for 'mul_11bits'...
+Generating metadata file...
+Generating metadata file...
+Generating ISE project...
+WARNING:coreutil - TclTasksC:project_006: Exception detected while executing
+   [project set].
+   Type [help project set] for more information.
+       while executing
+   "project set $key $value"
+       ("foreach" body line 5)
+       invoked from within
+   "foreach {xco_key ise_key} $xco2ise_key_mapping {
+         set key     $ise_key
+         set value   [set xcovals($xco_key)]
+         project set $key $value
+    ..."
+       (procedure "xco2ise" line 24)
+       invoked from within
+   "xco2ise $xcofile"
+       (procedure "core2ise" line 49)
+       invoked from within
+   "core2ise $corename"
+       invoked from within
+   "if {[info exists argc]} {
+      if {$argc==1} {
+         set corename [lindex $argv 0]
+         core2ise $corename
+      } elseif {$argc==2} {
+         set corepath ..."
+       (file "C:\Xilinx\13.2\ISE_DS\ISE\coregen\tcl\core2ise.tcl" line 250)
+WARNING:coreutil - Process returned a non-zero exit code '1'
+WARNING:sim - ISE project './tmp/_cg/mul_11bits.xise' will not be released.
+WARNING:sim - ISE file could not be generated.
+Generating README file...
+Generating FLIST file...
+INFO:sim - Finished FLIST file generation.
+Launching README viewer...
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'mul_11bits'.

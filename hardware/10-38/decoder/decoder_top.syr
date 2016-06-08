@@ -1,0 +1,717 @@
+Release 13.2 - xst O.61xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> Reading design: decoder_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "decoder_top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "decoder_top"
+Output Format                      : NGC
+Target Device                      : xc6vlx240t-3-ff784
+
+---- Source Options
+Top Module Name                    : decoder_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file \"C:\Users\RSPC\Dropbox\ConstantWeightCoding\hardware\10-38\decoder\ipcore_dir\mul_11bits.v\" into library work
+Parsing module <mul_11bits>.
+Analyzing Verilog file \"C:\Users\RSPC\Dropbox\ConstantWeightCoding\hardware\10-38\decoder\best_d.v\" into library work
+Parsing module <best_d>.
+Analyzing Verilog file \"C:\Users\RSPC\Dropbox\ConstantWeightCoding\hardware\10-38\decoder\ipcore_dir\fifo_10_to_10.v\" into library work
+Parsing module <fifo_10_to_10>.
+Analyzing Verilog file \"C:\Users\RSPC\Dropbox\ConstantWeightCoding\hardware\10-38\decoder\decoder_main.v\" into library work
+Parsing module <decoder_main>.
+WARNING:HDLCompiler:693 - "C:\Users\RSPC\Dropbox\ConstantWeightCoding\hardware\10-38\decoder\decoder_main.v" Line 62: Parameter declaration becomes local in decoder_main with formal parameter declaration list
+Analyzing Verilog file \"C:\Users\RSPC\Dropbox\ConstantWeightCoding\hardware\10-38\decoder\decoder_top.v\" into library work
+Parsing module <decoder_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <decoder_top>.
+
+Elaborating module <fifo_10_to_10>.
+WARNING:HDLCompiler:1499 - "C:\Users\RSPC\Dropbox\ConstantWeightCoding\hardware\10-38\decoder\ipcore_dir\fifo_10_to_10.v" Line 39: Empty module <fifo_10_to_10> remains a black box.
+WARNING:HDLCompiler:1127 - "C:\Users\RSPC\Dropbox\ConstantWeightCoding\hardware\10-38\decoder\decoder_top.v" Line 50: Assignment to full ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\RSPC\Dropbox\ConstantWeightCoding\hardware\10-38\decoder\decoder_top.v" Line 52: Assignment to data_count ignored, since the identifier is never used
+
+Elaborating module <decoder_main>.
+
+Elaborating module <best_d>.
+
+Elaborating module <mul_11bits>.
+WARNING:HDLCompiler:634 - "C:\Users\RSPC\Dropbox\ConstantWeightCoding\hardware\10-38\decoder\decoder_main.v" Line 90: Net <lt_update_delta[9]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <decoder_top>.
+    Related source file is "c:/users/rspc/dropbox/constantweightcoding/hardware/10-38/decoder/decoder_top.v".
+        CW_W = 10
+INFO:Xst:3210 - "c:/users/rspc/dropbox/constantweightcoding/hardware/10-38/decoder/decoder_top.v" line 43: Output port <data_count> of the instance <fifo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/rspc/dropbox/constantweightcoding/hardware/10-38/decoder/decoder_top.v" line 43: Output port <full> of the instance <fifo> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <decoder_top> synthesized.
+
+Synthesizing Unit <decoder_main>.
+    Related source file is "c:/users/rspc/dropbox/constantweightcoding/hardware/10-38/decoder/decoder_main.v".
+        CW_W = 10
+        T_W = 6
+        U_W = 4
+WARNING:Xst:653 - Signal <lt_update_delta> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 3-bit register for signal <state>.
+    Found 11-bit register for signal <n>.
+    Found 10-bit register for signal <delta>.
+    Found 6-bit register for signal <t>.
+    Found 1-bit register for signal <ready>.
+    Found 1-bit register for signal <done>.
+    Found 1-bit register for signal <bin_msg>.
+    Found 4-bit register for signal <u_reg>.
+    Found 9-bit register for signal <i>.
+    Found 4-bit register for signal <cnt>.
+    Found 5-bit subtractor for signal <GND_3_o_GND_3_o_sub_54_OUT> created at line 261.
+    Found 11-bit subtractor for signal <geq_update_n> created at line 381.
+    Found 10-bit subtractor for signal <geq_update_delta> created at line 382.
+    Found 11-bit subtractor for signal <lt_update_n_part1> created at line 384.
+    Found 11-bit subtractor for signal <lt_update_n_part2> created at line 385.
+    Found 6-bit subtractor for signal <lt_update_t> created at line 386.
+    Found 4-bit adder for signal <cnt[3]_GND_3_o_add_1_OUT> created at line 48.
+    Found 1-bit 12-to-1 multiplexer for signal <msg_sel[3]_GND_3_o_Mux_172_o> created at line 336.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0353> created at line 129.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0361> created at line 129.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0370> created at line 99.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0386> created at line 129.
+    Found 1-bit 3-to-1 multiplexer for signal <_n0395> created at line 129.
+    Found 1-bit 3-to-1 multiplexer for signal <_n0404> created at line 129.
+    Found 1-bit 3-to-1 multiplexer for signal <_n0413> created at line 129.
+    Found 1-bit 3-to-1 multiplexer for signal <_n0422> created at line 129.
+    Found 1-bit 3-to-1 multiplexer for signal <_n0431> created at line 129.
+    Found 1-bit 3-to-1 multiplexer for signal <_n0440> created at line 129.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0447> created at line 129.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0456> created at line 99.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0465> created at line 99.
+    Found 1-bit 4-to-1 multiplexer for signal <_n0481> created at line 129.
+WARNING:Xst:737 - Found 1-bit latch for signal <next_state<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <next_state<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <next_state<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <n_rst>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <n_sel<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <n_sel<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <t_sel>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <delta_sel<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <delta_sel<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <read_geq>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <read_lt>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <readfifo>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rdy_sel>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <done_sel>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <clr>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shift_sel<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <shift_sel<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <i_rst>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <geq_done>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lt_done>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <u_sel>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <msg_sel<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <msg_sel<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <msg_sel<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <msg_sel<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 11-bit comparator greater for signal <n[10]_GND_3_o_LessThan_25_o> created at line 169
+    Found 11-bit comparator equal for signal <n[10]_GND_3_o_equal_26_o> created at line 169
+    Found 10-bit comparator greater for signal <d[9]_delta[9]_LessThan_33_o> created at line 184
+    Found 10-bit comparator equal for signal <delta[9]_d[9]_equal_34_o> created at line 184
+    Found 10-bit comparator greater for signal <delta[9]_d[9]_LessThan_36_o> created at line 194
+    Found 32-bit comparator equal for signal <GND_3_o_GND_3_o_equal_55_o> created at line 261
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred  50 D-type flip-flop(s).
+	inferred  25 Latch(s).
+	inferred   6 Comparator(s).
+	inferred  62 Multiplexer(s).
+Unit <decoder_main> synthesized.
+
+Synthesizing Unit <best_d>.
+    Related source file is "c:/users/rspc/dropbox/constantweightcoding/hardware/10-38/decoder/best_d.v".
+    Found 10-bit register for signal <d>.
+    Found 4-bit register for signal <u>.
+    Found 5-bit register for signal <theta>.
+    Found 6-bit comparator greater for signal <n0000> created at line 33
+    Found 6-bit comparator lessequal for signal <n0002> created at line 35
+    Found 6-bit comparator lessequal for signal <n0004> created at line 37
+    Found 6-bit comparator lessequal for signal <n0006> created at line 39
+    Found 11-bit comparator greater for signal <GND_32_o_p[15]_LessThan_20_o> created at line 54
+    Found 11-bit comparator greater for signal <GND_32_o_p[15]_LessThan_21_o> created at line 58
+    Found 11-bit comparator greater for signal <GND_32_o_p[15]_LessThan_22_o> created at line 62
+    Found 11-bit comparator greater for signal <GND_32_o_p[15]_LessThan_23_o> created at line 66
+    Found 11-bit comparator greater for signal <GND_32_o_p[15]_LessThan_24_o> created at line 70
+    Found 11-bit comparator greater for signal <GND_32_o_p[15]_LessThan_25_o> created at line 74
+    Found 11-bit comparator greater for signal <GND_32_o_p[15]_LessThan_26_o> created at line 78
+    Summary:
+	inferred  19 D-type flip-flop(s).
+	inferred  11 Comparator(s).
+	inferred  16 Multiplexer(s).
+Unit <best_d> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 5
+ 10-bit subtractor                                     : 1
+ 11-bit subtractor                                     : 1
+ 4-bit adder                                           : 1
+ 5-bit subtractor                                      : 1
+ 6-bit subtractor                                      : 1
+# Registers                                            : 13
+ 1-bit register                                        : 3
+ 10-bit register                                       : 2
+ 11-bit register                                       : 1
+ 3-bit register                                        : 1
+ 4-bit register                                        : 3
+ 5-bit register                                        : 1
+ 6-bit register                                        : 1
+ 9-bit register                                        : 1
+# Latches                                              : 25
+ 1-bit latch                                           : 25
+# Comparators                                          : 17
+ 10-bit comparator equal                               : 1
+ 10-bit comparator greater                             : 2
+ 11-bit comparator equal                               : 1
+ 11-bit comparator greater                             : 8
+ 32-bit comparator equal                               : 1
+ 6-bit comparator greater                              : 1
+ 6-bit comparator lessequal                            : 3
+# Multiplexers                                         : 78
+ 1-bit 12-to-1 multiplexer                             : 1
+ 1-bit 2-to-1 multiplexer                              : 26
+ 1-bit 3-to-1 multiplexer                              : 6
+ 1-bit 4-to-1 multiplexer                              : 8
+ 10-bit 2-to-1 multiplexer                             : 8
+ 11-bit 2-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 11
+ 3-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 9
+ 5-bit 2-to-1 multiplexer                              : 4
+ 9-bit 2-to-1 multiplexer                              : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/fifo_10_to_10.ngc>.
+Reading core <ipcore_dir/mul_11bits.ngc>.
+Loading core <fifo_10_to_10> for timing and area information for instance <fifo>.
+Loading core <mul_11bits> for timing and area information for instance <multiplier>.
+
+Synthesizing (advanced) Unit <decoder_main>.
+The following registers are absorbed into accumulator <n>: 1 register on signal <n>.
+The following registers are absorbed into accumulator <delta>: 1 register on signal <delta>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+The following registers are absorbed into counter <t>: 1 register on signal <t>.
+Unit <decoder_main> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 5-bit subtractor                                      : 1
+# Counters                                             : 2
+ 4-bit up counter                                      : 1
+ 6-bit down counter                                    : 1
+# Accumulators                                         : 2
+ 10-bit down loadable accumulator                      : 1
+ 11-bit down accumulator                               : 1
+# Registers                                            : 38
+ Flip-Flops                                            : 38
+# Comparators                                          : 17
+ 10-bit comparator equal                               : 1
+ 10-bit comparator greater                             : 2
+ 11-bit comparator equal                               : 1
+ 11-bit comparator greater                             : 8
+ 32-bit comparator equal                               : 1
+ 6-bit comparator greater                              : 1
+ 6-bit comparator lessequal                            : 3
+# Multiplexers                                         : 85
+ 1-bit 12-to-1 multiplexer                             : 1
+ 1-bit 2-to-1 multiplexer                              : 35
+ 1-bit 3-to-1 multiplexer                              : 6
+ 1-bit 4-to-1 multiplexer                              : 8
+ 10-bit 2-to-1 multiplexer                             : 7
+ 11-bit 2-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 11
+ 3-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 9
+ 5-bit 2-to-1 multiplexer                              : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <next_state_2> (without init value) has a constant value of 0 in block <decoder_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <state_2> (without init value) has a constant value of 0 in block <decoder_main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <d_0> (without init value) has a constant value of 0 in block <best_d>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <d_1> (without init value) has a constant value of 0 in block <best_d>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2016 - Found a loop when searching source clock on port '_n0324:_n0324'
+Last warning will be issued only once.
+
+Optimizing unit <decoder_top> ...
+
+Optimizing unit <decoder_main> ...
+WARNING:Xst:1294 - Latch <t_sel> is equivalent to a wire in block <decoder_main>.
+WARNING:Xst:1294 - Latch <rdy_sel> is equivalent to a wire in block <decoder_main>.
+WARNING:Xst:1294 - Latch <delta_sel_0> is equivalent to a wire in block <decoder_main>.
+WARNING:Xst:1294 - Latch <n_sel_0> is equivalent to a wire in block <decoder_main>.
+WARNING:Xst:1294 - Latch <n_sel_1> is equivalent to a wire in block <decoder_main>.
+WARNING:Xst:1294 - Latch <delta_sel_1> is equivalent to a wire in block <decoder_main>.
+WARNING:Xst:1294 - Latch <next_state_1> is equivalent to a wire in block <decoder_main>.
+WARNING:Xst:1294 - Latch <next_state_0> is equivalent to a wire in block <decoder_main>.
+INFO:Xst:2261 - The FF/Latch <u_sel> in Unit <decoder_main> is equivalent to the following FF/Latch, which will be removed : <shift_sel_0> 
+
+Optimizing unit <best_d> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block decoder_top, actual ratio is 0.
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> in Unit <fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> in Unit <fifo> is equivalent to the following FF/Latch : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i> 
+INFO:Xst:2260 - The FF/Latch <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_2> in Unit <fifo> is equivalent to the following 2 FFs/Latches : <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg_0> <U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg_1> 
+FlipFlop cw2bin/done has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 67
+ Flip-Flops                                            : 67
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : decoder_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 448
+#      GND                         : 3
+#      INV                         : 8
+#      LUT1                        : 3
+#      LUT2                        : 48
+#      LUT3                        : 35
+#      LUT4                        : 55
+#      LUT5                        : 52
+#      LUT6                        : 62
+#      MULT_AND                    : 24
+#      MUXCY                       : 83
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 73
+# FlipFlops/Latches                : 140
+#      FD                          : 34
+#      FDC                         : 3
+#      FDCE                        : 28
+#      FDP                         : 11
+#      FDR                         : 9
+#      FDRE                        : 36
+#      FDSE                        : 4
+#      LD                          : 15
+# RAMS                             : 1
+#      RAMB18E1                    : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 16
+#      IBUF                        : 13
+#      OBUF                        : 3
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vlx240tff784-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             139  out of  301440     0%  
+ Number of Slice LUTs:                  263  out of  150720     0%  
+    Number used as Logic:               263  out of  150720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    293
+   Number with an unused Flip Flop:     154  out of    293    52%  
+   Number with an unused LUT:            30  out of    293    10%  
+   Number of fully used LUT-FF pairs:   109  out of    293    37%  
+   Number of unique control sets:        24
+
+IO Utilization: 
+ Number of IOs:                          17
+ Number of bonded IOBs:                  17  out of    400     4%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of    416     0%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------------------------------------+----------------------------+-------+
+Clock Signal                                                                         | Clock buffer(FF name)      | Load  |
+-------------------------------------------------------------------------------------+----------------------------+-------+
+clk                                                                                  | BUFGP                      | 126   |
+cw2bin/state[2]_PWR_26_o_Select_133_o(cw2bin/Mmux_state[2]_PWR_26_o_Select_133_o13:O)| NONE(*)(cw2bin/lt_done)    | 1     |
+cw2bin/_n0347(cw2bin/_n03471:O)                                                      | NONE(*)(cw2bin/msg_sel_0)  | 4     |
+cw2bin/state[2]_PWR_21_o_Select_123_o(cw2bin/Mmux_state[2]_PWR_21_o_Select_123_o11:O)| NONE(*)(cw2bin/clr)        | 1     |
+cw2bin/_n0345(cw2bin/_n03451:O)                                                      | NONE(*)(cw2bin/shift_sel_1)| 2     |
+cw2bin/state[2]_PWR_25_o_Select_131_o(cw2bin/Mmux_state[2]_PWR_25_o_Select_131_o11:O)| NONE(*)(cw2bin/geq_done)   | 1     |
+cw2bin/state_1                                                                       | NONE(cw2bin/i_rst)         | 6     |
+-------------------------------------------------------------------------------------+----------------------------+-------+
+(*) These 5 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.953ns (Maximum Frequency: 338.627MHz)
+   Minimum input arrival time before clock: 1.263ns
+   Maximum output required time after clock: 0.562ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.953ns (frequency: 338.627MHz)
+  Total number of paths / destination ports: 57422 / 234
+-------------------------------------------------------------------------
+Delay:               2.953ns (Levels of Logic = 20)
+  Source:            cw2bin/n_0 (FF)
+  Destination:       cw2bin/uut/multiplier/blk0000008b (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: cw2bin/n_0 to cw2bin/uut/multiplier/blk0000008b
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             8   0.280   0.513  cw2bin/n_0 (cw2bin/n_0)
+     begin scope: 'cw2bin/uut/multiplier:a<0>'
+     LUT4:I0->O            1   0.053   0.000  blk000000ad (sig00000052)
+     MUXCY:S->O            1   0.219   0.000  blk0000001d (sig0000007c)
+     MUXCY:CI->O           1   0.015   0.000  blk00000021 (sig00000080)
+     MUXCY:CI->O           1   0.015   0.000  blk00000023 (sig00000082)
+     MUXCY:CI->O           1   0.015   0.000  blk00000025 (sig00000084)
+     MUXCY:CI->O           1   0.015   0.000  blk00000027 (sig00000086)
+     MUXCY:CI->O           1   0.015   0.000  blk00000029 (sig00000088)
+     MUXCY:CI->O           1   0.015   0.000  blk0000002b (sig0000008a)
+     MUXCY:CI->O           1   0.015   0.000  blk0000002d (sig0000008c)
+     MUXCY:CI->O           1   0.015   0.000  blk0000002f (sig0000008e)
+     MUXCY:CI->O           1   0.015   0.000  blk00000031 (sig00000090)
+     XORCY:CI->O           1   0.180   0.296  blk00000017 (sig00000071)
+     LUT1:I0->O            1   0.053   0.000  blk000000b5 (sig000000af)
+     MUXCY:S->O            1   0.219   0.000  blk00000074 (sig0000001b)
+     XORCY:CI->O           1   0.180   0.357  blk00000071 (sig0000004a)
+     LUT2:I0->O            1   0.053   0.000  blk00000052 (sig00000005)
+     MUXCY:S->O            1   0.219   0.000  blk00000051 (sig00000004)
+     MUXCY:CI->O           0   0.015   0.000  blk0000004e (sig00000002)
+     XORCY:CI->O           1   0.180   0.000  blk0000004c (sig0000003d)
+     FD:D                     -0.012          blk0000008b
+    ----------------------------------------
+    Total                      2.953ns (1.786ns logic, 1.167ns route)
+                                       (60.5% logic, 39.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'cw2bin/state[2]_PWR_26_o_Select_133_o'
+  Clock period: 1.691ns (frequency: 591.436MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.691ns (Levels of Logic = 2)
+  Source:            cw2bin/lt_done (LATCH)
+  Destination:       cw2bin/lt_done (LATCH)
+  Source Clock:      cw2bin/state[2]_PWR_26_o_Select_133_o falling
+  Destination Clock: cw2bin/state[2]_PWR_26_o_Select_133_o falling
+
+  Data Path: cw2bin/lt_done to cw2bin/lt_done
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               4   0.282   0.606  cw2bin/lt_done (cw2bin/lt_done)
+     LUT5:I0->O           24   0.053   0.697  cw2bin/Mmux_state[2]_PWR_26_o_Select_133_o131 (cw2bin/Mmux_state[2]_PWR_26_o_Select_133_o13)
+     LUT6:I0->O            1   0.053   0.000  cw2bin/Mmux__n038612 (cw2bin/_n0386)
+     LD:D                     -0.043          cw2bin/lt_done
+    ----------------------------------------
+    Total                      1.691ns (0.388ns logic, 1.303ns route)
+                                       (22.9% logic, 77.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 44 / 44
+-------------------------------------------------------------------------
+Offset:              1.263ns (Levels of Logic = 5)
+  Source:            wr_en (PAD)
+  Destination:       fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i (FF)
+  Destination Clock: clk rising
+
+  Data Path: wr_en to fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.003   0.447  wr_en_IBUF (wr_en_IBUF)
+     begin scope: 'fifo:wr_en'
+     LUT4:I1->O            1   0.053   0.296  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/Mmux_ram_full_comb_PWR_40_o_MUX_13_o121 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/Mmux_ram_full_comb_PWR_40_o_MUX_13_o12)
+     LUT5:I4->O            1   0.053   0.357  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/Mmux_ram_full_comb_PWR_40_o_MUX_13_o13 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/Mmux_ram_full_comb_PWR_40_o_MUX_13_o13)
+     LUT6:I4->O            2   0.053   0.000  U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/Mmux_ram_full_comb_PWR_40_o_MUX_13_o16 (U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_comb_PWR_40_o_MUX_13_o)
+     FDP:D                    -0.012          U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_fb_i
+    ----------------------------------------
+    Total                      1.263ns (0.162ns logic, 1.101ns route)
+                                       (12.8% logic, 87.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              0.562ns (Levels of Logic = 1)
+  Source:            cw2bin/bin_msg (FF)
+  Destination:       bin_msg (PAD)
+  Source Clock:      clk rising
+
+  Data Path: cw2bin/bin_msg to bin_msg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.280   0.279  cw2bin/bin_msg (cw2bin/bin_msg)
+     OBUF:I->O                 0.003          bin_msg_OBUF (bin_msg)
+    ----------------------------------------
+    Total                      0.562ns (0.283ns logic, 0.279ns route)
+                                       (50.3% logic, 49.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+-------------------------------------+---------+---------+---------+---------+
+                                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------+---------+---------+---------+---------+
+clk                                  |    2.953|         |         |         |
+cw2bin/_n0345                        |         |    1.199|         |         |
+cw2bin/_n0347                        |         |    1.423|         |         |
+cw2bin/state[2]_PWR_21_o_Select_123_o|         |    0.895|         |         |
+cw2bin/state[2]_PWR_25_o_Select_131_o|         |    0.820|         |         |
+cw2bin/state[2]_PWR_26_o_Select_133_o|         |    2.049|         |         |
+cw2bin/state_1                       |    1.626|         |         |         |
+-------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock cw2bin/_n0345
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.340|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock cw2bin/_n0347
+-------------------------------------+---------+---------+---------+---------+
+                                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------+---------+---------+---------+---------+
+clk                                  |         |         |    2.315|         |
+cw2bin/state[2]_PWR_26_o_Select_133_o|         |         |    1.305|         |
+-------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock cw2bin/state[2]_PWR_21_o_Select_123_o
+-------------------------------------+---------+---------+---------+---------+
+                                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------+---------+---------+---------+---------+
+clk                                  |         |         |    2.613|         |
+cw2bin/state[2]_PWR_26_o_Select_133_o|         |         |    1.776|         |
+-------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock cw2bin/state[2]_PWR_25_o_Select_131_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    0.797|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock cw2bin/state[2]_PWR_26_o_Select_133_o
+-------------------------------------+---------+---------+---------+---------+
+                                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------+---------+---------+---------+---------+
+clk                                  |         |         |    2.342|         |
+cw2bin/state[2]_PWR_26_o_Select_133_o|         |         |    1.691|         |
+-------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock cw2bin/state_1
+-------------------------------------+---------+---------+---------+---------+
+                                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------------------+---------+---------+---------+---------+
+clk                                  |    2.474|         |         |         |
+cw2bin/state[2]_PWR_26_o_Select_133_o|         |    1.393|         |         |
+-------------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.60 secs
+ 
+--> 
+
+Total memory usage is 271248 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   43 (   0 filtered)
+Number of infos    :   11 (   0 filtered)
+

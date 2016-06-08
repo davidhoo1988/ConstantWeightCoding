@@ -1,0 +1,68 @@
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/11-27/NiederreiterEncryptor/encryptor_top.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/11-27/NiederreiterEncryptor/encryptor_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6vlx240t-ff784-3 encryptor_top.ngc encryptor_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encryptor_top_map.ncd encryptor_top.ngd encryptor_top.pcf 
+par -w -intstyle ise -ol high -mt off encryptor_top_map.ncd encryptor_top.ncd encryptor_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml encryptor_top.twx encryptor_top.ncd -o encryptor_top.twr encryptor_top.pcf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/11-27/NiederreiterEncryptor/encryptor_top.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/11-27/NiederreiterEncryptor/encryptor_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6vlx240t-ff784-3 encryptor_top.ngc encryptor_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encryptor_top_map.ncd encryptor_top.ngd encryptor_top.pcf 
+par -w -intstyle ise -ol high -mt off encryptor_top_map.ncd encryptor_top.ncd encryptor_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml encryptor_top.twx encryptor_top.ncd -o encryptor_top.twr encryptor_top.pcf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/11-27/NiederreiterEncryptor/encryptor_top.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/11-27/NiederreiterEncryptor/encryptor_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6vlx240t-ff784-3 encryptor_top.ngc encryptor_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encryptor_top_map.ncd encryptor_top.ngd encryptor_top.pcf 
+par -w -intstyle ise -ol high -mt off encryptor_top_map.ncd encryptor_top.ncd encryptor_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml encryptor_top.twx encryptor_top.ncd -o encryptor_top.twr encryptor_top.pcf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/11-27/NiederreiterEncryptor/encryptor_top.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/11-27/NiederreiterEncryptor/encryptor_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc encryptor_top.ucf -p xc6vlx240t-ff784-3 encryptor_top.ngc encryptor_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encryptor_top_map.ncd encryptor_top.ngd encryptor_top.pcf 
+par -w -intstyle ise -ol high -mt off encryptor_top_map.ncd encryptor_top.ncd encryptor_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml encryptor_top.twx encryptor_top.ncd -o encryptor_top.twr encryptor_top.pcf -ucf encryptor_top.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc encryptor_top.ucf -p xc6vlx240t-ff784-3 encryptor_top.ngc encryptor_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encryptor_top_map.ncd encryptor_top.ngd encryptor_top.pcf 
+par -w -intstyle ise -ol high -mt off encryptor_top_map.ncd encryptor_top.ncd encryptor_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml encryptor_top.twx encryptor_top.ncd -o encryptor_top.twr encryptor_top.pcf -ucf encryptor_top.ucf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/11-27/NiederreiterEncryptor/encryptor_top.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/11-27/NiederreiterEncryptor/encryptor_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc encryptor_top.ucf -p xc6vlx240t-ff784-3 encryptor_top.ngc encryptor_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encryptor_top_map.ncd encryptor_top.ngd encryptor_top.pcf 
+par -w -intstyle ise -ol high -mt off encryptor_top_map.ncd encryptor_top.ncd encryptor_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml encryptor_top.twx encryptor_top.ncd -o encryptor_top.twr encryptor_top.pcf -ucf encryptor_top.ucf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/11-27/NiederreiterEncryptor/encryptor_top.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/11-27/NiederreiterEncryptor/encryptor_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc encryptor_top.ucf -p xc6vlx240t-ff784-3 encryptor_top.ngc encryptor_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encryptor_top_map.ncd encryptor_top.ngd encryptor_top.pcf 
+par -w -intstyle ise -ol high -mt off encryptor_top_map.ncd encryptor_top.ncd encryptor_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml encryptor_top.twx encryptor_top.ncd -o encryptor_top.twr encryptor_top.pcf -ucf encryptor_top.ucf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/11-27/NiederreiterEncryptor/encryptor_top.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/11-27/NiederreiterEncryptor/encryptor_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc encryptor_top.ucf -p xc6vlx240t-ff784-3 encryptor_top.ngc encryptor_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encryptor_top_map.ncd encryptor_top.ngd encryptor_top.pcf 
+par -w -intstyle ise -ol high -mt off encryptor_top_map.ncd encryptor_top.ncd encryptor_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml encryptor_top.twx encryptor_top.ncd -o encryptor_top.twr encryptor_top.pcf -ucf encryptor_top.ucf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/11-27/NiederreiterEncryptor/encryptor_top.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/11-27/NiederreiterEncryptor/encryptor_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc encryptor_top.ucf -p xc6vlx240t-ff784-3 encryptor_top.ngc encryptor_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encryptor_top_map.ncd encryptor_top.ngd encryptor_top.pcf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/11-27/NiederreiterEncryptor/encryptor_top.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/11-27/NiederreiterEncryptor/encryptor_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc encryptor_top.ucf -p xc6vlx240t-ff784-3 encryptor_top.ngc encryptor_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encryptor_top_map.ncd encryptor_top.ngd encryptor_top.pcf 
+par -w -intstyle ise -ol high -mt off encryptor_top_map.ncd encryptor_top.ncd encryptor_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml encryptor_top.twx encryptor_top.ncd -o encryptor_top.twr encryptor_top.pcf -ucf encryptor_top.ucf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/11-27/NiederreiterEncryptor/encryptor_top.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/11-27/NiederreiterEncryptor/encryptor_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc encryptor_top.ucf -p xc6vlx240t-ff784-3 encryptor_top.ngc encryptor_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encryptor_top_map.ncd encryptor_top.ngd encryptor_top.pcf 
+par -w -intstyle ise -ol high -mt off encryptor_top_map.ncd encryptor_top.ncd encryptor_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml encryptor_top.twx encryptor_top.ncd -o encryptor_top.twr encryptor_top.pcf -ucf encryptor_top.ucf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/11-27/NiederreiterEncryptor/encryptor_top.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/11-27/NiederreiterEncryptor/encryptor_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc encryptor_top.ucf -p xc6vlx240t-ff784-3 encryptor_top.ngc encryptor_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encryptor_top_map.ncd encryptor_top.ngd encryptor_top.pcf 
+par -w -intstyle ise -ol high -mt off encryptor_top_map.ncd encryptor_top.ncd encryptor_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml encryptor_top.twx encryptor_top.ncd -o encryptor_top.twr encryptor_top.pcf -ucf encryptor_top.ucf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/11-27/NiederreiterEncryptor/encryptor_top.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/11-27/NiederreiterEncryptor/encryptor_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc encryptor_top.ucf -p xc6vlx240t-ff784-3 encryptor_top.ngc encryptor_top.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc encryptor_top.ucf -p xc6vlx240t-ff784-3 encryptor_top.ngc encryptor_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encryptor_top_map.ncd encryptor_top.ngd encryptor_top.pcf 
+par -w -intstyle ise -ol high -mt off encryptor_top_map.ncd encryptor_top.ncd encryptor_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml encryptor_top.twx encryptor_top.ncd -o encryptor_top.twr encryptor_top.pcf -ucf encryptor_top.ucf 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/11-27/NiederreiterEncryptor/encryptor_top.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/11-27/NiederreiterEncryptor/encryptor_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc encryptor_top.ucf -p xc6vlx240t-ff784-3 encryptor_top.ngc encryptor_top.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o encryptor_top_map.ncd encryptor_top.ngd encryptor_top.pcf 
+par -w -intstyle ise -ol high -mt off encryptor_top_map.ncd encryptor_top.ncd encryptor_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml encryptor_top.twx encryptor_top.ncd -o encryptor_top.twr encryptor_top.pcf -ucf encryptor_top.ucf 

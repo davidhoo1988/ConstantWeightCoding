@@ -1,0 +1,2 @@
+verilog work "ipcore_dir/mul_12bits.v"
+verilog work "best_d.v"

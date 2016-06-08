@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/decoder/decoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/decoder/decoder_main.syr" 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/decoder/decoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/decoder/decoder_main.syr" 
+xst -intstyle ise -ifn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/decoder/decoder_main.xst" -ofn "C:/Users/RSPC/Dropbox/ConstantWeightCoding/hardware/10-38/decoder/decoder_main.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6vlx240t-ff784-3 decoder_main.ngc decoder_main.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o decoder_main_map.ncd decoder_main.ngd decoder_main.pcf 
+par -w -intstyle ise -ol high -mt off decoder_main_map.ncd decoder_main.ncd decoder_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml decoder_main.twx decoder_main.ncd -o decoder_main.twr decoder_main.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc decoder_main.ucf -p xc6vlx240t-ff784-3 decoder_main.ngc decoder_main.ngd  
+map -intstyle ise -p xc6vlx240t-ff784-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o decoder_main_map.ncd decoder_main.ngd decoder_main.pcf 
+par -w -intstyle ise -ol high -mt off decoder_main_map.ncd decoder_main.ncd decoder_main.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml decoder_main.twx decoder_main.ncd -o decoder_main.twr decoder_main.pcf -ucf decoder_main.ucf 

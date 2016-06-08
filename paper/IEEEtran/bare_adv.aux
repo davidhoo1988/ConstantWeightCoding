@@ -1,0 +1,141 @@
+\relax 
+\citation{shor1997polynomial}
+\citation{vandersypen2001experimental,xu2011quantum}
+\citation{bernstein2009introduction}
+\citation{mceliece1978public,sendrier2014code}
+\citation{niederreiter1986knapsack}
+\citation{cover1973enumerative}
+\citation{sendrier1995efficient}
+\citation{sendrier1995efficient}
+\citation{goloumb1966run}
+\citation{sendrier2005encoding}
+\citation{heyse2010low,heyse2012towards}
+\citation{sendrier2005encoding}
+\citation{courtois2001achieve,landais2012cfs,finiasz2011parallel}
+\citation{courtois2001achieve}
+\citation{baldi2013using}
+\citation{hu2015application,heyse2012towards,baldi2013using}
+\citation{hu2015application,heyse2012towards,baldi2013using}
+\citation{sendrier2005encoding}
+\citation{heyse2010low}
+\citation{sendrier2005encoding}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}}
+\newlabel{sec:introduction}{{1}{1}}
+\citation{heyse2012towards}
+\citation{sendrier2005encoding,heyse2010low}
+\citation{sendrier2005encoding}
+\citation{sendrier2005encoding}
+\citation{sendrier2005encoding}
+\citation{goloumb1966run,sendrier2005encoding}
+\citation{sendrier2005encoding}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Parameters recommended used in the Niederreiter cryptosystem, referenced partly from \cite  {hu2015application,heyse2012towards,baldi2013using}\relax }}{2}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{table:ISD}{{1}{2}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Sendrier's methods for constant weight coding}{2}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Encode Binary String to Constant Weight Word (Bin2CW)\relax }}{2}}
+\newlabel{alg:encoding}{{1}{2}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {2}{\ignorespaces Decode Constant Weight Word to Binary String (CW2Bin)\relax }}{2}}
+\newlabel{alg:decoding}{{2}{2}}
+\newlabel{eq:theoretical_d}{{1}{2}}
+\citation{heyse2010low}
+\citation{sendrier2005encoding}
+\citation{heyse2012towards}
+\citation{sendrier2005encoding}
+\citation{heyse2010low}
+\citation{sendrier2005encoding}
+\citation{sendrier2005encoding}
+\citation{heyse2012towards}
+\citation{sendrier2005encoding}
+\citation{sendrier2005encoding}
+\citation{heyse2012towards}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Proposed approximation method of $d$}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Reduce memory footprint and computational steps}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Represent $\theta [t]$ in fixed-point format}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Find the optimal precision for constant weight encoding}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces The performance of different methods for choosing the optimal $d$. We have listed five most frequently used sets of $(n, t)$ for the Niederreiter cryptosystem. We have done three experiments for each $(n, t)$ in which the input binary message contains '1' with the probability $p=0.1$, $p=0.5$ and $p=0.9$ respectively. The results of each experiment are obtained by running 10,000 different messages. The X-axis lists different methods including Senderier's primitive\cite  {sendrier2005encoding}, Senderier's approximation\cite  {sendrier2005encoding}, Heyse's approximation\cite  {heyse2012towards} and our n*fixed\_0\_16 --- n*fixed\_0\_2. The Y-axis represents the average length (bits) of the input message read for a successful constant weight encoding.\relax }}{4}}
+\newlabel{fig:best_d}{{1}{4}}
+\citation{sendrier2005encoding}
+\citation{sendrier2005encoding}
+\citation{heyse2012towards}
+\citation{sendrier2005encoding}
+\citation{sendrier2005encoding}
+\citation{heyse2012towards}
+\citation{sendrier2005encoding}
+\citation{sendrier2005encoding}
+\citation{heyse2012towards}
+\citation{sendrier2005encoding}
+\citation{sendrier2005encoding}
+\citation{heyse2012towards}
+\citation{sendrier2005encoding}
+\citation{sendrier2005encoding}
+\citation{heyse2012towards}
+\citation{sendrier2005encoding}
+\citation{sendrier2005encoding}
+\citation{heyse2010low}
+\citation{sendrier2005encoding}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Proposed constant weight encoder and decoder}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}best\_d module}{5}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Encoding of $\theta [t]$\relax }}{5}}
+\newlabel{tab:encode_theta}{{3}{5}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Decoding of $n\cdot \theta [t]$\relax }}{5}}
+\newlabel{tab:decode_ntheta}{{4}{5}}
+\citation{hu2015application}
+\citation{heyse2012towards}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces The coding performance of the optimal $d$ chosen from our approximation method\relax }}{6}}
+\newlabel{tab:best_d}{{2}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces best\_d module for CW encoder and decoder. We list here the detailed configurations of $n=2^{11},t=27$ for demonstrative purpose.\relax }}{6}}
+\newlabel{fig:best_d}{{2}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Bin2CW encoder}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}CW2Bin decoder}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Integrating with the Niederrieter encryptor}{6}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {3}{\ignorespaces Niederreiter Message Encryption, referenced from \cite  {hu2015application}\relax }}{6}}
+\newlabel{alg:NiederreiterEncrypt}{{3}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces General architecture of CW encoder\relax }}{7}}
+\newlabel{fig:encoder}{{3}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces General architecture of CW decoder\relax }}{7}}
+\newlabel{fig:decoder}{{4}{7}}
+\citation{heyse2012towards}
+\citation{heyse2012towards}
+\citation{heyse2012towards}
+\citation{heyse2012towards}
+\citation{sendrier2005encoding}
+\citation{heyse2012towards}
+\citation{sendrier2005encoding}
+\citation{heyse2012towards}
+\citation{heyse2012towards}
+\citation{heyse2012towards}
+\citation{heyse2012towards}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Block diagram of the Niederrieter encryptor.\relax }}{8}}
+\newlabel{fig:encryptor}{{5}{8}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Results and comparisons}{8}}
+\citation{heyse2012towards}
+\citation{heyse2012towards}
+\citation{heyse2012towards}
+\citation{heyse2012towards}
+\citation{heyse2012towards}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Compact implementations of CW encoder and decoder on Xilinx Virtex-6 FPGA\relax }}{9}}
+\newlabel{tab:result}{{5}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{9}}
+\bibstyle{IEEEtran}
+\bibdata{IEEEabrv,./reference}
+\bibcite{shor1997polynomial}{1}
+\bibcite{vandersypen2001experimental}{2}
+\bibcite{xu2011quantum}{3}
+\bibcite{bernstein2009introduction}{4}
+\bibcite{mceliece1978public}{5}
+\bibcite{sendrier2014code}{6}
+\bibcite{niederreiter1986knapsack}{7}
+\bibcite{cover1973enumerative}{8}
+\bibcite{sendrier1995efficient}{9}
+\bibcite{goloumb1966run}{10}
+\bibcite{sendrier2005encoding}{11}
+\bibcite{heyse2010low}{12}
+\bibcite{heyse2012towards}{13}
+\bibcite{courtois2001achieve}{14}
+\bibcite{landais2012cfs}{15}
+\bibcite{finiasz2011parallel}{16}
+\bibcite{baldi2013using}{17}
+\bibcite{hu2015application}{18}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces FPGA Implementation results of Niederreiter encryption with $n=2048, t=27$ compared with\nobreakspace  {}\cite  {heyse2012towards} after PAR\relax }}{10}}
+\newlabel{table:encryptor_result}{{6}{10}}
+\@writefile{toc}{\contentsline {section}{References}{10}}

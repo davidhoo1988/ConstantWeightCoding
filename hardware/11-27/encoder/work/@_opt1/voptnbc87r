@@ -1,0 +1,94 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\RSPC\Dropbox\ConstantWeightCoding\hardware\11-27\decoder
+T_opt
+V6WO8S0nKmA`MQJcZC11RE1
+04 6 4 work best_d fast 0
+Z1 04 4 4 work glbl fast 0
+=1-f8b156b053e7-56791643-2f4-84d48
+Z2 o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L secureip +acc
+n@_opt
+Z3 OL;O;10.1c;51
+Z4 dC:\Users\RSPC\Dropbox\ConstantWeightCoding\hardware\11-27\decoder
+T_opt1
+V^Y>SL0HBEaP?gaU2bMcWQ0
+04 9 4 work best_d_tb fast 0
+R1
+=1-f8b156b053e7-567916f3-11a-84ca4
+R2
+n@_opt1
+R3
+vbest_d
+!s100 ]8SUZ]]>aD@P11c0dY1gC2
+I:>Z;l7Q:BBHgTLl[Pd`Dg1
+VHcJM<G7SQGSeM_Pgo5Mc>2
+R4
+w1450775067
+8best_d.v
+Fbest_d.v
+L0 21
+Z5 OL;L;10.1c;51
+r1
+31
+!s90 -reportprogress|300|best_d.v|
+Z6 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s108 1450776305.561000
+!s107 best_d.v|
+!i10b 1
+!s85 0
+vbest_d_tb
+I?YfSeVB90KC@LaOJV3RU?3
+Vbb^09<n=nD[TX6R=Y2II=3
+R4
+w1450776203
+8best_d_tb.v
+Fbest_d_tb.v
+L0 25
+R5
+r1
+31
+R6
+!s100 38H4lmj0M_J0f9T<0f6i>0
+!s108 1450776305.651000
+!s107 best_d_tb.v|
+!s90 -reportprogress|300|best_d_tb.v|
+!i10b 1
+!s85 0
+vglbl
+ImD9E<3l8]cHA6VAZDN3d_2
+VM[9mS]S:KA1i4VeCMX35[3
+R4
+w1308634177
+8C:/Xilinx/ISE_13.2/ISE_DS/ISE//verilog/src/glbl.v
+FC:/Xilinx/ISE_13.2/ISE_DS/ISE//verilog/src/glbl.v
+L0 5
+R5
+r1
+31
+R6
+!i10b 1
+!s100 ?92MIMGIo5^U1FKol^SQG0
+!s85 0
+!s108 1450776305.781000
+!s107 C:/Xilinx/ISE_13.2/ISE_DS/ISE//verilog/src/glbl.v|
+!s90 -reportprogress|300|C:/Xilinx/ISE_13.2/ISE_DS/ISE//verilog/src/glbl.v|
+vmul_12bits
+!s100 Xi9dd0DDelT<OnZ5LM`8N1
+I>A5k57=X60fml_M?[<D?20
+VD^RGI<GTTDa6G4=hLK1a71
+R4
+w1450772012
+8ipcore_dir/mul_12bits.v
+Fipcore_dir/mul_12bits.v
+L0 36
+R5
+r1
+31
+!s108 1450776304.558000
+!s107 ipcore_dir/mul_12bits.v|
+!s90 -reportprogress|300|ipcore_dir/mul_12bits.v|
+R6
+!i10b 1
+!s85 0
